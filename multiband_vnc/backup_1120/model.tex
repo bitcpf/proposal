@@ -1,0 +1,179 @@
+\section{Multiband Adaptation}
+\label{sec:model}
+In this section, we first focus on the problem formulation for multiband 
+adaptation in vehicular wireless links and introduce the context information 
+that we use. Based on the analysis of existing problems, we discuss two 
+baseline methods for comparison and propose two machine-learning-based 
+multiband adaptation algorithms for vehicular channels.
+
+\subsection{Problem Formulation}
+The problem we are going to resolve is to find a band has the best throughput in multiple available options as:
+\begin{align}
+\label{eqn:estimation}
+f: (v_{tx}, v_{rx},  P_R^1,..., P_R^n, B^1, ..., B^n,P_N^1,..., P_N^n,) \rightarrow b_{best}
+ \end{align}
+where $v_{tx}$ and $v_{rx}$ are the velocity of the transmitter and the receiver, 
+$P_R^i$ is the received power, $P_N^i$ is the no-802.11 interference signal level and
+ %Why we use context information 
+$B^i$ is the \emph{busy time}.
+
+
+To represent the unusable level of the channel, we define \emph{busy time}, $B$,
+as the percentage of time when the channel is occupied by 
+all competing sources $x_j ( j = 1, 2, 3, ...)$ other than the intended transmitter $y$. 
+For 802.11-based transmissions, the busy time on band $i$ could be defined as:
+\begin{equation}
+\label{eqn:80211activity}
+B^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
+\end{equation}
+where $L$ and $R$ represent the length of packet in bits and the data
+rate that packet is transmitted, respectively, for all external sources $x_i$
+as compared to the idle slots $S$ times the slot duration $\sigma$ and
+the packets from the intended transmitter $y$. When considering the level of
+activity of non-802.11 users (e.g., the bands currently licensed to TV 
+and other non-802.11 devices), whether the signal level from these
+competing sources reaches a level to disrupt communication at the receiver
+would define a similar notion of busy time. However, since this depends
+on the environment, hardware, coding, and modulation level, we use
+the received signal level from non-802.11 interference sources $P_N^i$ 
+on band $i$ as an input to our algorithms in various forms as shown 
+in~(\ref{eqn:estimation}).
+
+The existing patten embedded in the performance of different bands and 
+collected context information e.g. $v_{tx}$, $v_{rx}$, $B_i$, $P_N^i$, $P_R^i$ 
+and location information, $g$, could be extracted and help make decisions
+for multiband adaptation in a similar context~\cite{meikle2012global} .
+%can be used by people tending to have repeatable patterns
+%~\cite{meikle2012global} and we could improve the performance with each trip 
+%to the region if we could passively observe context along this repeatable 
+%pattern. The variables used in each algorithm will be explained for each algorithm 
+%later. 
+
+\subsection{Multiband Adaptation Algorithms}
+%2 baseline methods: 
+%1. band selection based on identifying the the most common class, 
+%2. SNR-based band selection
+In order to evaluate the proposed multiband adaptation algorithms, 
+we construct two simple multiband adaptation methods: (1) We search the
+most commonly selected band as the best band in the historical data
+and configure the most common band as the final decision. (2) For each band, we build 
+a lookup table for throughput $T_{ideal}$ in the ideal channel given $RSSI$ and obtain 
+the best band according to following:
+\begin{align}
+&\max_i T_{ideal}^i\times(1-B^i),
+\label{eq:baseline2}
+\end{align}
+The throughput $T_{ideal}$ is measured with Azimuth ACE-MX channel emulator~\cite{AzimuthACE}. 
+The details of system setup and data collection are discussed in Section~\ref{sec:experiment design}. 
+
+Machine learning has been introduced as an important tool in wireless communication
+~\cite{haykin2005cognitive}. When the user enters an area, the machine
+learning algorithm can learn from the historical data and train a mapping 
+function to select the potential optimal band given the input, e.g. RSSI, velocity 
+and activity level. We propose two multiband adaptation algorithms based on
+two machine learning methods: the k-nearest neighbor (KNN) and the decision tree.
+
+%2 machine learning methods: 
+%1. modified KNN, 
+
+{\bf Location based Look-up Algorithm.} KNN is a machine learning method
+based on searching closest training data points in the feature space and various
+modified versions has been applied successfully for classification~\cite{zhang2006svm}.
+In the Location based Look up Algorithm, we search the closest neighbors of 
+a testing points by using the parameter one by one in the input set. The 
+performance of the found training data points is averaged in each band. Then
+the band with the highest throughput performance is selected as the $b_best$.
+The Location based look-up algorithm involves the geographic information 
+for the band selection comparing with \emph{Machine Learning Algorithm}. 
+The process of this algorithm is presented as \ref{algorithms: Location}:
+	  \begin{algorithm}
+	  \caption{Location based Look-up Algorithm}
+	  \label{algorithms: Location}
+	  \begin{algorithmic}[1]
+	  \REQUIRE  ~~\\
+		  $P_R^i \in \{P_R^1,P_R^2 \dots,P_R^n\}$;\\
+		  $B^i \in \{B^1,B^2, \dots, B^n\}$;\\
+		  $P_N^i \in \{P_N^1,P_N^2 \dots,P_N^n\}$;\\
+		  $v_tx$\\
+		  $g$: Location Information of Multi-band node\\
+		  $Thr_{Area}$: Threshold of a Location\\
+		  $Thr_{RSSI}$: Threshold of RSSI\\
+		  $Thr_{Velocity}$: Threshold of Velocity\\
+		  $Thr_{A Area}$: Threshold of Data Amount for Location\\
+		  $Thr_{A RSSI}$: Threshold of Data Amount for RSSI\\
+		  $Thr_{A Non 802.11 SI}$: Threshold of Data Amount for Non 802.11 Interference\\
+		  $Thr_{A Velocity}$: Threshold of Data Amount for Velocity\\
+		  $D^i \in \{D_1,D_2,\dots,D_n\}$: Historical Look up data
+\ENSURE ~~\\    
+$b_{best}$:Optimal transmission band
+\FOR    {$i<=n$}
+\STATE Initialize \emph{$Data_{Location},Data_{RSSI},Data_{Velocity}$} to zero matrix;
+\WHILE {$Amount(Data_{Location,i})<Thr_{A Area}$}
+\STATE $Data_{Location,i} \leftarrow f_{Lookup}(D^i,g,Thr_{Area})$: Find data in $D^i$ whose distance less than $Thr_{Area}$;
+\STATE $Thr_{Area}=Thr_{Area} \times 1.1$;
+\ENDWHILE
+
+\WHILE {$Amount(Data_{RSSI,i})<Thr_{A RSSI}$}
+\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_R^i,Thr_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_R^i$ in range $Thr_{RSSI}$;
+\STATE $Thr_{RSSI}=Thr_{RSSI} \times 1.1$;
+\ENDWHILE
+
+\WHILE {$Amount(Data_{P_N,i})<Thr_{A Non 802.11 SI}$}
+\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_N^i,Thr_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_N^i$ in range $Thr_{RSSI}$;
+\STATE $Thr_{A Non 802.11 SI}=Thr_{A Non 802.11 SI} \times 1.1$;
+\ENDWHILE
+
+\WHILE {$Amount(Data_{Velocity,i})<Thr_{A Velocity}$}
+\STATE $Data_{Velocity,i} \leftarrow f_{Lookup}(D_{RSSI,i},v_tx,Thr_{Velocity})$: Find data in $D_{RSSI}$ the RSSI similar to $v_tx$ in range $Thr_{RSSI}$;
+\STATE $Thr_{Velocity}=Thr_{Velocity} \times 1.1$;
+\ENDWHILE \\
+
+\STATE $Tpt_{L,i}=avr(Data_{Velocity,i})$;
+\STATE  $Tpt_{e,i}=Tpt_{L,i}\times(1-b_i)$;
+\ENDFOR \\  
+\STATE $b^*=Max\{Tpt_{e,1},Tpt_{e,1},\dots,Tpt_{e,n}\}$;\\
+\end{algorithmic}
+\end{algorithm}
+
+For \emph{Location Based Look up Algorithm}, $B_i$ is the \emph{busy time}; $v_i$ 
+is the \emph{Velocity} of each band and $r_i$ is the \emph{RSSI} of each band. 
+Context information $c$ involves $g$, $v$, and $B^i$. In the 
+process of each data point, we have $4$ looking up process to narrow down the data 
+points which is similar to the testing data point. First, we find an amount of 
+historical data which is near the testing data in a distance range, if the amount of 
+historical data which qualify the requirement, we increase the distance range; then we 
+narrow the data in the previous looking up qualify the data has similar RSSI in a 
+range, if the amount is less than a threshold $Thr_{RSSI}$, the RSSI range will be 
+increased; the process is repeated for non 802.11 interference signal and velocity.
+At last, the average throughput of the most similar data will be adjust of the 802.11 
+\emph{busy time} and tell the best band.
+
+%2. region-based C4.5 (different region sizes)
+{\bf Region-based Decision Tree algorithm.} Decision trees are one kind of the most 
+widely used machine learning 
+algorithms according to its low complexity and stable performance~\cite{banfield2007}.
+The decision tree can model the relationship in the training data between the context 
+information and the optimal band as a set of tree-like deduction structure. Before 
+implementing the training process, we prepare a training set including a group of 
+training data points as $\{v_{tx}, v_{rx}, P_R^1, ..., P_R^n,  B^1, ..., B^n, P_N^1, 
+..., P_N^n, b_{best}\}$ based on the collected measurements. We obtain $b_best$ by comparing
+the throughput performance of all available bands and selecting the band with the highest 
+throughput. We choose C4.5 algorithm~\cite{hall2009weka}, an information entropy gain based
+and widely used algorithm to build the decision tree used in our system. At each intermediate
+node, the learning algorithm calculate the information entropy gain of splitting the rest 
+training data points based on each parameter in the input set, e.g. RSSI, velocity or 
+activity level. Then it compare and select the parameter with the highest entropy gain
+to decide the test condition at each intermediate node until all training data points are
+classified. The leaf node indicates the optimal band for prediction in our application
+Then the trained decision structure is integrated into the transmission system. With the
+collected context information fed into, the decision structure can suggest the potential 
+band with the best throughput performance for transmission. 
+
+The relationship between the context information and the best band could be changed at 
+different locations because of different propagation environment. To reduce the interference
+of training data from different locations, we split the routing of the 
+vehicles into several regions and implement the training process based on the historical 
+data collected in each region. Then trained decision structure is integrated in our system 
+for multiband adaptation in each region. The granularity of region division is one parameter
+that affect the training set as well as the performance of the resulting decision tree. We 
+evaluate granularity of division in Section~\ref{sec:experiment design}.

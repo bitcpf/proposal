@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{balanis2012antenna}
+{\sc Balanis, C.~A.}
+\newblock {\em Antenna theory: analysis and design}.
+\newblock John Wiley \& Sons, 2012.
+
+\bibitem{friis}
+{\sc Friis, H.~T.}
+\newblock A note on a simple transmission formula.
+\newblock 254--256.
+
+\bibitem{he2008optimizing}
+{\sc He, B., Xie, B., and Agrawal, D.~P.}
+\newblock Optimizing deployment of internet gateway in wireless mesh networks.
+\newblock {\em Computer Communications 31}, 7 (2008), 1259--1275.
+
+\bibitem{carlson}
+{\sc Inc., C.}
+\newblock Fcc certifies carlson wireless technologies tv white space radio.
+\newblock
+  \url{http://www.carlsonwireless.com/rural-connect-press-release.html}, 2014.
+
+\bibitem{marina2010topology}
+{\sc Marina, M.~K., Das, S.~R., and Subramanian, A.~P.}
+\newblock A topology control approach for utilizing multiple channels in
+  multi-radio wireless mesh networks.
+\newblock {\em Computer Networks 54}, 2 (2010), 241--256.
+
+\bibitem{si2010overview}
+{\sc Si, W., Selvakennedy, S., and Zomaya, A.~Y.}
+\newblock An overview of channel assignment methods for multi-radio
+  multi-channel wireless mesh networks.
+\newblock {\em Journal of Parallel and Distributed Computing 70}, 5 (2010),
+  505--524.
+
+\end{thebibliography}

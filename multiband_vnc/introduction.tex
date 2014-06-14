@@ -1,0 +1,95 @@
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+%Background
+%Worldwide governments and societies are active to achieve road safety and travel comfort of drivers and passengers.
+Drivers and passengers around the world could utilize a wide array of vehicular applications ranging from real-time traffic monitoring and
+safety applications to various {\it infotainment} applications.
+%spanning news, weather, audio, and video streams.  
+However, the continuous use of such applications is limited due to the challenge of transmitting over 
+highly-dynamic vehicular wireless channels. 
+In such networks, the increasing availability of different 
+frequency bands with correspondingly diverse propagation characteristics could allow flexibility and 
+robustness of vehicular links. Even with spectral flexibility, links are extremely tenuous, 
+demanding instantaneous decisions to remain connected, motivating an algorithm that
+can find the appropriate frequency band quickly and according to the current environmental context.
+
+Cognitive radio mechanisms which interleave channel accesses also motivate the frequency
+band selection problem of finding the optimal spectrum on which to 
+transmit~\cite{ghasemi2008spectrum}.
+%Furthermore, in existing systems, there are a number of different technologies from which to choose and the demand of
+% integrating the advantages of multiple protocol is presented as Heterogeneous Wireless Networks has opening topics related to band selection~\cite{hossain2010vehicular}.
+Prior work has considered a number of challenges in
+leveraging white space frequencies including spectrum sensing, frequency-agile operation,
+geolocation, solving stringent spectral mask requirements, and providing reliable service
+in unlicensed and dynamically changing spectrum~\cite{shellhammer2009technical}. In particular, there has recently been an acceleration
+in spectrum sensing work~\cite{rayanchu2011fluid, kim1996pulse,cabric2004implementation}. Based on 
+these works, protocols have been built for multi-channel and/or multiband wireless operation~\cite{MOAR,
+raychaudhuri2003spectrum,sabharwal2007opportunistic}.  Other works have presented methods for searching for the most efficient 
+transmission channel~\cite{mo2005comparison}, discovering channel information~\cite{rayanchu2011fluid, sabharwal2007opportunistic}, and estimating 
+channel quality~\cite{MOAR}.
+Finally, the emergence of a number of diverse sensors on a vehicle motivates work
+on heterogeneous wireless networks, which have different frequency bands {\it and}
+technologies~\cite{hossain2010vehicular}. Thus, the various communication 
+standards have diverse throughput capacity, allowing the choice of technology 
+to possibly usurp frequency band decisions. For example, an 802.11n link at 5.8 
+GHz with high levels of loss
+might still be a better choice than a Bluetooth link at 2.4 GHz with little loss
+due to the discrepancy of hundreds of Mbps in throughput capacity.
+%To consider the choice of frequency band, band selection problem for htereogeneous wireless networks should be researched under the same protocol, which make it similar to our problem~\cite{hossain2010vehicular}.
+%Add heterogeneous and cognitive radio
+%Research of heterogeneous wireless networks has been done for these purpose in Roadside-to-Vehicle and Vehicle-to-Vehicle.\cite{hossain2010vehicular}.
+%the understanding of primary/secondary users adaptation\cite{cordeiro2007c}, combining multiple devices for vehicle~\cite{hossain2010vehicular}.
+
+However, for the purposes of this work, we assume the underlying technology is the same to evaluate the choice of frequency band.
+While these works have considered spectral activity and developing protocols and algorithms to 
+find spectral holes, less of a focus has been on coupling such information with historical performance in a given 
+propagation environment.
+In this paper, 
+we develop multiband adaptation protocols which couple the prior knowledge of in-situ performance of various bands with the instantaneous knowledge of 
+spectral activity, SNR, and current location of each band to arrive at a decision on the optimal band to transmit. To do so, we use an
+off-the-shelf platform that allows direct comparison and simultaneous experimentation across four different wireless
+frequency bands from 450 MHz to 5.8 GHz with the same physical
+and media access layers. 
+%changes that frequency differences of hundreds of MHz to GHz could have on the band %decision. Moreover, it is well known that propagation greatly depends on the environment %in operation~\cite{rappaport}.  Thus, knowledge of the environment in operation could %allow the relationship between received power differences across multiple frequency bands %to have much greater accuracy.  
+
+%Contributions  fixme
+The main contributions of our work are as follows:
+\begin{itemize}
+\item We first develop a framework for multiband adaptation using both historical information and instantaneous measurements. This framework is broad enough to study adaptation across licensed and unlicensed bands, including white space frequency bands.  
+
+\item We propose two different machine-learning-based multiband adaptation algorithms. The 
+first machine learning algorithm, referred to as the \emph{Location-based 
+Look-up Algorithm}, 
+is based on the idea of $k$-nearest-neighbor classification. The second machine-learning-based 
+algorithm uses \emph{decision trees} for classification. 
+For comparison, we also create two baseline adaptation algorithms which attempt to make the optimal band selection based on only: (i.)~historical 
+performance data, and (ii.)~instantaneous SNR measurements across 
+various bands. 
+
+%We consider four different algorithms for comparison.  First, we consider a scheme
+%in which the throughput is achieved on an emulated channel for
+%the current received signal level. We then adjust the predicted best band choice according to the current activity
+%level (real-time information). 
+%Second, we consider an approach based on machine learning which
+%considers prior throughput for a given received signal and activity level
+%combination.  
+%Third, we build a scheme which include the prior relationship of throughput, received signal level and context information in an look up table for repeatable travel in an area.
+%Fourth, we split the area to different regions and apply machine learning in each region to get the property band selection.
+
+%earning in addition to the received signal and activity level.
+%Third, we consider a second machine learning approach which considers user
+%location in addition to the received signal and activity level.
+
+\item We perform extensive outdoor V-2-V experiments to evaluate the proposed algorithms.
+Our results indicate that the proposed machine learning based algorithms improve
+throughput by up to $49.3\%$ over these baseline methods.
+
+\end{itemize}
+
+
+
+%The remainder of this paper is organized as follows. In Section II, we present the multiband adaptation problem and proposed algorithms. Section III discusses experimental evaluation of the multiband algorithms. We conclude in Section IV.
+

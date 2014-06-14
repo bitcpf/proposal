@@ -1,0 +1,60 @@
+\section{Related Work}
+\label{sec:related}
+%%fixme add the daparowrds
+%The conventional definition of the spectrum opportunity, which is often defined as "A band of frequencies that are not being used by the primary user of that band at a particular time in a particular geographic area."\cite{kolodzy2001next}
+
+
+Elecronmagnetic radio spectrum is a natural resource licensed by governments.  the Federal Communications Commission(FCC) published a report prepared by the Spectrum-Policy Task Force, discussed improving the way to manage this resource in the United States \cite{federal2002spectrum}. 
+
+The limited resource make people find new ways to improve the effciency of the frquency resource utility. There are two methods to arrive this target. First is the underlay approach, constraints on the transmission power of second users. Second is the overlay approach, identify and exploit spatial and temporal spectrum white space by second users \cite{zhao2007survey}.
+The first approaching require more support from the hardware, the second approaching can be achieved by soft-ware radios only. The frequency is not occupacied all the time in all the regions.
+
+
+%ways to improve the frequency efficient
+
+
+
+The underutilization of the electromagnetic spectrum leads to a definition of \emph{Spectrum Opportunity} as a band of frequencies assigned to a primary user, but at a particular time and specific geographic location, the band is not being utilized by that user \cite{kolodzy2001next}.
+
+
+
+%Cognitive Radio
+
+%fixme FCC definition
+%The definition adopted by Federal Communications Commission(FCC):"Cognitive radio: A radio or system that senses its operational electromagnetic environment and can dynamically and autonomously adjust its radio operating parameters to modify system operation, such as maximize throughput, mitigate interference, facilitate interoperability, access secondary markets."
+The concept of \emph{Cognitive Radio} is introduced as a novel approach for improving the utilization of the wireless spectrum and the tasks for cognitive radio is summarized in \cite{haykin2005cognitive}. The three on-line cognitive tasks include: \emph{Radio-scene analysis, Channel identification, Transmit-power control and dynamic spectrum management} \cite{haykin2005cognitive}.
+Underutilized terrestrial TV bands will be able to be used by wireless communication. Combine different bands to create Multi-bands/Multi-channels system is a new field of \emph{Cognitive Radio} to improve the performance of wireless systems in different
+environments(e.g., as in ~\cite{MOAR}). 
+
+%Multi-channel
+A bunch of work has been done on \emph{Radio-scene analysis} and \emph{Channel identification} dating back to Simon Haykin \cite{haykin2005cognitive}.
+Some work of Multi-bands/Multi-channels in
+cognitive radios focus on optimize performance, such as avoiding frequency diversity \cite{rahul2009frequency}. 
+In \cite{OAR} an opportunistic algorithm is intorduced to balance the cost of \emph{spectrum sensing, Channel switching} and the gain of these activities.
+%fixme, add more multichannel and add pathloss exponent
+
+%spectrum sensing
+
+One of the most important components of the congnitive radio concept is the ability to measure, sense, learn and be aware of the parameters related to the radio channel characteristics, availability of spectrum and power, radios operating envrionment \cite{yucek2009survey}. Spectrum sensing becomes the most important component for the estabilishment of congnitive radio. \cite{yucek2009survey}. 
+
+
+
+
+
+%Adaptation algorithms
+There is a lot of recent research on the design of adaptation algorithms, both rate adaptation and \emph{band/channel} adptation of cognitive radio systems. These researches are focusing on the \emph{Spectrum sensing and Channel switching strategies}.
+
+\textbf{Evaluation of Channel Conditions}. Channel condition is the most important component of adaptation. 
+There are two classes of rate adaptation mechanisms that have been developed. 
+These mechanisms are focused on rate adaptation. The first generation adaptation algorithms are loss-triggered. The adaptation algorithm based on the statistics of a previous period of transmission. 
+Second generation rate adaptation schemes diagnose the cause of a loss and appropriately adjust the data rate \cite{biaz2008rate, camp2010modulation}, such as a SNR-triggered protocol. 
+Our work consider both the statistics information of the previous transmission and the dynamic information in context-aware based channel qualification.
+
+\textbf{Evaluation of Adaptation}. Most of the prior work of rate adaptation protocols has investigated the effectiveness via throughput comparison \cite{camp2010modulation}. This is the metric we also employ in the paper to evaluate the performance. Furthermore, we also evaluate the amount of context-aware information in prediction.
+ 
+\textbf{Primary Second User}. Some other works focus on Multi-channel which bandwidth range limits in 2.4GHz \cite{MOAR} or in a continuous bandwidth considering frequency diversity \cite{rahul2009frequency}. 
+Significant research on the design of channel selection algorithms has been done \cite{radunovic2011dynamic,raniwala2005architecture}. Algorithms are generated for second user to distinguish whether the channel is free or in less utility state as soon as possible \cite{cordeiro2007c}. These works indicate the way to employ limit frequency work in high efficiency. In contrast, we are trying to improve the wireless performance taking more frequency bands.
+
+Our work is motivated by prospective white band using for TV today and exploit the comparison across all the avaiable bands in the future. It is a kind of extention of multi-channel adaptation. Our approach classifies the performance based upon combination of in-field measurents and ideal channel conditions on \emph{channel emulator}. Most of the research focus on the stopping rules of spectrum sensing \cite{sabharwal2007opportunistic, OAR}. In contrast, we use the data and framework to classify the performance across different bands based on the parameters we get from the context-aware information.
+{\bf .} 
+

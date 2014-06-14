@@ -1,0 +1,8 @@
+\noindent CHAPTER \hfill \vskip 0.05in
+\contentsline {chapter}{\numberline {\hfill 1.\hbox {\hskip 0.8em}\ignorespaces }Introduction}{1}
+\contentsline {chapter}{\numberline {\hfill 2.\hbox {\hskip 0.8em}\ignorespaces }Background}{2}
+\contentsline {chapter}{\numberline {\hfill 3.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Access Tier Network}{3}
+\contentsline {section}{\numberline {3.1.}Introduction}{3}
+\contentsline {chapter}{\numberline {\hfill 4.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Backhual Tier Network}{6}
+\contentsline {chapter}{\numberline {\hfill 5.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{7}
+\contentsline {chapter}{REFERENCES}{8}

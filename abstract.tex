@@ -1,0 +1,83 @@
+
+
+% Challenge in wireless communication
+Due to the convenience of deployment and utility, wireless devices and network
+has become the dominant tools for telecommunication. However, the spectrum resource
+is limited in natural and has to be approved for accessibility, there is a huge challenge 
+for individual devices and infrastructure to efficiently exploit the licensed 
+frequency. 
+In 2009, the FCC has approved the use of broadband services in the white space 
+of UHF TV bands, which were formerly exclusively licensed to television broadcasters.
+These white space bands are now available for unlicensed public use, offerring
+new opportunities for new design of device and network with better performance in 
+throughput and economy cost. In this work, we investigate multiband adaptation
+in both link communication and network deployment. Furthermore, we design algorithms
+with in-field measurement to improve the link and network performance.
+% List each work
+% VNC
+First, since wireless propagation largely depends on the environment
+in operation, a historical understanding of the frequency bands' performance in
+a given environment could expedite band selection as vehicles transition across
+diverse scenarios. In this paper, we leverage knowledge of in-situ operation
+across frequency bands with real-time measurements of the activity level to 
+select the the band with the highest throughput. To do so, we
+perform a number of experiments in typical vehicular topologies. With two
+models based on machine learning algorithms and an in-situ training set, we 
+predict the throughput based on: ({\it i.}) prior performance for similar
+context information ({\it e.g.}, SNR, GPS, relative speed, and link distance),
+and ({\it ii.}) real-time activity level and relative channel quality per band.
+In the field, we show that training on a repeatable route with these machine
+learning techniques can yield vast performance improvements from prior schemes. 
+% Winmee
+While many metropolitan areas sought to deploy city-wide WiFi networks, the densest urban areas were not
+able to broadly leverage the technology for large-scale Internet access.  Ultimately, the small 
+spatial separation required for effective 802.11 links in these areas resulted in prohibitively large up-front 
+costs.  The FCC has reapportioned spectrum from TV white spaces for the purposes of large-scale Internet 
+connectivity via wireless topologies of all kinds.
+The far greater range of these lower carrier frequencies are especially critical in rural areas, where
+high levels of aggregation could dramatically lower the cost of deployment and is in direct contrast 
+to dense urban areas in which networks are built to maximize spatial reuse.  Thus, leveraging a broad 
+range of spectrum across diverse population densities becomes a critical issue for the deployment of data
+networks with WiFi and white space bands. In this paper, we measure the spectrum utility in the Dallas-Fort 
+Worth metropolitan and surrounding
+areas and propose a measurement-driven band selection framework, Multiband Access Point Estimation (MAPE). 
+In particular, we study the white space and WiFi bands with in-field spectrum utility measurements, revealing 
+the number of access points required for an area with channels in multiple bands. In doing so, we find that 
+networks with white space bands reduce the number of access points by up to 1650\% in sparse
+rural areas over similar WiFi-only solutions. In more populated rural areas and sparse urban areas, we 
+find an access point reduction of 660\% and 412\%, respectively.  However, due to the heavy use of white
+space bands in dense urban areas, the cost reductions invert (an increase in required access points 
+of 6\%).  Finally, we numerically analyze band combinations in typical rural and urban areas and show 
+the critical factor that leads to cost reduction: considering the same total number of channels, as more 
+channels are available in the white space bands, less access points are required for a given area.
+% WM
+Wireless mesh networks were previously thought
+to be an ideal solution for large-scale Internet connectivity in
+metropolitan areas. However, in-field trials revealed that the node
+spacing required for WiFi propagation induced a prohibitive
+cost model for network carriers to deploy. The digitization
+of TV channels and new FCC regulations have reapportioned
+spectrum for data networks with far greater range than WiFi
+due to lower carrier frequencies. In this work, we consider
+how these white space bands can be leveraged in large-scale
+wireless mesh network deployments. In particular, we present
+an integer linear programming model to leverage diverse prop-
+agation characteristics of white space and WiFi bands to deploy
+optimal WhiteMesh networks. Since such optimization is known
+to be NP-hard, we design a heuristic algorithm, Band-based Path
+Selection (BPS), which we show approaches the performance of
+the optimal solution with reduced complexity. We additionally
+compare the performance of BPS against two well-known multi-
+channel, multi-radio deployment algorithms across a range of
+scenarios spanning those typical for rural areas to urban areas.
+In doing so, we achieve between 3 to 6 times the gateway goodput
+of these existing multi-channel, multi-radio algorithms, which
+are agnostic to diverse propagation characteristics across bands.
+Moreover, we show that, with similar channel resources and
+bandwidth, the joint use of WiFi and white space bands can
+achieve a served user demand of 170\% that of mesh networks
+with only WiFi bands or white space bands, respectively.
+
+
+
+% Whiteteris

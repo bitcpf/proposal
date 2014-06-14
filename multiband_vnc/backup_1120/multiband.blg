@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: multiband.aux
+The style file: IEEEtran.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: multiband.bib
+Warning--string name "april" is undefined
+--line 1760 of file multiband.bib
+Warning--string name "april" is undefined
+--line 1767 of file multiband.bib
+-- IEEEtran.bst version 1.00 (2002/08/13) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 23 entries,
+            3917 wiz_defined-function locations,
+            912 strings with 10745 characters,
+and the built_in function-call counts, 15686 in all, are:
+= -- 1232
+> -- 348
+< -- 120
++ -- 188
+- -- 59
+* -- 751
+:= -- 2373
+add.period$ -- 53
+call.type$ -- 23
+change.case$ -- 24
+chr.to.int$ -- 273
+cite$ -- 23
+duplicate$ -- 1190
+empty$ -- 1359
+format.name$ -- 76
+if$ -- 3611
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 213
+newline$ -- 89
+num.names$ -- 21
+pop$ -- 512
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1183
+stack$ -- 0
+substring$ -- 666
+swap$ -- 915
+text.length$ -- 29
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 0
+warning$ -- 0
+while$ -- 70
+width$ -- 25
+write$ -- 229
+(There were 2 warnings)

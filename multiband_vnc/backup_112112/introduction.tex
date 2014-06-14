@@ -1,0 +1,76 @@
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+%Background
+Drivers can benefit from a wide array of vehicular applications ranging from real-time traffic monitoring and
+safety applications to {\it infotainment} applications spanning news, weather, audio, or video streams.  
+However, the continuous use of such applications is limited due to the challenge of transmitting over 
+highly-dynamic vehicular wireless channels. In such networks, the increasing availability of different 
+frequency bands with correspondingly diverse propagation characteristics could allow flexibility and 
+robustness of vehicular links. Even with such spectral flexibility, links are extremely tenuous, 
+demanding nearly instantaneous decisions in order to remain connected and motivating an algorithm that
+can find the appropriate frequency band quickly and according to the current application.
+
+Prior work has considered a number of challenges in
+leveraging the digital white space frequencies including spectrum sensing, frequency-agile operation,
+geolocation, solving stringent spectral mask requirements, and providing reliable service
+in unlicensed and dynamically changing spectrum along with corresponding 
+protocols~\cite{shellhammer2009technical}. In particular, there has recently been an acceleration
+in spectrum sensing work~\cite{rayanchu2011fluid, kim1996pulse,cabric2004implementation}. Based on 
+these works, protocols have been built for multi-channel and/or multi-band wireless operation~\cite{MOAR,
+raychaudhuri2003spectrum,sabharwal2007opportunistic}.  Other works have presented a method for searching the most efficient 
+transmission channel~\cite{mo2005comparison}, discovering channel information from limited 
+measurements~\cite{rayanchu2011fluid, sabharwal2007opportunistic}, and estimating 
+channel quality through limit information~\cite{MOAR}. 
+
+While these works have considered spectral activity and developing protocols and algorithms to 
+find spectral holes, less of a focus has been on coupling such information with the propagation 
+changes that frequency differences of hundreds of MHz to GHz could have on the band decision.  
+Moreover, it is well known that propagation greatly depends on the environment in 
+operation~\cite{rappaport}.  Thus, 
+knowledge of the environment in operation could allow the relationship between received power 
+differences across multiple frequency bands to have much greater accuracy.  
+In this paper, 
+we present a multi-band adaptation protocol which leverage 
+prior knowledge of given context as well as per band
+measurements and make a properly band selection.
+To do so, we use an
+off-the-shelf platform that allows direct experimentation across four different wireless
+frequency bands simultaneously from 450 MHz to 5.8 GHz while maintaining the same physical
+and media access layers.
+
+
+
+
+%Contributions  fixme
+The main contributions of our work are as follows:
+\begin{itemize}
+\item We first formulate the problem of selecting the optimal 
+frequency band according to 
+an application metrics
+to perform the following multiband algorithms.
+\item We consider four different algorithms for comparison.  First, we consider a scheme
+in which the throughput is achieved on an emulated channel for
+the current received signal level. We then adjust the predicted best band choice according to the current activity
+level (real-time information). 
+Second, we consider an approach based on machine learning which
+considers prior throughput for a given received signal and activity level
+combination.  
+Third, we build a scheme which include the prior relationship of throughput, received signal level and context information in an look up table for repeatable travel in an area.
+Fourth, we split the area to different regions and apply machine learning in each region to get the property band selection.
+
+earning in addition to the received signal and activity level.
+%Third, we consider a second machine learning approach which considers user
+%location in addition to the received signal and activity level.
+\item We perform V-2-V experiments to evaluate each algorithm on a repeatable pattern that
+%spans multiple environment types (campus, residential, and suburban) with various activity
+spans in-field environment with various activity
+levels and propagation characteristics within the regions. 
+\end{itemize}
+
+
+
+The remainder of this paper is organized as follows. In Section II, we present the multiband adaptation problem and proposed algorithms. Section III discusses experimental evaluation of the multiband algorithms. We present related work in Section IV. A summary and discussion of future work is included in Section V.
+

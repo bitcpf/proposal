@@ -1,0 +1,240 @@
+latex multiband 
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4)
+entering extended mode
+(./multiband.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+-- This is a 10 point document.
+) (/usr/share/texmf/tex/latex/cite/cite.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/psnfss/times.sty)
+(/usr/share/texmf/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+) (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/dvips.def)))
+(/usr/share/texmf/tex/latex/oberdiek/epstopdf.sty
+
+Package epstopdf Warning: Graphics driver file `pdftex.def' not loaded.
+
+) (/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg))
+(/usr/share/texmf/tex/latex/multirow/multirow.sty)
+(/usr/share/texmf/tex/latex/algorithms/algorithmic.sty
+Document Style `algorithmic' - environment
+(/usr/share/texmf/tex/latex/base/ifthen.sty)
+(/usr/share/texmf/tex/latex/tools/calc.sty))
+(/usr/share/texmf/tex/latex/algorithms/algorithm.sty
+Document Style `algorithm' - floating environment
+(/usr/share/texmf/tex/latex/float/float.sty))
+(/usr/share/texmf/tex/latex/tools/verbatim.sty)
+No file multiband.aux.
+(/usr/share/texmf/tex/latex/psnfss/omsptm.fd)
+
+LaTeX Warning: Citation `MFC' on page 1 undefined on input line 31.
+
+No file multiband.bbl.
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[1] (./multiband.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
+Output written on multiband.dvi (1 page, 668 bytes).
+Transcript written on multiband.log.
+bibtex multiband
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: multiband.aux
+The style file: IEEEtran.bst
+Database file #1: multiband.bib
+-- IEEEtran.bst version 1.00 (2002/08/13) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+latex multiband 
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4)
+entering extended mode
+(./multiband.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+-- This is a 10 point document.
+) (/usr/share/texmf/tex/latex/cite/cite.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/psnfss/times.sty)
+(/usr/share/texmf/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+) (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/dvips.def)))
+(/usr/share/texmf/tex/latex/oberdiek/epstopdf.sty
+
+Package epstopdf Warning: Graphics driver file `pdftex.def' not loaded.
+
+) (/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg))
+(/usr/share/texmf/tex/latex/multirow/multirow.sty)
+(/usr/share/texmf/tex/latex/algorithms/algorithmic.sty
+Document Style `algorithmic' - environment
+(/usr/share/texmf/tex/latex/base/ifthen.sty)
+(/usr/share/texmf/tex/latex/tools/calc.sty))
+(/usr/share/texmf/tex/latex/algorithms/algorithm.sty
+Document Style `algorithm' - floating environment
+(/usr/share/texmf/tex/latex/float/float.sty))
+(/usr/share/texmf/tex/latex/tools/verbatim.sty) (./multiband.aux)
+(/usr/share/texmf/tex/latex/psnfss/omsptm.fd)
+
+LaTeX Warning: Citation `MFC' on page 1 undefined on input line 31.
+
+(./multiband.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[1] (./multiband.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+Output written on multiband.dvi (1 page, 864 bytes).
+Transcript written on multiband.log.
+latex multiband 
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4)
+entering extended mode
+(./multiband.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+-- This is a 10 point document.
+) (/usr/share/texmf/tex/latex/cite/cite.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/psnfss/times.sty)
+(/usr/share/texmf/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+) (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/dvips.def)))
+(/usr/share/texmf/tex/latex/oberdiek/epstopdf.sty
+
+Package epstopdf Warning: Graphics driver file `pdftex.def' not loaded.
+
+) (/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg))
+(/usr/share/texmf/tex/latex/multirow/multirow.sty)
+(/usr/share/texmf/tex/latex/algorithms/algorithmic.sty
+Document Style `algorithmic' - environment
+(/usr/share/texmf/tex/latex/base/ifthen.sty)
+(/usr/share/texmf/tex/latex/tools/calc.sty))
+(/usr/share/texmf/tex/latex/algorithms/algorithm.sty
+Document Style `algorithm' - floating environment
+(/usr/share/texmf/tex/latex/float/float.sty))
+(/usr/share/texmf/tex/latex/tools/verbatim.sty) (./multiband.aux)
+(/usr/share/texmf/tex/latex/psnfss/omsptm.fd) (./multiband.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[1] (./multiband.aux) )
+Output written on multiband.dvi (1 page, 816 bytes).
+Transcript written on multiband.log.

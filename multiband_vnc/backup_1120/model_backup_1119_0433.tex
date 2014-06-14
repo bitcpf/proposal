@@ -1,0 +1,277 @@
+\section{Multi-band Adaptation---Motivation and Algorithms}
+\label{sec:model}
+
+In this section, we will investigate optimal band selection in wireless vehicular channels. 
+
+\subsection{Problem Formulation of Multiband Selection}
+\label{subsec:problem}
+Assume there are K bands, the throughput set across all bands as $T_{pt}=[r_1,r_2,...r_K]$, which depends on the received signal power, noise, interference and other factors. 
+The objective of our multiband selection problem is to choose the frequency band which has the maximum throughput of all K available bands. 
+
+\begin{align}
+\label{eqn:max}
+b^*=Max\{r_1,r_2,...r_K\}
+\end{align}
+
+There are many factors need to be considered.
+Compared to multi-channel algorithms which assume the same propagation
+characteristics between channels \cite{multichannel}, when hundreds of MHz or 
+GHz exist between bands, the received power between bands can be vastly 
+different due to path loss at that frequency.
+%Path loss increases with distance from the base and related to the wavelength 
+The received signal across frequency bands can be approximated according to
+the following equation found in~\cite{friis}:
+
+\begin{align}
+\label{eqn:pathloss}
+P_{R}=\frac{P_TG_TG_R\lambda}{d^\alpha(4\pi)^2}
+\end{align}
+
+Here, $P_R$ is the received signal of receiver node, $P_T$ is the transmitted
+power, $G_T,G_R$ represent the antennas gain at transmitter and receiver,
+respectively, $\lambda$ is the wavelength, and $\alpha$ is the path loss 
+exponent of the environment. 
+
+Signal level is widely used to represent the channel 
+state~\cite{rahul2009frequency}. From Equation \ref{eqn:pathloss},
+we could expect the signal level to be directly related to the wavelength, 
+where $\lambda=\frac{C}{F}$, where C is the speed of light and
+$F$ is the frequency (i.e., the received power is inversely proportional 
+to the carrier frequency).  Thus, we could expect the lower frequency bands 
+to have an advantage in received signal level for a given environment.
+Many hardware manufacturers already detect SNR or received signal 
+strength in their radios~\cite{edalat2006measured}. Correspondingly,
+RSSI (Received Signal Strength Indicator) is consider an important 
+factor for throughput performance \cite{laneman2000energy,
+laneman2001efficient}.  
+
+	  %In this paper, signal level is also an important factor for the performance database.
+	  %3,Loss based
+Other factors have been used to interpret channel state. For example,
+FARA tracks the the number of active clients, updating the next-hop table 
+for transmission\cite{rahul2009frequency}. Moreover, the number of collisions
+and link errors is frequently used to determine the channel 
+state~\cite{pang2005rate}. In this work, we consider the channel usage
+or busy time that a particular band contains as part of the assessment
+of an in-field channel.
+
+%4,The definitation of the activity level
+
+The \emph{busy time} represents the unusable level of the channel
+which is defined as a percentage of time an interfering transmitter 
+occupies the channel and is highly correlated temporally. For 802.11-based
+transmissions, the busy time ($B$) on band $k$ could be defined as:
+\begin{align}
+\label{eqn:80211activity}
+B^k = \frac{\sum{\sum{\frac{L_n^{x_i}}{R_n^{x_i}}}}}{\sum{\frac{L_n^y}{R_n^y}}+S \sigma}
+\end{align}
+
+Here, $L$ and $R$ represent the length of a packet in bits and the data
+rate that packet is transmitted, respectively, for all external sources $x_i$
+as compared to the idle slots $S$ times the slot duration $\sigma$ and
+the packets from the intended transmitter $y$. The \emph{busy time} is 
+the percentage of time the channel is occupied by all competing sources 
+$x$ versus the intended transmitter $y$. When considering the level of
+activity of non-802.11 users (e.g., the bands currently licensed to TV 
+and other non-802.11 devices), whether the signal level from these
+competing sources reaches a level to disrupt communication at the receiver
+would define a similar notion of busy time.  However, since this depends
+on the environment, hardware, coding, and modulation level, we use
+the received signal level from non-802.11 sources $P_N^k$ on band $k$
+as an input to our algorithms in various forms, which we discuss with 
+Equation~\ref{eqn:performance}.
+
+Some multi-channel adaptation and rate adaptation research focuses on RSSI 
+and the level of activity as represented by~\cite{cordeiro2007c,MOAR},
+which distinguish performance based on the corresponding channel state.
+Each channel in these works is assumed to be statistically similar (e.g.,
+the notion of received power changes across bands does not exist).
+In another work, the embedded temporal correlation of the wireless 
+channel also represent the channel state \cite{liuastra}. As discussed
+in~\cite{yucek2009survey}, some methods have experimentally observed 
+differences in each band's path loss as prediction parameters.
+
+Relating these works to the nominclature used in this paper, one or more
+of the following factors have been used to select the channel or band
+with the highest throughput ($b^*$) across the set of available bands
+$K$: received power $P_R^K$, busy 
+time $B^K$, and non-802.11 signal level $P_N^K$. However, the 
+chief distinguisher for our work is that we also leverage 
+the notion of context $c$ in a given environment to make
+improve the choice of $b^*$.  In other words, we consider:
+
+\begin{align}
+\label{eqn:performance}
+f(P_R^K,B^K,P_N^K,c) \rightarrow b^*
+\end{align}
+
+%Why we use context information
+Context $c$ is used by people tending to have repeatable patterns \cite{meikle2012globali} and we could improve the performance with each trip to the region if we could passively observe context along this repeatable pattern. The varibles of context $c$ vary in multiple environment and algorithms. The variables will be explained for each algorithm. 
+
+
+
+
+	  %Objective
+	  This work is to improve the performance of point to point multi-bands system in practical environments based on estimation of channel states according to prior performance.
+	  In this paper, our work involves historical information with context information for multi-band adaptation such as path loss of different bands.
+	  The context information has parameters related to the performance of wireless networks, such as velocity of nodes, the location, and previous activity of the channel.
+	  We use different sub-sets of the context information to design multiple algorithms for various vehicular environment. 
+
+
+	  %A performance mapping from the spectrum sensing is introduced and evaluated by experiments.
+
+	  \subsection{Algorithms}
+	  \label{subsec:algorithms}
+
+	  Context information provides a way for the optimum bands selection. However, it is usually difficult to directly get all the context Information at a time.Therefore, we develop methods to search the optimal band for maximizing throughput. In the following, we describe the ideal performance based algorithm, machine learning algorithm, location based look up algorithm, region slitted machine learning algorithm.
+
+	  When a wireless node gets in to a strange area, there is only RSSI $r_i$, activity of channels can be collected by the device as \emph{activity Level} $a_i$ for each band among the available band $\{b_1,b_2,\dots,b_n\}$. In this case, there is no context $c$ available for band selection and the algorithm is the basis we could have in this scenario.
+	  Therefore, the node can only rely on hardware performance $\{H_1,H_2,\dots,H_n\}$ from manufacture or self test of the node \emph{Hardware Performance Data}. For this case, we have the \emph{SNR based Throughput Look-up Algorithm}.
+
+
+	  \begin{algorithm}
+	  \caption{SNR based Throughput Look-up Algorithm}
+	  \label{algorithms: H}
+	  \begin{algorithmic}[1]
+	  \REQUIRE  ~~\\
+		  $r_i \in \{r_1,r_2 \dots,r_n\}$;\\
+		  $a_i \in \{a_1,a_2, \dots, a_n\}$;\\
+		  $H_i \in \{H_1,H_2,\dots,H_n\}$;
+\ENSURE ~~\\    
+		  $b^*$:Optimal transmission band
+\FOR    {$i<=n$}
+\STATE $Tpt_{ideal,i} \leftarrow f_{Look-up}(H_i,r_i)$;
+\STATE  $Tpt_{e,i}=Tpt_{ideal,i}\times(1-Activity \ Level)$;
+\ENDFOR \\  
+\STATE $b^*=Max\{Tpt_{e,1},Tpt_{e,1},\dots,Tpt_{e,n}\}$;\\
+\end{algorithmic}
+\end{algorithm}
+
+
+
+On the other side, people always drive cars, ride subway or bus entering some areas many times. In a familiar area, previous information collected in this area can be used for band selection. 
+Machine learning algorithm, Location based algorithm, and Region split machine learning algorithm are tested for this scenario.
+
+Machine learning has been introduced as an important tool in wireless communication
+~\cite{haykin2005cognitive}. With the proposed machine-learning-based framework, when 
+the user enters an area, the machine
+learning algorithm can collect the historical data and train a mapping 
+function to select the potential optimal band given the input, e.g. SNR, velocity 
+and activity level.\emph{Decision Tree} is one of the most widely used machine learning 
+algorithms according to its low complexity and stable performance~\cite{banfield2007}.
+The decision tree can model the relationship in the training data between the context 
+information,including \emph{Velocity, RSSI, Activity }  and the optimal band as a set of tree-like deduction structure. Each intermediate
+node in the tree represents a parameter in the input set and the leaf node indicates the optimal 
+band for prediction. Then the trained decision structure is integrated into the transmission 
+system. 
+With the collected context information fed into, the decision structure suggests the
+the potential band with the best performance for transmission.
+The \emph{Machine Learning Algorithm} can lead to the optimum band selection through several steps:
+
+	  \begin{algorithm}
+	  \caption{Machine Learning Algorithm}
+	  \label{algorithms: Machine}
+	  \begin{algorithmic}[1]
+	  \REQUIRE  ~~\\
+		  $r_i \in \{r_1,r_2 \dots,r_n\}$;\\
+		  $a_i \in \{a_1,a_2, \dots, a_n\}$;\\
+		  $v_i \in \{v_1,v_2,\dots,v_n\}$;\\
+		  $D$: Collected data
+\ENSURE ~~\\    
+		  $b^*$:Optimal transmission band
+\STATE $M \leftarrow f_{Decision Tree}(D)$
+\STATE $b^* \leftarrow f(M,r_i,a_i,v_i)$;
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+\emph{Machine Learning Algorithm} can find the inner pattern of different parameters. However, the machine learning algorithm could not include context information which is not related to the performance directly, such as the location information. Also, due to the limited computation resource on mobile devices, it is difficult to train the data on the device itself. 
+However, the location information is pretty important for vehicle utility.
+Even the areas have the same RSSI, interference activity, due to multi-path and different traffic nearby, the performance could be great different.
+Therefore, the \emph{Location Based Look up Algorithm} is developed to consider the location based on the previous data collected. The algorithm is an iteration method to find the data near the location and look for the best performance across bands.
+
+
+
+	  \begin{algorithm}
+	  \caption{Location Based Look up Algorithm}
+	  \label{algorithms: Location}
+	  \begin{algorithmic}[1]
+	  \REQUIRE  ~~\\
+		  $r_i \in \{r_1,r_2 \dots,r_n\}$;\\
+		  $a_i \in \{a_1,a_2, \dots, a_n\}$;\\
+		  $v_i \in \{v_1,v_2,\dots,v_n\}$\\
+		  $g$: Location Information of Multi-band node\\
+		  $Thr_{Area}$;: Threshold of a Location\\
+		  $Thr_{RSSI}$;: Threshold of RSSI\\
+		  $Thr_{Velocity}$;: Threshold of Velocity\\
+		  $Thr_{A Area}$;: Threshold of Data Amount for Location\\
+		  $Thr_{A RSSI}$;: Threshold of Data Amount for RSSI\\
+		  $Thr_{A Velocity}$;: Threshold of Data Amount for Velocity\\
+		  $D_i \in \{D_1,D_2,\dots,D_n\}$;: Collected Look up data
+\ENSURE ~~\\    
+		  $b^*$:Optimal transmission band
+\FOR    {$i<=n$}
+\STATE Initialize \emph{$Data_{Location},Data_{RSSI},Data_{Velocity}$} to zero matrix;
+\WHILE {$Amount(Data_{Location,i})<Thr_{A Area}$}
+\STATE $Data_{Location,i} \leftarrow f_{Lookup}(D_i,g,Thr_{Area})$: Find data in $D_i$ whose distance less than $Thr_{Area}$;
+\STATE $Thr_{Area}=Thr_{Area} \times 1.1$;
+\ENDWHILE
+
+\WHILE {$Amount(Data_{RSSI,i})<Thr_{A RSSI}$}
+\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},r_i,Thr_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $r_i$ in range $Thr_{RSSI}$;
+\STATE $Thr_{RSSI}=Thr_{RSSI} \times 1.1$;
+\ENDWHILE
+
+\WHILE {$Amount(Data_{Velocity,i})<Thr_{A Velocity}$}
+\STATE $Data_{Velocity,i} \leftarrow f_{Lookup}(D_{RSSI,i},v_i,Thr_{Velocity})$: Find data in $D_{RSSI}$ the RSSI similar to $v_i$ in range $Thr_{RSSI}$;
+\STATE $Thr_{Velocity}=Thr_{Velocity} \times 1.1$;
+\ENDWHILE \\
+
+\STATE $Tpt_{L,i}=avr(Data_{Velocity,i})$;
+\STATE  $Tpt_{e,i}=Tpt_{L,i}\times(1-Activity \ Level)$;
+\ENDFOR \\  
+\STATE $b^*=Max\{Tpt_{e,1},Tpt_{e,1},\dots,Tpt_{e,n}\}$;\\
+\end{algorithmic}
+\end{algorithm}
+
+
+
+The \emph{Location Based Look up Algorithm} provide a simple way to include location information for prediction. To investigate the machine learning with location information, data is divided into different regions based on the location and develop as \emph{Split Region Machine Learning Algorithm}
+
+
+	  \begin{algorithm}
+	  \caption{Split Region Machine Learning Algorithm}
+	  \label{algorithms: Split}
+	  \begin{algorithmic}[1]
+	  \REQUIRE  ~~\\
+		  $r_i \in \{r_1,r_2 \dots,r_n\}$;\\
+		  $a_i \in \{a_1,a_2, \dots, a_n\}$;\\
+		  $v_i \in \{v_1,v_2,\dots,v_n\}$;\\
+		  $g$:Location Information of Multi-band node;\\
+		  $Region_j \in \{Region_1, Region_2,\dots,Region_m\}$;\\
+		  $D$: Collected Training data
+\ENSURE ~~\\    
+		  $b^*$:Optimal transmission band
+\FOR {$j<=m$}
+\STATE $D_{j} \leftarrow f_{Regioni\ Split}(Region_j,D)$;
+\STATE $M_{j} \leftarrow f_{Decision\ Tree}(D_{j})$;
+\ENDFOR
+
+\FOR {$i<=n$}
+\FOR {$j<=m$}
+\IF {$g\ in\ Region_j$}
+\STATE $M=M_{j}$;
+\STATE Break;
+\ENDIF
+\ENDFOR
+\STATE $b^* \leftarrow f(M,r_i,a_i,v_i)$;
+\ENDFOR \\
+\end{algorithmic}
+\end{algorithm}
+
+
+In \emph{Split Region Machine Learning Algorithm} multiple Decision Tree are generated for different regions to involve location information. We have presented the 4 schemes and we will use in-field data to investigate the performances of the algorithms.
+
+

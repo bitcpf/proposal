@@ -1,0 +1,18 @@
+
+The emergence of the reapportioned white space bands for data usage will fuel the already
+increasing frequency band diversity of today's wireless hardware. As a result, many
+existing multi-channel and/or multi-band adaptation schemes will become more important.
+Many of these works have considered the capacity and channel activity of these channels,
+but have not distinguished between the propagation characteristics that occur when considering
+a difference in frequency of multiple GHz and the resulting effect in various environments.
+In this paper, we leverage the contextual information and propagation diversity to enable
+adaptation across a number of frequency bands from 700 MHz to 5.8 GHz.  To do so, we
+perform a number of experiments in a vehicular environment using a campus bus.  With a
+model based on a Support Vector Machine (SVM) and an in-situ training set, we can predict
+the throughput on a free channel.  We can then consider the activity level per band to 
+compute the net throughput we should expect on a given band.  In the field, we exploit
+the propgation differences experience per band to show that training on a repeatable 
+route can yield vast performance improvements from prior schemes.  We show that minimal
+amounts of training can provide such improvements and show a simple scheme that can allow
+multiband adaptation gains when there is insufficient levels of training.
+

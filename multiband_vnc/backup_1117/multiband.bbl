@@ -1,0 +1,155 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\def\UrlFont{\rmfamily}
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{shellhammer2009technical}
+S.~Shellhammer, A.~Sadek, and W.~Zhang, ``Technical challenges for cognitive
+  radio in the tv white space spectrum,'' in \emph{Information Theory and
+  Applications Workshop, 2009}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2009, pp. 323--333.
+
+\bibitem{rayanchu2011fluid}
+S.~Rayanchu, V.~Shrivastava, S.~Banerjee, and R.~Chandra, ``Fluid: improving
+  throughputs in enterprise wireless lans through flexible channelization,'' in
+  \emph{Proceedings of the 17th annual international conference on Mobile
+  computing and networking}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2011,
+  pp. 1--12.
+
+\bibitem{kim1996pulse}
+S.~Kim, H.~Bertoni, and M.~Stern, ``Pulse propagation characteristics at 2.4
+  ghz inside buildings,'' \emph{Vehicular Technology, IEEE Transactions on},
+  vol.~45, no.~3, pp. 579--592, 1996.
+
+\bibitem{cabric2004implementation}
+D.~Cabric, S.~Mishra, and R.~Brodersen, ``Implementation issues in spectrum
+  sensing for cognitive radios,'' in \emph{Signals, Systems and Computers,
+  2004. Conference Record of the Thirty-Eighth Asilomar Conference on},
+  vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax Ieee, 2004, pp. 772--776.
+
+\bibitem{MOAR}
+V.~Kanodia, A.~Sabharwal, and E.~Knightly, ``{MOAR}: A multi-channel
+  opportunistic auto-rate media access protocol for ad hoc networks,'' in
+  \emph{Broadnets}, San Jose, CA, October 2004.
+
+\bibitem{raychaudhuri2003spectrum}
+D.~Raychaudhuri and X.~Jing, ``A spectrum etiquette protocol for efficient
+  coordination of radio devices in unlicensed bands,'' in \emph{Personal,
+  Indoor and Mobile Radio Communications, 2003. PIMRC 2003. 14th IEEE
+  Proceedings on}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2003,
+  pp. 172--176.
+
+\bibitem{sabharwal2007opportunistic}
+A.~Sabharwal, A.~Khoshnevis, and E.~Knightly, ``Opportunistic spectral usage:
+  Bounds and a multi-band csma/ca protocol,'' \emph{Networking, IEEE/ACM
+  Transactions on}, vol.~15, no.~3, pp. 533--545, 2007.
+
+\bibitem{mo2005comparison}
+J.~Mo, H.~So, and J.~Walrand, ``Comparison of multi-channel mac protocols,'' in
+  \emph{Proceedings of the 8th ACM international symposium on Modeling,
+  analysis and simulation of wireless and mobile systems}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2005, pp. 209--218.
+
+\bibitem{rappaport}
+T.~Rappaport, \emph{Wireless Communications, Principles \& Practice}, ser.
+  Emerging Technologies Series, T.~Rappaport, Ed.\hskip 1em plus 0.5em minus
+  0.4em\relax Upper Saddle River, New Jersey: Prentice Hall, 1996.
+
+\bibitem{rahul2009frequency}
+H.~Rahul, F.~Edalat, D.~Katabi, and C.~Sodini, ``Frequency-aware rate
+  adaptation and mac protocols,'' in \emph{Proceedings of the 15th annual
+  international conference on Mobile computing and networking}.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2009, pp. 193--204.
+
+\bibitem{edalat2006measured}
+F.~Edalat, J.~Tan, K.~Nguyen, N.~Matalon, and C.~Sodini, ``Measured data rate
+  from adaptive modulation in wideband ofdm systems,'' in \emph{Ultra-Wideband,
+  The 2006 IEEE 2006 International Conference on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2006, pp. 195--200.
+
+\bibitem{laneman2000energy}
+J.~Laneman and G.~Wornell, ``Energy-efficient antenna sharing and relaying for
+  wireless networks,'' in \emph{Wireless Communications and Networking
+  Confernce, 2000. WCNC. 2000 IEEE}, vol.~1.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2000, pp. 7--12.
+
+\bibitem{laneman2001efficient}
+J.~Laneman, G.~Wornell, and D.~Tse, ``An efficient protocol for realizing
+  cooperative diversity in wireless networks,'' in \emph{Information Theory,
+  2001. Proceedings. 2001 IEEE International Symposium on}.\hskip 1em plus
+  0.5em minus 0.4em\relax Ieee, 2001, p. 294.
+
+\bibitem{pang2005rate}
+Q.~Pang, V.~Leung, and S.~Liew, ``A rate adaptation algorithm for ieee 802.11
+  wlans based on mac-layer loss differentiation,'' in \emph{Broadband Networks,
+  2005. BroadNets 2005. 2nd International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2005, pp. 659--667.
+
+\bibitem{cordeiro2007c}
+C.~Cordeiro and K.~Challapali, ``C-mac: A cognitive mac protocol for
+  multi-channel wireless networks,'' in \emph{New Frontiers in Dynamic Spectrum
+  Access Networks, 2007. DySPAN 2007. 2nd IEEE International Symposium
+  on}.\hskip 1em plus 0.5em minus 0.4em\relax Ieee, 2007, pp. 147--157.
+
+\bibitem{liuastra}
+H.~Liu, J.~He, P.~Cui, J.~Camp, and D.~Rajan, ``Astra: Application of
+  sequential training to rate adaptation.''
+
+\bibitem{yucek2009survey}
+T.~Yucek and H.~Arslan, ``A survey of spectrum sensing algorithms for cognitive
+  radio applications,'' \emph{Communications Surveys \& Tutorials, IEEE},
+  vol.~11, no.~1, pp. 116--130, 2009.
+
+\bibitem{haykin2005cognitive}
+S.~Haykin, ``Cognitive radio: brain-empowered wireless communications,''
+  \emph{Selected Areas in Communications, IEEE Journal on}, vol.~23, no.~2, pp.
+  201--220, 2005.
+
+\bibitem{Gateworks}
+``Cambria gw2358-4 network platform,'' http://www.gateworks.com/, 2007.
+
+\bibitem{Ubnt}
+``Ubiquiti xtremerange series of radio,'' http://www.ubnt.com/, 2012.
+
+\bibitem{Openwrt}
+``Openwrt wireless freedom,'' https://openwrt.org/, Dec. 2011.
+
+\bibitem{AzimuthACE}
+``{Aximuth {ACE}-{MIMO} Channel Emulator},'' http://www.azimuthsystems.com,
+  Mar. 2011.
+
+\bibitem{Iperf}
+``Iperf,'' http://iperf.sourceforge.net/, Mar. 2008.
+
+\bibitem{jacobson1989tcpdump}
+V.~Jacobson, C.~Leres, and S.~McCanne, ``The tcpdump manual page,''
+  \emph{Lawrence Berkeley Laboratory, Berkeley, CA}, 1989.
+
+\bibitem{federal2002spectrum}
+F.~C. Commission \emph{et~al.}, ``Spectrum policy task force,'' \emph{rep. ET
+  Docket}, no. 02-135, p.~1, 2002.
+
+\bibitem{kolodzy2001next}
+P.~Kolodzy \emph{et~al.}, ``Next generation communications: Kickoff meeting,''
+  in \emph{Proc. DARPA}, vol.~10, 2001.
+
+\bibitem{OAR}
+B.~Sadeghi, V.~Kanodia, A.~Sabharwal, and E.~Knightly, ``Opportunistic media
+  access for multirate ad hoc networks,'' in \emph{{ACM MobiCom}}, Sept. 2002.
+
+\end{thebibliography}

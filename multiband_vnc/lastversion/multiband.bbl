@@ -1,0 +1,112 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\def\UrlFont{\rmfamily}
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{shellhammer2009technical}
+S.~Shellhammer, A.~Sadek, and W.~Zhang, ``Technical challenges for cognitive
+  radio in the tv white space spectrum,'' in \emph{Information Theory and
+  Applications Workshop, 2009}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2009, pp. 323--333.
+
+\bibitem{rayanchu2011fluid}
+S.~Rayanchu, V.~Shrivastava, S.~Banerjee, and R.~Chandra, ``Fluid: improving
+  throughputs in enterprise wireless lans through flexible channelization,'' in
+  \emph{Proceedings of the 17th annual international conference on Mobile
+  computing and networking}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2011,
+  pp. 1--12.
+
+\bibitem{kim1996pulse}
+S.~Kim, H.~Bertoni, and M.~Stern, ``Pulse propagation characteristics at 2.4
+  ghz inside buildings,'' \emph{Vehicular Technology, IEEE Transactions on},
+  vol.~45, no.~3, pp. 579--592, 1996.
+
+\bibitem{cabric2004implementation}
+D.~Cabric, S.~Mishra, and R.~Brodersen, ``Implementation issues in spectrum
+  sensing for cognitive radios,'' in \emph{Signals, Systems and Computers,
+  2004. Conference Record of the Thirty-Eighth Asilomar Conference on},
+  vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax Ieee, 2004, pp. 772--776.
+
+\bibitem{MOAR}
+V.~Kanodia, A.~Sabharwal, and E.~Knightly, ``{MOAR}: A multi-channel
+  opportunistic auto-rate media access protocol for ad hoc networks,'' in
+  \emph{Broadnets}, San Jose, CA, October 2004.
+
+\bibitem{raychaudhuri2003spectrum}
+D.~Raychaudhuri and X.~Jing, ``A spectrum etiquette protocol for efficient
+  coordination of radio devices in unlicensed bands,'' in \emph{Personal,
+  Indoor and Mobile Radio Communications, 2003. PIMRC 2003. 14th IEEE
+  Proceedings on}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2003,
+  pp. 172--176.
+
+\bibitem{sabharwal2007opportunistic}
+A.~Sabharwal, A.~Khoshnevis, and E.~Knightly, ``Opportunistic spectral usage:
+  Bounds and a multi-band csma/ca protocol,'' \emph{Networking, IEEE/ACM
+  Transactions on}, vol.~15, no.~3, pp. 533--545, 2007.
+
+\bibitem{mo2005comparison}
+J.~Mo, H.~So, and J.~Walrand, ``Comparison of multi-channel mac protocols,'' in
+  \emph{Proceedings of the 8th ACM international symposium on Modeling,
+  analysis and simulation of wireless and mobile systems}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2005, pp. 209--218.
+
+\bibitem{meikle2012global}
+R.~Meikle and J.~Camp, ``A global measurement study of context-based
+  propagation and user mobility,'' in \emph{Proceedings of the 4th ACM
+  international workshop on Hot topics in planet-scale measurement}.\hskip 1em
+  plus 0.5em minus 0.4em\relax ACM, 2012, pp. 21--26.
+
+\bibitem{AzimuthACE}
+``{Aximuth {ACE}-{MIMO} Channel Emulator},'' http://www.azimuthsystems.com,
+  Mar. 2011.
+
+\bibitem{haykin2005cognitive}
+S.~Haykin, ``Cognitive radio: brain-empowered wireless communications,''
+  \emph{Selected Areas in Communications, IEEE Journal on}, vol.~23, no.~2, pp.
+  201--220, 2005.
+
+\bibitem{zhang2006svm}
+H.~Zhang, A.~Berg, M.~Maire, and J.~Malik, ``Svm-knn: Discriminative nearest
+  neighbor classification for visual category recognition,'' in \emph{Computer
+  Vision and Pattern Recognition, 2006 IEEE Computer Society Conference on},
+  vol.~2, 2006, pp. 2126--2136.
+
+\bibitem{banfield2007}
+R.~Banfield, L.~Hall, K.~Bowyer, W.~Kegelmeyer, \emph{et~al.}, ``A comparison
+  of decision tree ensemble creation techniques,'' \emph{{IEEE} Trans on
+  Pattern Analysis and Machine Intelligence}, vol.~29, no.~1, p. 173, 2007.
+
+\bibitem{hall2009weka}
+M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.~Witten, ``The
+  weka data mining software: an update,'' \emph{ACM SIGKDD Explorations
+  Newsletter}, vol.~11, no.~1, pp. 10--18, 2009.
+
+\bibitem{Openwrt}
+``Openwrt wireless freedom,'' https://openwrt.org/, Dec. 2011.
+
+\bibitem{Gateworks}
+``Cambria gw2358-4 network platform,'' http://www.gateworks.com/, 2007.
+
+\bibitem{Ubnt}
+``Ubiquiti xtremerange series of radio,'' http://www.ubnt.com/, 2012.
+
+\bibitem{jacobson1989tcpdump}
+V.~Jacobson, C.~Leres, and S.~McCanne, ``The tcpdump manual page,''
+  \emph{Lawrence Berkeley Laboratory, Berkeley, CA}, 1989.
+
+\end{thebibliography}

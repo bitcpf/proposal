@@ -1,0 +1,40 @@
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+%Background
+Digital TV is in steps to replace analog TV to free the wireless bandwidth for data usage. These free bands make it possible to extend wireless networks serving in more bands to achive better performance. To exploit the TV white space frequence with existed common wireless communication bands, a number of challenges, including spectrum sensing of both TV signals and wireless devices signals, frequency agile operation, geo-location, stringent spectral
+mask requirements, and of course the ability to provide reliable
+service in unlicensed and dynamically changing spectrum \cite{shellhammer2009technical} and new protocols to adapt these changes need to be resolved. 
+
+%Related
+To put the new free band in utility, the first step is to understand the characters of the bands and the difference among them and find a way to evaluate the performance across different bands.
+Over the last few years there has been a rapid increase research done for spectrum sensing in both common communication bands and the White spaces \cite{rayanchu2011fluid, kim1996pulse,cabric2004implementation}. Based on these work, protocols are built for multi-channel, multi-band wireless application \cite{MOAR,raychaudhuri2003spectrum,sabharwal2007opportunistic}.  Such as, in \cite{mo2005comparison}, a method for searching the most efficient transmission channel; learning channel information from limited measurements \cite{rayanchu2011fluid, sabharwal2007opportunistic}; estimate channel quality through limit information\cite{MOAR},etc. However, as far as we know, no work explicitly considered the wireless channel switching across different bands and the resulting performance due to the channel switching.
+
+%Introduce the protocol
+In this paper, we present a multi-band adaptation protocol to employ different bands for wireless networks.
+The protocol predict the wireless performance across different bands with both theory pathloss equation and context-aware information. And according to these messages, a framework considering the bands' activity is employed to adjust the prediction more accuray for wireless multi-band adaptation. 
+%RSSI prediction
+The framework involve context-aware information of multi bands. A look-up table from ideal channel and a statistic based activity level are included to improve wireless performance. 
+We evaluate our methods by in field experiments across 4 bands(700MHz, 900MHz, 2.4GHz, 5.8GHz), and show that in certain scenarios our approach can improve the throughput by Fixme compared to single wireless band.
+The specific wireless channel states we involve in this paper are the measured Singnal strength, received packages and channel type. Wireless channels map to different types based on the speed, propogation, noise ando so on. A simplistic characterization of channel type could be a vehicular A in this paper. The basic problem of interest is as follows: \emph{given the channel type and Signal Strength, find the wireless band that achieves the highest throughput.}
+To solve the problem, we first build a \emph{Ideal Channel Look-Up Table} through the measured data from channel emulator across a wide range of different scenarios. Based on this LUT, an ideal throughput for particular signal strength without noise and interference can be connected. The protocol also holds a tunable threshold parameter that determines when the \emph{Signal Strength} is different enough from others.
+
+We then analyze the effect of \emph{activity level} and find the available transmission time to be a dominant factor. As a result, we formulate a \emph{Multi-band} adaptation problem to the throughput computed from known Signal Strength and received packages. We verified the protocol on in field experiments to experimentally evaluate our approach. 
+
+The main contributions of our work are as follows:
+\begin{itemize}
+\item We define an \emph{Activity Level} and enroll the concept to dynamic throughput prediction framework. The \emph{Activity Level} can describe the channel interference in time domain.
+\item We propose a simple framework that provides a way to compare the throughput across 4 different bands. Prediction the throughput across multi-band is the precondition to select a band for transmission.  
+\item We build the Look-up Table across different bands, channel models. The LUT refer to the ideal status of the channels across multi bands. It bring benifet for the work in the future.
+\end{itemize}
+
+We experimentally analyze our framework with simulation and in-field experiments on off-the-shelf hardware platform. The off-theshelf hardware platform we use is a Gateworks 2358 board with for 802.11-based Ubiquiti radios(XR2,XR5,XR7 AND XR9) with seperate frequency bands. All the radios have a physical layer based on the IEEE 802.11 a/g standard, and the board offers a built-in GPS. The GPS provide information of time slot to compute the \emph{Activity Level} .
+
+
+
+
+The remainder of this paper is organized as follows: In Section II, we discuss related work. Section III presents the background and motivation of the project.  Section IV discusses framework under consideration and provides a brief introduction on the functionality of the framework. Section V introduces the implementation on the WARP platform. Section VI contains experiments used for band switching and evaluation.  A list of future work will be discussed for the project in Section VII.
+
+

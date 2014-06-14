@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: multiband.aux
+The style file: IEEEtran.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: multiband.bib
+Warning--string name "april" is undefined
+--line 1744 of file multiband.bib
+Warning--string name "april" is undefined
+--line 1751 of file multiband.bib
+-- IEEEtran.bst version 1.00 (2002/08/13) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in shellhammer2009technical
+Warning--empty year in rayanchu2011fluid
+Warning--empty year in cabric2004implementation
+Warning--empty year in raychaudhuri2003spectrum
+Warning--empty year in mo2005comparison
+Warning--empty year in meikle2012global
+Warning--empty year in zhang2006svm
+
+Done.
+You've used 20 entries,
+            3917 wiz_defined-function locations,
+            896 strings with 9929 characters,
+and the built_in function-call counts, 14188 in all, are:
+= -- 1129
+> -- 332
+< -- 128
++ -- 183
+- -- 54
+* -- 683
+:= -- 2110
+add.period$ -- 40
+call.type$ -- 20
+change.case$ -- 20
+chr.to.int$ -- 291
+cite$ -- 27
+duplicate$ -- 1060
+empty$ -- 1129
+format.name$ -- 69
+if$ -- 3249
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 176
+newline$ -- 80
+num.names$ -- 16
+pop$ -- 422
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1065
+stack$ -- 0
+substring$ -- 704
+swap$ -- 845
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 0
+warning$ -- 7
+while$ -- 69
+width$ -- 22
+write$ -- 199
+(There were 9 warnings)
