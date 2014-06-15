@@ -1,5 +1,3 @@
-
-
 % Challenge in wireless communication
 Due to the convenience of deployment and utility, wireless devices and network
 has become the dominant tools for telecommunication. However, the spectrum resource
@@ -15,10 +13,12 @@ in both link communication and network deployment. Furthermore, we design algori
 with in-field measurement to improve the link and network performance.
 % List each work
 % VNC
-First, since wireless propagation largely depends on the environment
-in operation, a historical understanding of the frequency bands' performance in
-a given environment could expedite band selection as vehicles transition across
-diverse scenarios. In this paper, we leverage knowledge of in-situ operation
+First, 
+%since wireless propagation largely depends on the environment
+%in operation, a historical understanding of the frequency bands' performance in
+%a given environment could expedite band selection as vehicles transition across
+%diverse scenarios. 
+we leverage knowledge of in-situ operation
 across frequency bands with real-time measurements of the activity level to 
 select the the band with the highest throughput. To do so, we
 perform a number of experiments in typical vehicular topologies. With two
@@ -29,16 +29,17 @@ and ({\it ii.}) real-time activity level and relative channel quality per band.
 In the field, we show that training on a repeatable route with these machine
 learning techniques can yield vast performance improvements from prior schemes. 
 % Winmee
-While many metropolitan areas sought to deploy city-wide WiFi networks, the densest urban areas were not
-able to broadly leverage the technology for large-scale Internet access.  Ultimately, the small 
-spatial separation required for effective 802.11 links in these areas resulted in prohibitively large up-front 
-costs.  The FCC has reapportioned spectrum from TV white spaces for the purposes of large-scale Internet 
-connectivity via wireless topologies of all kinds.
-The far greater range of these lower carrier frequencies are especially critical in rural areas, where
-high levels of aggregation could dramatically lower the cost of deployment and is in direct contrast 
-to dense urban areas in which networks are built to maximize spatial reuse.  Thus, leveraging a broad 
-range of spectrum across diverse population densities becomes a critical issue for the deployment of data
-networks with WiFi and white space bands. In this paper, we measure the spectrum utility in the Dallas-Fort 
+Second, 
+%while many metropolitan areas sought to deploy city-wide WiFi networks, the densest urban areas were not
+%able to broadly leverage the technology for large-scale Internet access.  Ultimately, the small 
+%spatial separation required for effective 802.11 links in these areas resulted in prohibitively large up-front 
+%costs.  
+%the far greater range of these lower white space carrier frequencies are especially critical in rural areas, where
+%high levels of aggregation could dramatically lower the cost of deployment and is in direct contrast 
+%to dense urban areas in which networks are built to maximize spatial reuse.  Thus, leveraging a broad 
+%range of spectrum across diverse population densities becomes a critical issue for the deployment of data
+%networks with WiFi and white space bands. 
+we measure the spectrum utility in the Dallas-Fort 
 Worth metropolitan and surrounding
 areas and propose a measurement-driven band selection framework, Multiband Access Point Estimation (MAPE). 
 In particular, we study the white space and WiFi bands with in-field spectrum utility measurements, revealing 
@@ -50,17 +51,27 @@ space bands in dense urban areas, the cost reductions invert (an increase in req
 of 6\%).  Finally, we numerically analyze band combinations in typical rural and urban areas and show 
 the critical factor that leads to cost reduction: considering the same total number of channels, as more 
 channels are available in the white space bands, less access points are required for a given area.
+% Whiteteris
+Furthermore, we model the heterogeneous white space and WiFi access tier 
+deployment problem. We propose a relaxed ILP to get the lower bound of the 
+amount of access point under resource limitations and a heuristic approach 
+of the problem. We start from the uniform population distribution wireless 
+network deployment, then discuss the non-uniform population distribution 
+wireless network deployment. Then, we discuss white space band application
+in multiple spectrum resource degree. 
+In particular, we map the problem as a Bin packing problem 
+and resolve it with Multiband Hetegeneous Access Point deployment method. 
+In doing so, we discuss the benefit of white space bands in reducing 
+the number of acess points and provide heuristic solution for access point
+ selection. Our numerical simulation shows that
+hetergeneous access point could benefit most of the scenarios in wireless
+access tier deployment.
 % WM
-Wireless mesh networks were previously thought
-to be an ideal solution for large-scale Internet connectivity in
-metropolitan areas. However, in-field trials revealed that the node
-spacing required for WiFi propagation induced a prohibitive
-cost model for network carriers to deploy. The digitization
-of TV channels and new FCC regulations have reapportioned
-spectrum for data networks with far greater range than WiFi
-due to lower carrier frequencies. In this work, we consider
-how these white space bands can be leveraged in large-scale
-wireless mesh network deployments. In particular, we present
+Forth,
+%we consider
+%how white space bands can be leveraged in large-scale backhual
+%wireless mesh network deployments. In particular, 
+we present
 an integer linear programming model to leverage diverse prop-
 agation characteristics of white space and WiFi bands to deploy
 optimal WhiteMesh networks. Since such optimization is known
@@ -77,7 +88,15 @@ Moreover, we show that, with similar channel resources and
 bandwidth, the joint use of WiFi and white space bands can
 achieve a served user demand of 170\% that of mesh networks
 with only WiFi bands or white space bands, respectively.
+% Future work
+Lastly, we propose to discuss the beamforming application in 
+large scale network deployment. Beamforming is a efficient way to 
+increase the spatial reuse. With the application of beaforming,
+a single access point could communicate with multiple device 
+simultaneously. In large scale network deployment, beamforming
+could increase the capacity of an access point and lower the cost 
+through reducing the number of access points. In our work, we
+will investigate in what degree the beamforming could benifet
+the vendors in wireless network deployment.
 
 
-
-% Whiteteris

@@ -2,46 +2,50 @@ This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: proposal_pcui.aux
 The style file: acm.bst
 Database file #1: proposal_pcui.bib
+Warning--to sort, need author or key in metis
+Warning--to sort, need author or key in fccwhitespace
+Warning--empty author in metis
+Warning--empty journal in metis
 Warning--empty journal in friis
-You've used 6 entries,
+You've used 26 entries,
             2253 wiz_defined-function locations,
-            566 strings with 4862 characters,
-and the built_in function-call counts, 1801 in all, are:
-= -- 176
-> -- 72
+            675 strings with 8457 characters,
+and the built_in function-call counts, 8669 in all, are:
+= -- 827
+> -- 390
 < -- 0
-+ -- 33
-- -- 24
-* -- 136
-:= -- 302
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 29
++ -- 166
+- -- 136
+* -- 655
+:= -- 1361
+add.period$ -- 75
+call.type$ -- 26
+change.case$ -- 145
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 56
-empty$ -- 151
-format.name$ -- 24
-if$ -- 365
+cite$ -- 31
+duplicate$ -- 334
+empty$ -- 741
+format.name$ -- 136
+if$ -- 1825
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 31
+int.to.str$ -- 26
+missing$ -- 23
+newline$ -- 130
+num.names$ -- 48
+pop$ -- 188
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 120
 quote$ -- 0
-skip$ -- 33
+skip$ -- 207
 stack$ -- 0
-substring$ -- 135
-swap$ -- 11
+substring$ -- 521
+swap$ -- 84
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
-warning$ -- 1
-while$ -- 19
-width$ -- 7
-write$ -- 61
-(There was 1 warning)
+type$ -- 102
+warning$ -- 5
+while$ -- 82
+width$ -- 28
+write$ -- 256
+(There were 5 warnings)

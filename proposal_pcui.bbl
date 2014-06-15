@@ -1,19 +1,65 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{metis}
+Metis: Mobile and wireless communications enablers for the twenty-twenty
+  information society.
+
+\bibitem{fccwhitespace}
+Fcc white space.
+\newblock \url{http://www.fcc.gov/topic/white-space}, 2012.
+
+\bibitem{google_imc08}
+{\sc Afanasyev, M., Chen, T., Voelker, G., and Snoeren, A.}
+\newblock Analysis of a mixed-use urban {WiFi} network: When metropolitan
+  becomes neapolitan.
+\newblock In {\em {ACM IMC}\/} (2008).
 
 \bibitem{balanis2012antenna}
 {\sc Balanis, C.~A.}
 \newblock {\em Antenna theory: analysis and design}.
 \newblock John Wiley \& Sons, 2012.
 
+\bibitem{cabric2004implementation}
+{\sc Cabric, D., Mishra, S., and Brodersen, R.}
+\newblock Implementation issues in spectrum sensing for cognitive radios.
+\newblock In {\em Signals, Systems and Computers, 2004. Conference Record of
+  the Thirty-Eighth Asilomar Conference on\/} (2004), vol.~1, Ieee,
+  pp.~772--776.
+
+\bibitem{CRSK06}
+{\sc Camp, J., Robinson, J., Steger, C., and Knightly, E.}
+\newblock Measurement driven deployment of a two-tier urban mesh access
+  network.
+\newblock In {\em {ACM MobiSys}\/} (2006).
+
+\bibitem{arstechnica_may08}
+{\sc Cheng, J.}
+\newblock Philadelphia's municipal {WiFi} network to go dark.
+\newblock
+  \url{http://arstechnica.com/gadgets/2008/05/philadelphias-municipal-wifi-net%
+work-to-go-dark}, 2008.
+
 \bibitem{friis}
 {\sc Friis, H.~T.}
 \newblock A note on a simple transmission formula.
 \newblock 254--256.
 
+\bibitem{ghasemi2008spectrum}
+{\sc Ghasemi, A., and Sousa, E.}
+\newblock Spectrum sensing in cognitive radio networks: requirements,
+  challenges and design trade-offs.
+\newblock {\em Communications Magazine, IEEE 46}, 4 (2008), 32--39.
+
 \bibitem{he2008optimizing}
 {\sc He, B., Xie, B., and Agrawal, D.~P.}
 \newblock Optimizing deployment of internet gateway in wireless mesh networks.
 \newblock {\em Computer Communications 31}, 7 (2008), 1259--1275.
+
+\bibitem{hossain2010vehicular}
+{\sc Hossain, E., Chow, G., Leung, V., McLeod, R., Mi{\v{s}}i{\'c}, J., Wong,
+  V., and Yang, O.}
+\newblock Vehicular telematics over heterogeneous wireless networks: A survey.
+\newblock {\em Computer Communications 33}, 7 (2010), 775--793.
 
 \bibitem{carlson}
 {\sc Inc., C.}
@@ -21,11 +67,78 @@
 \newblock
   \url{http://www.carlsonwireless.com/rural-connect-press-release.html}, 2014.
 
+\bibitem{jain2005impact}
+{\sc Jain, K., Padhye, J., Padmanabhan, V.~N., and Qiu, L.}
+\newblock Impact of interference on multi-hop wireless network performance.
+\newblock {\em Wireless networks 11}, 4 (2005), 471--487.
+
+\bibitem{MOAR}
+{\sc Kanodia, V., Sabharwal, A., and Knightly, E.}
+\newblock {MOAR}: A multi-channel opportunistic auto-rate media access protocol
+  for ad hoc networks.
+\newblock In {\em Broadnets\/} (San Jose, CA, October 2004).
+
+\bibitem{taps}
+{\sc Karrer, R., Sabharwal, A., and Knightly, E.}
+\newblock Enabling large-scale wireless broadband: the case for {TAPs}.
+\newblock In {\em {HotNets-II}\/} (2003).
+
+\bibitem{kim1996pulse}
+{\sc Kim, S., Bertoni, H., and Stern, M.}
+\newblock Pulse propagation characteristics at 2.4 ghz inside buildings.
+\newblock {\em Vehicular Technology, IEEE Transactions on 45}, 3 (1996),
+  579--592.
+
 \bibitem{marina2010topology}
 {\sc Marina, M.~K., Das, S.~R., and Subramanian, A.~P.}
 \newblock A topology control approach for utilizing multiple channels in
   multi-radio wireless mesh networks.
 \newblock {\em Computer Networks 54}, 2 (2010), 241--256.
+
+\bibitem{mo2005comparison}
+{\sc Mo, J., So, H., and Walrand, J.}
+\newblock Comparison of multi-channel mac protocols.
+\newblock In {\em Proceedings of the 8th ACM international symposium on
+  Modeling, analysis and simulation of wireless and mobile systems\/} (2005),
+  ACM, pp.~209--218.
+
+\bibitem{raniwala2004centralized}
+{\sc Raniwala, A., Gopalan, K., and Chiueh, T.-c.}
+\newblock Centralized channel assignment and routing algorithms for
+  multi-channel wireless mesh networks.
+\newblock {\em {ACM SIGMOBILE MCCR} 8}, 2 (2004), 50--65.
+
+\bibitem{rayanchu2011fluid}
+{\sc Rayanchu, S., Shrivastava, V., Banerjee, S., and Chandra, R.}
+\newblock Fluid: improving throughputs in enterprise wireless lans through
+  flexible channelization.
+\newblock In {\em Proceedings of the 17th annual international conference on
+  Mobile computing and networking\/} (2011), ACM, pp.~1--12.
+
+\bibitem{raychaudhuri2003spectrum}
+{\sc Raychaudhuri, D., and Jing, X.}
+\newblock A spectrum etiquette protocol for efficient coordination of radio
+  devices in unlicensed bands.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2003. PIMRC
+  2003. 14th IEEE Proceedings on\/} (2003), vol.~1, IEEE, pp.~172--176.
+
+\bibitem{cnet_aug07}
+{\sc Reardon, M.}
+\newblock {EarthLink} pays 5 million to delay houston {Wi-Fi} buildout.
+\newblock \url{http://news.cnet.com/8301-10784\_3-9768759-7.html}, 2007.
+
+\bibitem{sabharwal2007opportunistic}
+{\sc Sabharwal, A., Khoshnevis, A., and Knightly, E.}
+\newblock Opportunistic spectral usage: Bounds and a multi-band csma/ca
+  protocol.
+\newblock {\em Networking, IEEE/ACM Transactions on 15}, 3 (2007), 533--545.
+
+\bibitem{shellhammer2009technical}
+{\sc Shellhammer, S., Sadek, A., and Zhang, W.}
+\newblock Technical challenges for cognitive radio in the tv white space
+  spectrum.
+\newblock In {\em Information Theory and Applications Workshop, 2009\/} (2009),
+  IEEE, pp.~323--333.
 
 \bibitem{si2010overview}
 {\sc Si, W., Selvakennedy, S., and Zomaya, A.~Y.}
@@ -33,5 +146,11 @@
   multi-channel wireless mesh networks.
 \newblock {\em Journal of Parallel and Distributed Computing 70}, 5 (2010),
   505--524.
+
+\bibitem{tang2005interference}
+{\sc Tang, J., Xue, G., and Zhang, W.}
+\newblock Interference-aware topology control and {QoS} routing in
+  multi-channel wireless mesh networks.
+\newblock In {\em {ACM MobiHoc}\/} (2005).
 
 \end{thebibliography}
