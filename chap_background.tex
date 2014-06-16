@@ -4,3 +4,113 @@ In this chapter, we describe the background of our research, including the basic
 technology related to this work and the hardware/software tools that we used to
 implement and evaluate our proposed algorithms in this work.
 
+
+\section{White Space Bands}
+
+
+The white space band term is mentioned the frequencies 
+channels previously used by analog TV broadcasts.
+In United States, full power analog television broadcasts, 
+which operated between the 54 MHz and 806 MHz television 
+frequencies (Channels 2-69), ceased operating on June 12, 
+2009 per a United States digital switchover mandate. At that 
+time, full power TV stations were required to switch to digital 
+transmission and operate only between 54 MHz and 698 MHz.~\cite{fccwhitespace} 
+
+Industry and academia have recognized the value of white space bands
+in wireless communication. Various proposals, including IEEE 802.11af, 
+IEEE 802.22 and those from the White Spaces Coalition, 
+have advocated using white spaces left by the termination of 
+analog TV to provide wireless broadband 
+Internet access. 
+Some company from industry has designed device intended to use these available channels 
+as a "white-spaces device" (WSD), such as Ubiquiti SR serials products. 
+These devices are designed to 
+detect the presence of existing but unused areas of airwaves, such 
+as those reserved for analog television, and utilize these unused 
+airwaves to transmit signals for data traffic. 
+Such technology is predicted to improve the availability of 
+broadband Internet service, especially in rural areas.
+
+White space band not only provide more bandwidth for wireless
+communication, but also bring the diversity in transmission range.
+Our algorithms and frameworks try to combine white space bands 
+and WiFi bands in link communication and network deployment improvement.
+
+
+\section{Gateworks Platform}
+
+The off the shelf platform we use for our measurments is the GW2358.
+GW2358 is a member of the Gateworks Cambria Single Board Computer family. 
+The GW2358 meets the requirements for enterprise and residential network 
+applications. This single board computer consists of an Intel IXP435 XScale 
+operating at 667MHz, 128Mbytes of DDRII-400 DRAM, and 32Mbytes of Flash. 
+Peripherals include four Type III Mini-PCI sockets, two 10/100 Base-TX 
+Ethernet ports with IEC-6100-4 ESD and EFT protection, two USB Host ports, 
+and Compact Flash socket. Additional features include digital I/O, serial 
+EEPROM, real time clock with battery backup, system monitor to track 
+operating temperature and input voltage, RS232 serial port for management 
+and debug, and watchdog timer. The GW2358 also supports GPS and RS485 
+serial port as ordering options. Power is applied through a dedicated 
+connector or through either Ethernet connector with the unused signal 
+pairs in a passive power over Ethernet architecture. 
+An opensource software OpenWrt board support package is included 
+for Linux operating systems.
+
+
+\begin{figure} 
+%\vspace{-0.1in}
+\centering
+\includegraphics[width=75mm]{figures/gw2358}
+\vspace{-0.1in}
+\caption{The Gateworks GW2358 off-shelf Platform.}
+\label{fig:gw2358}
+\vspace{0.1in}
+\end{figure}
+
+We use Gateworks platform with Ubnt radios to perform 802.11 multiband 
+measurements for both indoor and in-field. It helps to collect 
+the SNR, throughput and packet information for the post process. 
+
+
+
+\section{Rohde \& Schwarz FSH8 Spectrum Analyzer}
+
+The R\&S FSH 8 spectrum analyzer is portable and designed for use in the field. 
+Its low weight, its simple, well-conceived operation concept and the large number 
+of measurement functions make it an indispensable tool for anyone who needs an 
+efficient measuring instrument for outdoor work.
+
+
+\begin{figure} 
+%\vspace{-0.1in}
+\centering
+\includegraphics[width=75mm]{figures/fsh8}
+\vspace{-0.1in}
+\caption{Rohde \& Schwarz FSH 8 Spectrum Analyzer.}
+\label{fig:fsh8}
+\vspace{0.1in}
+\end{figure}
+
+FSH 8 could sense the signal in the air from 9 KHz to 8 GHz. 
+The spectrum analyzer could sense both 802.11 signals and
+non-802.11 signal in the air. Through the time stamp, we could 
+merge data from Gateworks platform and FSH8 platform to perform
+our algorithms and frameworks.
+
+\section{Mesh Network Deployment}
+
+Wireless Mesh Network is the infrastructure to provide wireless access for 
+clients. Wireless mesh network is made up of radio 
+nodes organized in a mesh topology. Each node forwards messages on behalf 
+of the other nodes. The nodes connected to clients are counted as the access
+tier, the nodes to relay data traffic to wired networks are backhual tier.
+For access tier, the nodes need to cover the service area and provide
+enough capacity for the clients in the service area.
+The backhual tier need to have high efficient connection to
+the wired network. 
+We analyze the mesh network deployment in multiband scenario, and propose
+our solution for access and backhual network deployment.
+
+
+

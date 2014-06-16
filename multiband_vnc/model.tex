@@ -1,12 +1,16 @@
-\section{Multiband Adaptation}
-\label{sec:model}
+
+
 In this section, we first formulate the multiband 
 adaptation problem in vehicular wireless links and introduce the set of information we use to make band decisions, which we refer to as context information. We then propose two machine-learning-based 
 multiband adaptation algorithms for vehicular channels. For comparison, we also propose two baseline adaptation methods based on existing solutions which consider historical and instantaneous information independently.
 
-\subsection{Problem Formulation}
+
+
+
+\section{Link Adaptation Problem Formulation}
 %The focus of this paper is on a context-based multiband adaptation algorithm as:
 %The problem we are going to resolve is to find a band has the best throughput in multiple available options as:
+
 Consider a system with~$n$ frequency bands, represented by an index set~$\{1,2, \ldots, n\}$. 
 The objective is to select the optimal band,~$b_{best}$, to transmit at each time instant that maximizes a desired objective function such as throughput. The throughput~$r_i$ on band~$i$ depends on several factors such as received signal power~$P_R^i$, noise power~$P_N^i$, the channel busy time~$B^i$, the velocity of the transmitter,~$v_{tx}$,
  the velocity of the receiver,~$v_{rx}$, 
@@ -61,11 +65,12 @@ When considering the activity level of non-802.11 users
 we use the received signal level from non-802.11 interfering sources $P_N^i$ 
 on band $i$ directly as an input to our algorithms. 
 
-\subsection{Multiband Adaptation Algorithms}
+\section{Multiband Adaptation Algorithms}
 \label{subsec:algorithms}
 %2 baseline methods: 
 %1. band selection based on identifying the the most common class, 
 %2. SNR-based band selection
+
 In order to evaluate the proposed multiband adaptation algorithms, 
 we construct two baseline methods: (i.) We search for the
 most commonly selected band as the best band in the historical data
@@ -192,4 +197,4 @@ on the historical data collected in each region. Then, the trained decision stru
 is integrated in our system for multiband adaptation in each region. The granularity 
 of regional division is one parameter that affects the training set as well as the 
 performance of the resulting decision tree. We 
-evaluate the granularity of these divisions in Section~\ref{sec:experiment design}.
+evaluate the granularity of these divisions in Section~\ref{sec:vncexperiment design}.

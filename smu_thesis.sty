@@ -343,20 +343,20 @@
 %      \else \vadjust{\penalty -\@Miv \vbox{}\penalty\@floatpenalty}\@esphack
 %     \fi\fi}
 
-% \def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
-%    \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
-%       \@parmoderr\@floatpenalty\z@
-%     \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
-%        \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
-%        \@tfor \@tempa :=#2\do
-%                         {\if\@tempa h\advance\@tempcnta \@ne\fi
-%                          \if\@tempa t\advance\@tempcnta \tw@\fi
-%                          \if\@tempa b\advance\@tempcnta 4\relax\fi
-%                          \if\@tempa p\advance\@tempcnta 8\relax\fi
-%          }\global\count\@currbox\@tempcnta}\@fltovf\fi
-%     \global\setbox\@currbox\vbox\bgroup
-%%    \boxmaxdepth\z@     % commented out 15 Dec 87
-%     \hsize\columnwidth \@parboxrestore \baselineskip \fbaselinestretch}
+ \def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+    \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+       \@parmoderr\@floatpenalty\z@
+     \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
+        \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+        \@tfor \@tempa :=#2\do
+                         {\if\@tempa h\advance\@tempcnta \@ne\fi
+                          \if\@tempa t\advance\@tempcnta \tw@\fi
+                          \if\@tempa b\advance\@tempcnta 4\relax\fi
+                          \if\@tempa p\advance\@tempcnta 8\relax\fi
+          }\global\count\@currbox\@tempcnta}\@fltovf\fi
+     \global\setbox\@currbox\vbox\bgroup
+%    \boxmaxdepth\z@     % commented out 15 Dec 87
+     \hsize\columnwidth \@parboxrestore \baselineskip \fbaselinestretch}
 
  \def\@startline{\vskip \tabbaselinestretch
    \global\@curtabmar\@nxttabmar\relax

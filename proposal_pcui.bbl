@@ -4,9 +4,37 @@
 Metis: Mobile and wireless communications enablers for the twenty-twenty
   information society.
 
+\bibitem{Gateworks}
+Cambria gw2358-4 network platform.
+\newblock http://www.gateworks.com/, 2007.
+
+\bibitem{AzimuthACE}
+{Aximuth {ACE}-{MIMO} Channel Emulator}.
+\newblock http://www.azimuthsystems.com, Mar. 2011.
+
+\bibitem{Openwrt}
+Openwrt wireless freedom.
+\newblock https://openwrt.org/, Dec. 2011.
+
 \bibitem{fccwhitespace}
 Fcc white space.
 \newblock \url{http://www.fcc.gov/topic/white-space}, 2012.
+
+\bibitem{Ubnt}
+Ubiquiti xtremerange series of radio.
+\newblock http://www.ubnt.com/, 2012.
+
+\bibitem{googledatabase}
+Google spectrum database.
+\newblock \url{http://goo.gl/NnIFXQ}, 2013.
+
+\bibitem{msdatabase}
+Microsoft research white space database.
+\newblock \url{http://whitespaces.cloudapp.net/Default.aspx}, 2013.
+
+\bibitem{uscensus}
+People and households.
+\newblock \url{http://www.census.gov/people/}, 2014.
 
 \bibitem{google_imc08}
 {\sc Afanasyev, M., Chen, T., Voelker, G., and Snoeren, A.}
@@ -14,10 +42,44 @@ Fcc white space.
   becomes neapolitan.
 \newblock In {\em {ACM IMC}\/} (2008).
 
+\bibitem{akyildiz2006next}
+{\sc Akyildiz, I.~F., Lee, W.-Y., Vuran, M.~C., and Mohanty, S.}
+\newblock Next generation/dynamic spectrum access/cognitive radio wireless
+  networks: a survey.
+\newblock {\em Computer Networks 50}, 13 (2006), 2127--2159.
+
+\bibitem{akyildiz2005wireless}
+{\sc Akyildiz, I.~F., Wang, X., and Wang, W.}
+\newblock Wireless mesh networks: a survey.
+\newblock {\em Computer networks 47}, 4 (2005), 445--487.
+
+\bibitem{andersen1995propagation}
+{\sc Andersen, J.~B., Rappaport, T.~S., and Yoshida, S.}
+\newblock Propagation measurements and models for wireless communications
+  channels.
+\newblock {\em {IEEE Communications Magazine} 33}, 1 (1995), 42--49.
+
+\bibitem{avallone2008channel}
+{\sc Avallone, S., and Akyildiz, I.~F.}
+\newblock A channel assignment algorithm for multi-radio wireless mesh
+  networks.
+\newblock {\em Computer Communications 31}, 7 (2008), 1343--1353.
+
+\bibitem{bahl2009white}
+{\sc Bahl, P., Chandra, R., Moscibroda, T., Murty, R., and Welsh, M.}
+\newblock White space networking with {WiFi} like connectivity.
+\newblock {\em {ACM SIGCOMM} 39}, 4 (2009), 27--38.
+
 \bibitem{balanis2012antenna}
 {\sc Balanis, C.~A.}
 \newblock {\em Antenna theory: analysis and design}.
 \newblock John Wiley \& Sons, 2012.
+
+\bibitem{banfield2007}
+{\sc Banfield, R., Hall, L., Bowyer, K., Kegelmeyer, W., et~al.}
+\newblock A comparison of decision tree ensemble creation techniques.
+\newblock {\em {IEEE} Trans on Pattern Analysis and Machine Intelligence 29}, 1
+  (2007), 173.
 
 \bibitem{cabric2004implementation}
 {\sc Cabric, D., Mishra, S., and Brodersen, R.}
@@ -39,6 +101,18 @@ Fcc white space.
   \url{http://arstechnica.com/gadgets/2008/05/philadelphias-municipal-wifi-net%
 work-to-go-dark}, 2008.
 
+\bibitem{cui2013leveraging}
+{\sc Cui, P., Liu, H., He, J., Altintas, O., Vuyyuru, R., Rajan, D., and Camp,
+  J.}
+\newblock Leveraging diverse propagation and context for multi-modal vehicular
+  applications.
+\newblock In {\em {IEEE WiVeC}\/} (2013).
+
+\bibitem{draves2004routing}
+{\sc Draves, R., Padhye, J., and Zill, B.}
+\newblock Routing in multi-radio, multi-hop wireless mesh networks.
+\newblock In {\em {ACM MobiCom}\/} (2004).
+
 \bibitem{friis}
 {\sc Friis, H.~T.}
 \newblock A note on a simple transmission formula.
@@ -49,6 +123,28 @@ work-to-go-dark}, 2008.
 \newblock Spectrum sensing in cognitive radio networks: requirements,
   challenges and design trade-offs.
 \newblock {\em Communications Magazine, IEEE 46}, 4 (2008), 32--39.
+
+\bibitem{golden1976shortest}
+{\sc Golden, B.}
+\newblock Shortest-path algorithms: A comparison.
+\newblock {\em Operations Research\/} (1976), 1164--1168.
+
+\bibitem{gupta2000capacity}
+{\sc Gupta, P., and Kumar, P.~R.}
+\newblock The capacity of wireless networks.
+\newblock {\em {IEEE Trans. on Information Theory} 46}, 2 (2000), 388--404.
+
+\bibitem{hall2009weka}
+{\sc Hall, M., Frank, E., Holmes, G., Pfahringer, B., Reutemann, P., and
+  Witten, I.}
+\newblock The weka data mining software: an update.
+\newblock {\em ACM SIGKDD Explorations Newsletter 11}, 1 (2009), 10--18.
+
+\bibitem{haykin2005cognitive}
+{\sc Haykin, S.}
+\newblock Cognitive radio: brain-empowered wireless communications.
+\newblock {\em Selected Areas in Communications, IEEE Journal on 23}, 2 (2005),
+  201--220.
 
 \bibitem{he2008optimizing}
 {\sc He, B., Xie, B., and Agrawal, D.~P.}
@@ -66,6 +162,11 @@ work-to-go-dark}, 2008.
 \newblock Fcc certifies carlson wireless technologies tv white space radio.
 \newblock
   \url{http://www.carlsonwireless.com/rural-connect-press-release.html}, 2014.
+
+\bibitem{jacobson1989tcpdump}
+{\sc Jacobson, V., Leres, C., and McCanne, S.}
+\newblock The tcpdump manual page.
+\newblock {\em Lawrence Berkeley Laboratory, Berkeley, CA\/} (1989).
 
 \bibitem{jain2005impact}
 {\sc Jain, K., Padhye, J., Padmanabhan, V.~N., and Qiu, L.}
@@ -95,6 +196,18 @@ work-to-go-dark}, 2008.
   multi-radio wireless mesh networks.
 \newblock {\em Computer Networks 54}, 2 (2010), 241--256.
 
+\bibitem{meikle2012global}
+{\sc Meikle, R., and Camp, J.}
+\newblock A global measurement study of context-based propagation and user
+  mobility.
+\newblock In {\em Proceedings of the 4th ACM international workshop on Hot
+  topics in planet-scale measurement\/} (2012), ACM, pp.~21--26.
+
+\bibitem{mishra2005weighted}
+{\sc Mishra, A., Banerjee, S., and Arbaugh, W.}
+\newblock Weighted coloring based channel assignment for {WLAN}s.
+\newblock {\em {ACM SIGMOBILE MCCR} 9}, 3 (2005), 19--31.
+
 \bibitem{mo2005comparison}
 {\sc Mo, J., So, H., and Walrand, J.}
 \newblock Comparison of multi-channel mac protocols.
@@ -102,11 +215,46 @@ work-to-go-dark}, 2008.
   Modeling, analysis and simulation of wireless and mobile systems\/} (2005),
   ACM, pp.~209--218.
 
+\bibitem{murty2012senseless}
+{\sc Murty, R., Chandra, R., Moscibroda, T., and Bahl, P.}
+\newblock Senseless: A database-driven white spaces network.
+\newblock {\em Mobile Computing, IEEE Transactions on 11}, 2 (2012), 189--203.
+
+\bibitem{peng2012efficient}
+{\sc Peng, Y., Yu, Y., Guo, L., Jiang, D., and Gai, Q.}
+\newblock An efficient joint channel assignment and {QoS} routing protocol for
+  ieee 802.11 multi-radio multi-channel wireless mesh networks.
+\newblock {\em Journal of Network and Computer Applications\/} (2012).
+
+\bibitem{rahul2009frequency}
+{\sc Rahul, H., Edalat, F., Katabi, D., and Sodini, C.}
+\newblock Frequency-aware rate adaptation and mac protocols.
+\newblock In {\em Proceedings of the 15th annual international conference on
+  Mobile computing and networking\/} (2009), ACM, pp.~193--204.
+
+\bibitem{ramachandran2006interference}
+{\sc Ramachandran, K.~N., Belding-Royer, E.~M., Almeroth, K.~C., and Buddhikot,
+  M.~M.}
+\newblock Interference-aware channel assignment in multi-radio wireless mesh
+  networks.
+\newblock In {\em {IEEE INFOCOM}\/} (2006).
+
+\bibitem{raniwala2005architecture}
+{\sc Raniwala, A., and Chiueh, T.}
+\newblock Architecture and algorithms for an {IEEE} 802.11-based multi-channel
+  wireless mesh network.
+\newblock In {\em {IEEE INFOCOM}\/} (2005).
+
 \bibitem{raniwala2004centralized}
 {\sc Raniwala, A., Gopalan, K., and Chiueh, T.-c.}
 \newblock Centralized channel assignment and routing algorithms for
   multi-channel wireless mesh networks.
 \newblock {\em {ACM SIGMOBILE MCCR} 8}, 2 (2004), 50--65.
+
+\bibitem{rappaport}
+{\sc Rappaport, T.}
+\newblock {\em Wireless Communications, Principles \& Practice}.
+\newblock Prentice Hall, 1996.
 
 \bibitem{rayanchu2011fluid}
 {\sc Rayanchu, S., Shrivastava, V., Banerjee, S., and Chandra, R.}
@@ -127,11 +275,31 @@ work-to-go-dark}, 2008.
 \newblock {EarthLink} pays 5 million to delay houston {Wi-Fi} buildout.
 \newblock \url{http://news.cnet.com/8301-10784\_3-9768759-7.html}, 2007.
 
+\bibitem{robinson2010deploying}
+{\sc Robinson, J., Singh, M., Swaminathan, R., and Knightly, E.}
+\newblock Deploying mesh nodes under non-uniform propagation.
+\newblock In {\em {IEEE INFOCOM}\/} (2010).
+
+\bibitem{robinson2008adding}
+{\sc Robinson, J., Uysal, M., Swaminathan, R., and Knightly, E.}
+\newblock Adding capacity points to a wireless mesh network using local search.
+\newblock In {\em {IEEE INFOCOM}\/} (2008).
+
+\bibitem{rosston2011household}
+{\sc Rosston, G., Savage, S., and Waldman, D.}
+\newblock Household demand for broadband internet service.
+\newblock {\em Communications of the ACM 54}, 2 (2011), 29--31.
+
 \bibitem{sabharwal2007opportunistic}
 {\sc Sabharwal, A., Khoshnevis, A., and Knightly, E.}
 \newblock Opportunistic spectral usage: Bounds and a multi-band csma/ca
   protocol.
 \newblock {\em Networking, IEEE/ACM Transactions on 15}, 3 (2007), 533--545.
+
+\bibitem{OAR}
+{\sc Sadeghi, B., Kanodia, V., Sabharwal, A., and Knightly, E.}
+\newblock Opportunistic media access for multirate ad hoc networks.
+\newblock In {\em {ACM MobiCom}\/} (Sept. 2002).
 
 \bibitem{shellhammer2009technical}
 {\sc Shellhammer, S., Sadek, A., and Zhang, W.}
@@ -147,10 +315,47 @@ work-to-go-dark}, 2008.
 \newblock {\em Journal of Parallel and Distributed Computing 70}, 5 (2010),
   505--524.
 
+\bibitem{subramanian2008minimum}
+{\sc Subramanian, A.~P., Gupta, H., Das, S.~R., and Cao, J.}
+\newblock Minimum interference channel assignment in multiradio wireless mesh
+  networks.
+\newblock {\em {IEEE TMC} 7}, 12 (2008), 1459--1473.
+
 \bibitem{tang2005interference}
 {\sc Tang, J., Xue, G., and Zhang, W.}
 \newblock Interference-aware topology control and {QoS} routing in
   multi-channel wireless mesh networks.
 \newblock In {\em {ACM MobiHoc}\/} (2005).
+
+\bibitem{wang2010game}
+{\sc Wang, B., Wu, Y., and Liu, K.}
+\newblock Game theory for cognitive radio networks: An overview.
+\newblock {\em Computer Networks 54}, 14 (2010), 2537--2561.
+
+\bibitem{wu2006distributed}
+{\sc Wu, H., Yang, F., Tan, K., Chen, J., Zhang, Q., and Zhang, Z.}
+\newblock Distributed channel assignment and routing in multiradio multichannel
+  multihop wireless networks.
+\newblock {\em Selected Areas in Communications, IEEE Journal on 24}, 11
+  (2006), 1972--1983.
+
+\bibitem{wu2006analysis}
+{\sc Wu, X., Liu, J., and Chen, G.}
+\newblock Analysis of bottleneck delay and throughput in wireless mesh
+  networks.
+\newblock In {\em {IEEE MASS}\/} (2006).
+
+\bibitem{yuan2006cross}
+{\sc Yuan, J., Li, Z., Yu, W., and Li, B.}
+\newblock A cross-layer optimization framework for multihop multicast in
+  wireless mesh networks.
+\newblock {\em {IEEE JSAC} 24}, 11 (2006), 2092--2103.
+
+\bibitem{zhang2006svm}
+{\sc Zhang, H., Berg, A., Maire, M., and Malik, J.}
+\newblock Svm-knn: Discriminative nearest neighbor classification for visual
+  category recognition.
+\newblock In {\em Computer Vision and Pattern Recognition, 2006 IEEE Computer
+  Society Conference on\/} (2006), vol.~2, pp.~2126--2136.
 
 \end{thebibliography}
