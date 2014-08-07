@@ -40,5 +40,6 @@
 \contentsline {section}{\numberline {5.5.}Related Work}{60}
 \contentsline {section}{\numberline {5.6.}Summary}{61}
 \contentsline {chapter}{\numberline {\hfill 6.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{63}
-\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{64}
-\contentsline {chapter}{REFERENCES}{65}
+\contentsline {section}{\numberline {6.1.}Related Work}{63}
+\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{66}
+\contentsline {chapter}{REFERENCES}{67}

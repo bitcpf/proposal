@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.4)
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: proposal_pcui.aux
 The style file: acm.bst
 Database file #1: proposal_pcui.bib
@@ -6,6 +6,16 @@ Warning--string name "april" is undefined
 --line 2401 of file proposal_pcui.bib
 Warning--string name "april" is undefined
 --line 8995 of file proposal_pcui.bib
+Warning--I didn't find a database entry for "tragos2013spectrum"
+Warning--I didn't find a database entry for "irwin2013resource"
+Warning--I didn't find a database entry for "chieochan2013channel"
+Warning--I didn't find a database entry for "doraghinejad2014channel"
+Warning--I didn't find a database entry for "pcuiwinmee"
+Warning--I didn't find a database entry for "li2012channel"
+Warning--I didn't find a database entry for "long2013fair"
+Warning--I didn't find a database entry for "filippini2013new"
+Warning--I didn't find a database entry for "zhu2013survey"
+Warning--I didn't find a database entry for "deb2009dynamic"
 Warning--to sort, need author or key in metis
 Warning--to sort, need author or key in fccwhitespace
 Warning--to sort, need author or key in AzimuthACE
@@ -20,7 +30,7 @@ Warning--empty journal in metis
 Warning--empty journal in friis
 You've used 64 entries,
             2253 wiz_defined-function locations,
-            853 strings with 14197 characters,
+            863 strings with 14353 characters,
 and the built_in function-call counts, 21024 in all, are:
 = -- 1987
 > -- 1004
@@ -59,4 +69,4 @@ warning$ -- 12
 while$ -- 186
 width$ -- 66
 write$ -- 615
-(There were 14 warnings)
+(There were 24 warnings)

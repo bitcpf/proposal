@@ -1,0 +1,87 @@
+\section{Related Work}
+\label{sec:related}
+
+% Deployment problem 
+Wireless mesh network deployment is to design wireless architecture
+for offering Internet service in an target area.
+There are significant challenges in wireless mesh network deployment,
+such as user priorities, user behaviors, long term throughput estimation, selfish clients,
+interference and energy efficiency, etc.~\cite{tragos2013spectrum}
+These challenges are distinguished under the topics of channel assignment,
+cognitive radio, protocol design, etc.~\cite{tragos2013spectrum,akyildiz2006next}
+Previous works have recognize the impact of interference in 
+wireless mesh network deployment is the key issue~\cite{tang2005interference,irwin2013resource,chieochan2013channel}.
+To overcome the challenges, a lot of works have been done to optimize the 
+deployment in increasing throughput, minimize resource, reducing interference,
+etc.~\cite{irwin2013resource,subramanian2008minimum,doraghinejad2014channel}
+Many works have studied the network deployment problem in multihop wireless
+networks~\cite{jain2005impact,akyildiz2005wireless,raniwala2004centralized,tragos2013spectrum}.
+In addition, multiple radios have been used to improve the routing in multi-channel
+scenarios~\cite{draves2004routing,irwin2013resource}. 
+Both static and dynamic network deployments have been discussed in previous works under
+the 802.11 WiFi scenario~\cite{wu2006analysis,ramachandran2006interference,subramanian2008minimum}. 
+However, all of the aforementioned works have not considered propagation 
+differences of the diverse frequency bands of white space and WiFi, which we show are 
+critical improving the performance of mesh networks.
+Frequency agility in multiband scenario brings more traffic capacity to 
+wireless network deployment as well as more complexity of resolving the interference issues.
+
+% Network deployment focuses, metrics/targets
+Previous work~\cite{pcuiwinmee} involve the inter-network interference in
+multiband scenario, but did not offer the solution of intra-network interference.
+As a new designed wireless network, intra-network interference is 
+more important for performance estimation. Previous work focus on
+WiFi wireless networks proposed several methods to reduce the 
+interference targeting on multiple metrics.
+~\cite{tang2005interference,he2008optimizing,robinson2010deploying}
+focus on reducing the gateway mesh nodes. ~\cite{irwin2013resource,subramanian2008minimum} try to reduce the
+overall interference in the worst case of traffic independent scenario.
+~\cite{chieochan2013channel,li2012channel} improve the performance
+in throughput. However, these works fails to involve the traffic demands
+of clients in their solutions.~\cite{robinson2010deploying,long2013fair} consider
+the QoS requirements in the WiFi network design. Our work also
+consider the traffic demands from the client as part of our 
+network design to satisfy both customers and vendors.
+
+
+
+% Solution methods
+The wireless network deployment problem has been 
+proved as a NP-hard problem~\cite{doraghinejad2014channel}. 
+Several works introduce relaxed linear program formulation 
+to find the optimization of multihop wireless networks 
+\cite{tang2005interference,irwin2013resource,filippini2013new}.  
+Also, game theory methods is another option to solve 
+the problem~\cite{raniwala2005architecture,
+wang2010game}.  
+Social network analysis is also popular in wireless 
+network design~\cite{zhu2013survey}.
+In this work, we model the problem to a linear program
+to approach the optimal solution and generate heuristic
+algorithms to find a practical solution for the problem.
+
+% White Space
+To be used effectively, white space bands must ensure that available TV bands
+exist but no interference exists between microphones and other devices~\cite{bahl2009white}. 
+White space bands availability has to be known in prior of network deployment.
+TV channels freed by FCC are fairly static in their channel assignment, 
+databases have been used to account for white space channel availability 
+(e.g., Microsoft's White Space Database~\cite{msdatabase}).
+In fact, Google has even visualized the licensed white space channels 
+in US cities with an API for research and commercial use~\cite{googledatabase}.
+In contrast, we study the performance of mesh networks with a varying number 
+of available white space channels at varying population densities, assuming 
+such white space databases and mechanisms are in place. As FCC release these 
+bands for research, many methods have been proposed to employ these frequency bands.
+~\cite{bahl2009white} introduce WiFi like white space link implementation on USRP and 
+link protocols. ~\cite{cui2013leveraging} discuss the point to point communication
+in multiband scenario. In~\cite{filippini2013new}, white space band application is 
+discussed in cognitive radio network for reducing maintenance cost. 
+In~\cite{deb2009dynamic}, the white space is proposed to increase the 
+data rates through spectrum allocation. 
+In our work, we focus on maximizing the throughput of the wireless network.
+
+
+
+
+
