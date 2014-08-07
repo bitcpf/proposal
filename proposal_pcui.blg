@@ -1,72 +1,47 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.6)
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: proposal_pcui.aux
 The style file: acm.bst
 Database file #1: proposal_pcui.bib
-Warning--string name "april" is undefined
---line 2401 of file proposal_pcui.bib
-Warning--string name "april" is undefined
---line 8995 of file proposal_pcui.bib
-Warning--I didn't find a database entry for "tragos2013spectrum"
-Warning--I didn't find a database entry for "irwin2013resource"
-Warning--I didn't find a database entry for "chieochan2013channel"
-Warning--I didn't find a database entry for "doraghinejad2014channel"
-Warning--I didn't find a database entry for "pcuiwinmee"
-Warning--I didn't find a database entry for "li2012channel"
-Warning--I didn't find a database entry for "long2013fair"
-Warning--I didn't find a database entry for "filippini2013new"
-Warning--I didn't find a database entry for "zhu2013survey"
-Warning--I didn't find a database entry for "deb2009dynamic"
-Warning--to sort, need author or key in metis
 Warning--to sort, need author or key in fccwhitespace
-Warning--to sort, need author or key in AzimuthACE
-Warning--to sort, need author or key in Openwrt
-Warning--to sort, need author or key in Gateworks
-Warning--to sort, need author or key in Ubnt
-Warning--to sort, need author or key in msdatabase
-Warning--to sort, need author or key in googledatabase
-Warning--to sort, need author or key in uscensus
-Warning--empty author in metis
-Warning--empty journal in metis
-Warning--empty journal in friis
-You've used 64 entries,
+You've used 26 entries,
             2253 wiz_defined-function locations,
-            863 strings with 14353 characters,
-and the built_in function-call counts, 21024 in all, are:
-= -- 1987
-> -- 1004
+            675 strings with 8635 characters,
+and the built_in function-call counts, 8943 in all, are:
+= -- 847
+> -- 421
 < -- 0
-+ -- 430
-- -- 354
-* -- 1645
-:= -- 3304
-add.period$ -- 182
-call.type$ -- 64
-change.case$ -- 366
++ -- 177
+- -- 148
+* -- 685
+:= -- 1409
+add.period$ -- 76
+call.type$ -- 26
+change.case$ -- 151
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 766
-empty$ -- 1780
-format.name$ -- 354
-if$ -- 4392
+cite$ -- 27
+duplicate$ -- 336
+empty$ -- 759
+format.name$ -- 148
+if$ -- 1877
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 55
-newline$ -- 313
-num.names$ -- 110
-pop$ -- 462
+int.to.str$ -- 26
+missing$ -- 22
+newline$ -- 131
+num.names$ -- 50
+pop$ -- 195
 preamble$ -- 1
-purify$ -- 304
+purify$ -- 126
 quote$ -- 0
-skip$ -- 467
+skip$ -- 213
 stack$ -- 0
-substring$ -- 1236
-swap$ -- 177
+substring$ -- 530
+swap$ -- 87
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 252
-warning$ -- 12
-while$ -- 186
-width$ -- 66
-write$ -- 615
-(There were 24 warnings)
+type$ -- 102
+warning$ -- 1
+while$ -- 85
+width$ -- 28
+write$ -- 259
+(There was 1 warning)
