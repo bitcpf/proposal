@@ -1,42 +1,44 @@
 \chapter{Introduction} \label{ch:introduction}
 
-Wireless network is the most convenient method to get service for users.
-The demand of wireless device users inspires vendors to provide faster,
-stable service in their networks. Because of the prevalence of individual
-devices, vehicular wireless devices and wireless sensors, wireless data
-traffic is expected to increasde a thousand-fold over the next decade~\cite{metis},
-greatly motivating the improvement of link communication and network
-deployment.
+Wireless network is believed to be the most convenient method to get service 
+for users. The demand of wireless device users inspires vendors to provide 
+faster, stable service in their networks. Because of the prevalence of 
+individual devices, vehicular wireless devices and wireless sensors, wireless 
+data traffic has increased for a thousand-fold over the last years and is 
+expected to continue over the next decade~\cite{metis}, greatly motivating 
+the improvement of wireless link communication and network deployment technology.
 
 However, unlike wired networks, wireless devices have to share crowd
 and unstable channels in limited frequencies. Especially in vehicular
-environment, the situation is even worse due to the moving. 
-Fortunately, drivers and passengers around the world could utilize a 
+environment, the situation is even worse due to the chaging channel 
+state. Fortunately, drivers and passengers around the world could utilize a 
 wide array of vehicular applications ranging from real-time traffic 
 monitoring and safety applications to various infotainment applications.
 However, the continuous use of such applications is limited due to the
-challenge of transmitting over highly-dynamic vehicular wireless channels. 
-In such networks, the increasing availability of different 
-frequency bands with correspondingly diverse propagation characteristics could allow flexibility and 
-robustness of vehicular links. Even with spectral flexibility, links are extremely tenuous, 
-demanding instantaneous decisions to remain connected, motivating an algorithm that
-can find the appropriate frequency band quickly and according to the current environmental context.
+challenge of transmitting over highly-dynamic vehicular wireless channels.
+In such networks, the increasing availability of different frequency bands 
+with correspondingly diverse propagation characteristics could allow flexibility 
+and robustness of vehicular links. Even with spectral flexibility, links are 
+extremely tenuous, demanding instantaneous decisions to remain connected, 
+motivating an algorithm that can find the appropriate frequency band quickly 
+and according to the current environmental context.
 
-Obviously, more frequencies could improve the performance for both link and network communication.
-The FCC has approved the use of broadband services in the white spaces of 
-UHF TV bands, which were formerly exclusively licensed to television broadcasters.
-These white space bands are now available for unlicensed public use, enabling the
-deployment of wireless access networks across a broad range of scenarios from 
-sparse rural areas (one of the key applications identified by the FCC) to dense urban 
-areas~\cite{carlson}. The white space bands operate in available channels from 
-54-806 MHz, having a far greater propagation range than WiFi bands for similar
-transmission power~\cite{balanis2012antenna}. 
-In WiFi and white space heterogeneous wireless network, the service area degree of 
-an access point depends on the capacity of radios, the propagation range and the 
-demands of the serving area. The scant frequencies of radios, the propagation distinctive
-and the demands diversity of population distribution bring the variation of an access point
-service area. These issues are substantial to designing an optimal network deployment 
-and provide potential commercial wireless services to clients in any location.
+Obviously, more frequencies resource could improve the performance for 
+both link and network communication. The FCC has approved the use of broadband 
+services in the white spaces of UHF TV bands, which were formerly exclusively 
+licensed to television broadcasters. These white space bands are now available 
+for unlicensed public use, enabling the deployment of wireless access networks 
+across a broad range of scenarios from sparse rural areas (one of the key 
+applications identified by the FCC) to dense urban areas~\cite{carlson}. The 
+white space bands operate in available channels from 54-806 MHz, having a far 
+greater propagation range than WiFi bands for similar transmission power
+~\cite{balanis2012antenna}. In WiFi and white space heterogeneous wireless 
+network, the service area degree of an access point depends on the capacity 
+of radios, the propagation range and the demands of the serving area. The scant 
+frequencies of radios, the propagation distinctive and the demands diversity 
+of population distribution bring the variation of an access point service area. 
+These issues are substantial to designing an optimal network deployment and 
+provide potential commercial wireless services to clients in any location.
 Thus, the new opportunities created by white spaces motivate the following 
 questions for wireless Internet carriers, which have yet to be addressed: 
 (i) To what degree can white space bands reduce the network deployment cost of
@@ -46,83 +48,95 @@ space bands no longer offer cost savings for wireless network deployments?
 and To what degree can hetergeneous access points benefit the dense 
 population areas and sparsely populated rural areas?
 
-
-White space is not only benefit the access tier network, but also benefit the 
-backhual tier networks. About a decade ago, numerous cities solicited proposals from
-network carriers for exclusive rights to deploy city-wide WiFi,
-spanning hundreds of square miles.  
-While the vast majority of the resulting awarded contracts used
-a wireless mesh topology, initial field tests revealed that the 
-actual WiFi propagation could not achieve the proposed mesh node
+White space frequencies is not only benefit the access tier network, 
+but also provides opportunity for backhual tier networks. About a 
+decade ago, numerous cities solicited proposals from network carriers 
+for exclusive rights to deploy city-wide WiFi, spanning hundreds of 
+square miles. While the vast majority of the resulting awarded 
+contracts used a wireless mesh topology, initial field tests revealed 
+that the actual WiFi propagation could not achieve the proposed mesh node
 spacing. As a result, many network carriers opted to pay millions of 
 dollars in penalties rather than face the exponentially-increasing
-deployment costs (e.g., Houston~\cite{cnet_aug07} and 
-Philadelphia~\cite{arstechnica_may08}). Thus, while a few mesh 
-networks have been deployed in certain communities~\cite{CRSK06,google_imc08},
-wireless mesh networks have largely been unsuccessful in achieving 
-the scale of what was once anticipated~\cite{taps}.
-Around the same time, the digital TV transition created more
-spectrum for use with data networks~\cite{fccwhitespace}. These white 
-space bands operate in available channels from 54-806 MHz, having
-increased propagation characteristics as compared to 
-WiFi~\cite{balanis2012antenna}. Hence, the FCC has identified rural
-areas as a key application for white space networks since the reduced
-population from major metropolitan areas allows a greater service area
-per backhaul device without saturating wireless capacity. Naturally, 
-the question arises for these rural communities as well as more dense 
-urban settings: how can the emerging white space bands improve 
-large-scale mesh network deployments?  While much work has been done 
-on deploying multihop wireless networks with multiple channels and 
-radios, the differences in propagation have not be exploited in their 
-models~\cite{raniwala2004centralized,tang2005interference, si2010overview}, 
-which could be the fundamental issue for the success of mesh 
-networks going forward.
+deployment costs (e.g., Houston~\cite{cnet_aug07} and Philadelphia
+~\cite{arstechnica_may08}). Thus, while a few mesh networks have been 
+deployed in certain communities~\cite{CRSK06,google_imc08}, wireless 
+mesh networks have largely been unsuccessful in achieving the scale 
+of what was once anticipated~\cite{taps}. Around the same time, the 
+digital TV transition created more spectrum for use with data networks
+~\cite{fccwhitespace}. These white space bands operate in available 
+channels from 54-806 MHz, having increased propagation characteristics 
+as compared to WiFi~\cite{balanis2012antenna}. Hence, the FCC has 
+identified rural areas as a key application for white space networks 
+since the reduced population from major metropolitan areas allows a 
+greater service area per backhaul device without saturating wireless 
+capacity. Naturally, the question arises for these rural communities 
+as well as more dense urban settings: how can the emerging white space 
+bands improve large-scale mesh network deployments?  While much work 
+has been done on deploying multihop wireless networks with multiple 
+channels and radios, the differences in propagation have not be 
+exploited in their models~\cite{raniwala2004centralized,tang2005interference, si2010overview}, 
+which could be the fundamental issue for the success of mesh networks 
+going forward.
 
-Beamforming is recognized as an prospective technology to 
-further improve the performance of wireless networks, 
-through increasing both time reuse and spatial reuse. However,
-people still have the question: in what degree beamforming could 
-add capacity and reduce the cost for the network. This is the 
-fundamental issue which could inspire new technology utilization
-in the wireless networks.
+As white space frequencies are freed for wireless communication,
+both the academy and the industry are looking forward to a complete
+solution for white space application in wireless link communication
+and networks. In this work, we try to answer part of the concerns
+of white space link communication in vechicular environment, jointly 
+white space bands and WiFi bands network deployment issues. We also
+propose prospective graph theory solution for white space frequencies
+application in short future. Beamforming is recognized as an prospective 
+technology to further improve the performance of wireless networks, 
+through increasing both time reuse and spatial reuse. The potential 
+gains of reducing deployment cost and fairness from beamforming 
+motivated us to exploit the jointly usibility of beamforming and 
+white space bands in the future.
+
 
 \section{Challenges}
 % Challenges
 
-For wireless networks, both the clients and the vendors require
-better service and low cost. However, due to the nature and policy, 
-wireless channels suffer a lot in providing efficient and stable service for 
-either link communication or network deployments. Spectrum 
-adaptation offers new solution for these issues. However, the
-diversity of spectrum and network complexity present great
-challenges in designing multiband communication systems, 
-for both link and network layers.
+Wireless communications and networks suffers the limited resource
+and interference since the day they were born. Everyone has to
+share the channels other than having a private cable as wired 
+communication. However, both the clients and the vendors are 
+seeking better service and lower cost for wireless communication. 
+Spectrum agility offers new solution for these issues. To employ
+the spectrum agility, the diversity of spectrum and network 
+complexity have to be recognized prior to the solutions.
 
 % VNC challenge
-First, accurate knowledge of channel status is hard to be detected at the receiver. 
-In recently, cognitive radio mechanisms which interleave channel accesses motivate the frequency
-band selection problem of finding the optimal spectrum on which to 
-transmit~\cite{ghasemi2008spectrum}. Prior work has considered a number of challenges in
-leveraging white space frequencies including spectrum sensing, frequency-agile operation,
-geolocation, solving stringent spectral mask requirements, and providing reliable service
-in unlicensed and dynamically changing spectrum~\cite{shellhammer2009technical}. 
-In particular, there has recently been an acceleration
-in spectrum sensing work~\cite{rayanchu2011fluid, kim1996pulse,cabric2004implementation}. Based on 
-these works, protocols have been built for multi-channel and/or multiband wireless operation~\cite{MOAR,
-raychaudhuri2003spectrum,sabharwal2007opportunistic}.  Other works have presented methods for searching for the most efficient 
-transmission channel~\cite{mo2005comparison}, discovering channel information~\cite{rayanchu2011fluid, sabharwal2007opportunistic}, and estimating 
-channel quality~\cite{MOAR}.
-Moreover, the emergence of a number of diverse sensors on a vehicle motivates work
-on heterogeneous wireless networks, which have different frequency bands and
-technologies~\cite{hossain2010vehicular}. Thus, the various communication 
-standards have diverse throughput capacity, allowing the choice of technology 
-to possibly usurp frequency band decisions. For example, an 802.11n link at 5.8 
-GHz with high levels of loss
-might still be a better choice than a Bluetooth link at 2.4 GHz with little loss
-due to the discrepancy of hundreds of Mbps in throughput capacity.
-While these works have considered spectral activity and developing protocols and algorithms to 
-find spectral holes, less of a focus has been on coupling such information with historical performance in a given 
-propagation environment.
+First, accurate knowledge of channel status is hard to be detected 
+at the receiver. In recently, cognitive radio mechanisms which 
+interleave channel accesses motivate the frequency band selection 
+problem of finding the optimal spectrum on which to transmit
+~\cite{ghasemi2008spectrum}. Prior work has considered a number of 
+challenges in leveraging white space frequencies including spectrum 
+sensing, frequency-agile operation, geolocation, solving stringent 
+spectral mask requirements, and providing reliable service in unlicensed 
+and dynamically changing spectrum~\cite{shellhammer2009technical}. In 
+particular, there has recently been an acceleration in spectrum sensing 
+work~\cite{rayanchu2011fluid, kim1996pulse,cabric2004implementation}. 
+Based on these works, protocols have been built for multi-channel and/or 
+multiband wireless operation~\cite{MOAR,raychaudhuri2003spectrum,sabharwal2007opportunistic}. 
+Other works have presented methods for searching for the most efficient 
+transmission channel~\cite{mo2005comparison}, discovering channel 
+information~\cite{rayanchu2011fluid, sabharwal2007opportunistic}, and 
+estimating channel quality~\cite{MOAR}. Moreover, the emergence of a 
+number of diverse sensors on a vehicle motivates work on heterogeneous 
+wireless networks, which have different frequency bands and technologies
+~\cite{hossain2010vehicular}. Thus, the various communication standards 
+have diverse throughput capacity, allowing the choice of technology 
+to possibly usurp frequency band decisions. For example, an 802.11n 
+link at 5.8 GHz with high levels of loss might still be a better choice 
+than a Bluetooth link at 2.4 GHz with little loss due to the discrepancy 
+of hundreds of Mbps in throughput capacity. While these works have 
+considered spectral activity and developing protocols and algorithms to 
+find spectral holes, less of a focus has been on coupling such information 
+with historical performance in a given propagation environment.
+
+
+
 
 
 Second, in access layer network deployment, specific to rural areas, 
