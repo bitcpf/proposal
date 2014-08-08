@@ -3,4 +3,9 @@
 \contentsline {section}{\numberline {1.1.}Challenges}{3}
 \contentsline {section}{\numberline {1.2.}Contributions and Futurework}{6}
 \contentsline {section}{\numberline {1.3.}Proposal Overview}{9}
-\contentsline {chapter}{REFERENCES}{10}
+\contentsline {chapter}{\numberline {\hfill 2.\hbox {\hskip 0.8em}\ignorespaces }Background}{10}
+\contentsline {section}{\numberline {2.1.}White Space Bands}{10}
+\contentsline {section}{\numberline {2.2.}Gateworks Platform}{11}
+\contentsline {section}{\numberline {2.3.}Rohde \& Schwarz FSH8 Spectrum Analyzer}{11}
+\contentsline {section}{\numberline {2.4.}Mesh Network Deployment}{13}
+\contentsline {chapter}{REFERENCES}{15}
