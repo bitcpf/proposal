@@ -1,6 +1,76 @@
 \section{Related Work}
 \label{sec:related}
 
+As FCC adopt the white space bands for communication, the application
+of these new frequency resource become new research spot. Many previous
+works are related to the challenges for white space frequencies, but
+no one focused on and answered on them.
+
+\subsection{White Space Links}
+\label{subsec:related_whitelinks}
+
+A bunch of work has been done on radio-scene analysis and channel 
+identification for utility of channel adaptation dating back to 
+Simon Haykin~\cite{haykin2005cognitive}. Some work of Multi-bands/Multi-channels 
+in cognitive radios focus on optimize performance, such as avoiding 
+frequency diversity~\cite{rahul2009frequency}. In~\cite{OAR} an opportunistic 
+algorithm is introduced to balance the cost of spectrum sensing and channel
+switching in multichannel scenario.
+
+Oppose to previous works, our work is motivated by prospective releasing 
+frequency, white space bands used for TV and exploit the comparison 
+across all the available bands in the future. Previous work assume 
+all the channels have the same performance in an clean environment 
+for channels with small gap of frequencies. However, when the white space
+bands are activited, the assumption need to be adjust due to the propagation
+variation of the channels with large gap in frequency. 
+Some other works focus on the theoritic stopping rules of spectrum 
+sensing with the cost of time and channel switching gains
+~\cite{sabharwal2007opportunistic, OAR}. In contrast, we focus on
+measurement driven framework to exploit the channel selection
+rules under in-field environment and to leverage the impacts of 
+white space bands on wireless communication links.
+
+\subsection{White Space Networks}
+\label{sec:related_subwhitemesh}
+
+Prior work in wireless network deployment has focused extensively on 
+solving gateway placement, channel assignment, and routing problems 
+to reduce the interference generated inside the network
+~\cite{he2008optimizing,ramachandran2006interference,akyildiz2006next}.
+Unfortunately, few works in network deployment notice the interference 
+across networks. Some cognitive radio works discuss this inter-network 
+interference, but most of them focus on point-to-point communication 
+other than taking a network-wide view~\cite{cabric2004implementation}.
+ 
+% White Space large propagation range
+With new FCC regulations on the use of white space bands, there are 
+two factors to consider with such bands: large propagation range 
+and existing inter-network interference from TV stations and other 
+devices such as microphones~\cite{fccwhitespace,cui2013leveraging,bahl2009white}.
+Prior work does not specifically study the benefits of jointly 
+using white space and WiFi bands in the deployment of wireless access 
+networks~\cite{akyildiz2005wireless}. Additionally, prior work related 
+to white spaces target opportunistic media access. However, the 
+application of white spaces across diverse population densities 
+has not been fully explored.
+
+% Network propagation difference
+Finally, some works discuss the propagation variation in both WiFi 
+bands and white space bands. For example, Robinson et al. models 
+the propagation variation at the same band in terrain domain
+~\cite{robinson2010deploying}. Another work proposes a database-driven 
+framework for designing a white space network with database of 
+primary user (TV station) locations and channel occupation
+~\cite{murty2012senseless}. However, these works do not jointly study 
+the influence of white space and WiFi bands on network deployment 
+according to their resulting propagation variation and spectrum utilization.
+
+% New Problem: more radios on access points or more access points
+% fixme WITH MOA
+
+
+
 % Deployment problem 
 Wireless mesh network deployment is to design wireless architecture
 for offering Internet service in an target area.
@@ -43,8 +113,6 @@ the QoS requirements in the WiFi network design. Our work also
 consider the traffic demands from the client as part of our 
 network design to satisfy both customers and vendors.
 
-
-
 % Solution methods
 The wireless network deployment problem has been 
 proved as a NP-hard problem~\cite{doraghinejad2014channel}. 
@@ -80,8 +148,4 @@ discussed in cognitive radio network for reducing maintenance cost.
 In~\cite{deb2009dynamic}, the white space is proposed to increase the 
 data rates through spectrum allocation. 
 In our work, we focus on maximizing the throughput of the wireless network.
-
-
-
-
 

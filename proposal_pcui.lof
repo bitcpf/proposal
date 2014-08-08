@@ -1,2 +1,20 @@
 \contentsline {figure}{\numberline {\hfill 2.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces The Gateworks GW2358 off-shelf Platform.}}{12}
 \contentsline {figure}{\numberline {\hfill 2.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Rohde \& Schwarz FSH 8 Spectrum Analyzer.}}{13}
+\contentsline {figure}{\numberline {\hfill 3.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Experimental setup for channel emulator.}}{21}
+\contentsline {figure}{\numberline {\hfill 3.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces In-field Experimental Setup.}}{21}
+\contentsline {figure}{\numberline {\hfill 3.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Spectrum Analyzer Data Processing.}}{22}
+\contentsline {figure}{\numberline {\hfill 3.4.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Accuracy of the four multiband algorithms.}}{23}
+\contentsline {figure}{\numberline {\hfill 3.5.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Throughput Gap of the four multiband algorithms.}}{24}
+\contentsline {figure}{\numberline {\hfill 3.6.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Spatially splitting experimental area into 8 regions.}}{25}
+\contentsline {figure}{\numberline {\hfill 3.7.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Accuracy when dividing training set into 8 regions.}}{26}
+\contentsline {figure}{\numberline {\hfill 4.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Multiband Measurement Platform}}{35}
+\contentsline {figure}{\numberline {\hfill 4.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces White Space Channels in DFW Metropolitan and Surrounding Areas.}}{36}
+\contentsline {figure}{\numberline {\hfill 4.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Spectrum Activity in DFW Metropolitan and Surrounding Areas.}}{37}
+\contentsline {figure}{\numberline {\hfill 4.4.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Number of Access Points Needed for a 13 km x13 km Area.}}{38}
+\contentsline {figure}{\numberline {\hfill 5.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Example WhiteMesh topology with different mesh-node shapes representing different frequency band choices per link.}}{45}
+\contentsline {figure}{\numberline {\hfill 5.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Performance in terms of traffic arrived gateway for various offered loads, network sizes, and configurations of WiFi or white space (WS) channels.}}{59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Population Distribution = 500 $ppl/km^2$}}}{59}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Varying Load, 49-Nodes Regular Grid}}}{59}
+\contentsline {figure}{\numberline {\hfill 5.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces }}{64}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Uniform Activity Level VS. Space Distance}}}{64}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Traffic arrived Gateways with Activity Level \& Spacing }}}{64}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  7 AUG 2014 20:44
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  7 AUG 2014 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -188,63 +188,90 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./proposal_pcui.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen123
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen124
+\subfiglabelskip=\skip60
+\c@subfigure=\count118
+\c@lofdepth=\count119
+\c@subtable=\count120
+\c@lotdepth=\count121
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+(./proposal_pcui.aux
+
+LaTeX Warning: Label `eq:friis' multiply defined.
+
+
+LaTeX Warning: Label `eq:intercap' multiply defined.
+
+
+LaTeX Warning: Label `tab:activitymeasurement' multiply defined.
+
+
+LaTeX Warning: Label `fig:all3figs' multiply defined.
+
+)
 \openout1 = `proposal_pcui.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-\numfigure=\count118
-\numtable=\count119
-\chaptertest=\count120
-
-(./proposal_pcui.idx) [0
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+\numfigure=\count122
+\numtable=\count123
+\chaptertest=\count124
+ (./proposal_pcui.idx) [0
 
 
 ] [0] (./acknow.tex) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
 
  []
 
-(./abstract.tex [4] [5] [6]) [7] (./proposal_pcui.toc)
+(./abstract.tex [4] [5] [6]) [7] (./proposal_pcui.toc [8
+
+])
 \tf@toc=\write3
 \openout3 = `proposal_pcui.toc'.
 
- [8
+ [9] [10]
+(./proposal_pcui.lof)
+\tf@lof=\write4
+\openout4 = `proposal_pcui.lof'.
 
-] [0]
-(./chap_intro.tex
+ [11
+
+] (./proposal_pcui.lot)
+\tf@lot=\write5
+\openout5 = `proposal_pcui.lot'.
+
+ [12
+
+] [0] (./chap_intro.tex
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7] [8]
-
-LaTeX Warning: Reference `ch:vnc' on page 9 undefined on input line 285.
-
-
-LaTeX Warning: Reference `ch:winmee' on page 9 undefined on input line 287.
-
-
-LaTeX Warning: Reference `ch:wm' on page 9 undefined on input line 289.
-
-
-LaTeX Warning: Reference `ch:futurework' on page 9 undefined on input line 291.
-
-
-
-LaTeX Warning: Reference `ch:conclusion' on page 9 undefined on input line 293.
-
-
-) (./chap_background.tex [9]
+] [2] [3] [4] [5] [6] [7] [8]) (./chap_background.tex [9]
 Chapter 2.
 [10
 
@@ -252,41 +279,214 @@ Chapter 2.
 File: figures/gw2358.eps Graphic file (type eps)
  <figures/gw2358.eps> [11] [12]
 File: figures/fsh8.eps Graphic file (type eps)
- <figures/fsh8.eps> [13])
-(./proposal_pcui.bbl [14]
-REFERENCES.
+ <figures/fsh8.eps> [13]) (./chap_vnc.tex
+[14]
+Chapter 3.
+(./multiband_vnc/model.tex
+Overfull \hbox (5.20886pt too wide) in paragraph at lines 14--21
+[]\OT1/cmr/m/n/12 Consider a sys-tem with $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 
+fre-quency bands, rep-re-sented by an in-dex set $\OMS/cmsy/m/n/12 f\OT1/cmr/m/
+n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/
+n/12 g$\OT1/cmr/m/n/12 .
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+[15
+
+] [16] [17]
+
+LaTeX Warning: Float too large for page by 222.80685pt on input line 167.
+
+) (./multiband_vnc/experiment_design.tex [18] [19]
+File: figures/emulator2.eps Graphic file (type eps)
+ <figures/emulator2.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20]
+File: figures/infield.eps Graphic file (type eps)
+ <figures/infield.eps>
+File: figures/sa_process.eps Graphic file (type eps)
+ <figures/sa_process.eps> [21])
+(./multiband_vnc/experiment.tex [22]
+File: figures/performance_accuracy.eps Graphic file (type eps)
+ <figures/performance_accuracy.eps>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+ [23]
+Overfull \hbox (2.74246pt too wide) in paragraph at lines 66--70
+[]\OT1/cmr/m/n/12 The sec-ond base-line al-go-rithm, \OT1/cmr/m/it/12 SNR-based
+ Through-put Look-up\OT1/cmr/m/n/12 , main-tains 39.2%
+ []
+
+File: figures/performance_gap.eps Graphic file (type eps)
+<figures/performance_gap.eps>
+Overfull \hbox (10.09898pt too wide) in paragraph at lines 99--105
+[]\OT1/cmr/m/n/12 The \OT1/cmr/m/it/12 Most Commonly-Selected Band Al-go-rithm 
+\OT1/cmr/m/n/12 has two dif-fer-ent modes of through-
+ []
+
+[24]
+File: figures/region_map.eps Graphic file (type eps)
+ <figures/region_map.eps>
+File: figures/mvsl.eps Graphic file (type eps)
+ <figures/mvsl.eps> [25])
+(./multiband_vnc/conclusion.tex) [26]) (./chap_winmee.tex [27]
+Chapter 4.
+(./multiband_winmee/problemformulation.tex [28
+
+] [29] [30] [31] [32])
+(./multiband_winmee/experiment.tex [33]
+File: figures/equipment.eps Graphic file (type eps)
+ <figures/equipment.eps> [34] [35]
+File: figures/drivemap.eps Graphic file (type eps)
+
+<figures/drivemap.eps>
+File: figures/drivetest.eps Graphic file (type eps)
+ <figures/drivetest.eps> [36]
+Overfull \hbox (190.629pt too wide) in paragraph at lines 156--172
+ [][] 
+ []
+
+[37]
+File: figures/redensity.eps Graphic file (type eps)
+ <figures/redensity.eps> [38]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39] [40]) (./multiband_winmee/conclusion.tex [41])) (./chap_wm.tex [42]
+Chapter 5.
+(./multiband_wm/problemformulation.tex [43
+
+] [44]
+File: figures/interferencerange2.eps Graphic file (type eps)
+
+<figures/interferencerange2.eps> [45] [46] [47]) (./multiband_wm/linearopt.tex
+[48]
+Underfull \hbox (badness 4859) in paragraph at lines 31--35
+[]\OT1/cmr/m/n/12 Protocol In-ter-fer-
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 35--39
+[]\OT1/cmr/m/n/12 Gateways in net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--46
+
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 60--61
+[]\OT1/cmr/m/n/12 Time share of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+\OT1/cmr/m/n/12 link $(\OML/cmm/m/it/12 i; j\OT1/cmr/m/n/12 )$ on
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 62--63
+[]\OT1/cmr/m/n/12 Uplink flow of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--67
+
+ []
+
+[49] [50]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [51] [52] [53])
+
+LaTeX Warning: Float too large for page by 6.71977pt on input line 53.
+
+[54]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 84.
+
+) (./multiband_wm/experiment.tex [55] [56] [57]
+File: figures/varysize.eps Graphic file (type eps)
+ <figures/varysize.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\OT1/cmr/m/n/10 (a) Av-er-age Pop-u-la-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 139--139
+\OT1/cmr/m/n/10 tion Dis-tri-bu-tion = 500
+ []
+
+File: figures/maxtpt.eps Graphic file (type eps)
+<figures/maxtpt.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\OT1/cmr/m/n/10 (b) Vary-ing Load, 49-
+ []
+
+[58] [59]
+Overfull \hbox (280.83109pt too wide) in paragraph at lines 215--235
+ [][] 
+ []
+
+[60] [61] [62]
+File: figures/actspac3d.eps Graphic file (type eps)
+ <figures/actspac3d.eps>
+File: figures/act_spacing.eps Graphic file (type eps)
+ <figures/act_spacing.eps>
+Underfull \hbox (badness 2689) in paragraph at lines 334--334
+[]\OT1/cmr/m/n/10 (b) Traf-fic ar-rived Gate-
+ []
+
+[63]) (./multiband_wm/conclusion.tex [64])) (./chap_futurework.tex [65]
+[66]
+Chapter 6.
+) (./chap_related.tex [67
+
+] [68] [69]) (./chap_conclusion.tex [70]
+Chapter 7.
+) (./proposal_pcui.bbl [71
+
+]
+REFERENCES.
+[72
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 []\OT1/cmr/m/sc/12 Cheng, J.  \OT1/cmr/m/n/12 Philadel-phia's mu-nic-i-pal WiFi
  net-work to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 \OT1/cmr/m/n/12 go dark.  $\OT1/cmtt/m/n/12 http : / / arstechnica . com / gadg
 ets / 2008 / 05 /
  []
 
-[15
-
-] [16])
+[73] [74] [75] [76] [77])
 \openout7 = `proposal_pcui.idx'.
 
 
-Total number of figures: 0
-Total number of tables: 0
-[17] (./proposal_pcui.aux)
+Total number of figures: 16
+Total number of tables: 4
+[78] (./proposal_pcui.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2071 strings out of 493322
- 23148 string characters out of 6140449
- 96553 words of memory out of 5000000
- 5508 multiletter control sequences out of 15000+600000
- 8174 words of font info for 30 fonts, out of 8000000 for 9000
+ 2516 strings out of 493322
+ 30063 string characters out of 6140449
+ 103051 words of memory out of 5000000
+ 5861 multiletter control sequences out of 15000+600000
+ 11970 words of font info for 43 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 27i,5n,43p,230b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,43p,414b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (26 pages, 54472 bytes).
+Output written on proposal_pcui.dvi (91 pages, 234376 bytes).
