@@ -11,10 +11,16 @@
 \contentsline {figure}{\numberline {\hfill 4.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces White Space Channels in DFW Metropolitan and Surrounding Areas.}}{36}
 \contentsline {figure}{\numberline {\hfill 4.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Spectrum Activity in DFW Metropolitan and Surrounding Areas.}}{37}
 \contentsline {figure}{\numberline {\hfill 4.4.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Number of Access Points Needed for a 13 km x13 km Area.}}{38}
-\contentsline {figure}{\numberline {\hfill 5.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Example WhiteMesh topology with different mesh-node shapes representing different frequency band choices per link.}}{45}
-\contentsline {figure}{\numberline {\hfill 5.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Performance in terms of traffic arrived gateway for various offered loads, network sizes, and configurations of WiFi or white space (WS) channels.}}{59}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Population Distribution = 500 $ppl/km^2$}}}{59}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Varying Load, 49-Nodes Regular Grid}}}{59}
-\contentsline {figure}{\numberline {\hfill 5.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces }}{64}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Uniform Activity Level VS. Space Distance}}}{64}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Traffic arrived Gateways with Activity Level \& Spacing }}}{64}
+\contentsline {figure}{\numberline {\hfill 5.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Low Traffic Scenario}}{48}
+\contentsline {figure}{\numberline {\hfill 5.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Medium Traffic Scenario}}{48}
+\contentsline {figure}{\numberline {\hfill 5.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces High Traffic Scenario}}{48}
+\contentsline {figure}{\numberline {\hfill 5.4.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Sufficient White Space Channels Scenario}}{54}
+\contentsline {figure}{\numberline {\hfill 5.5.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces One white channel}}{55}
+\contentsline {figure}{\numberline {\hfill 5.6.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Percentage of Heterogeneous Access Points}}{56}
+\contentsline {figure}{\numberline {\hfill 6.1.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Example WhiteMesh topology with different mesh-node shapes representing different frequency band choices per link.}}{59}
+\contentsline {figure}{\numberline {\hfill 6.2.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces Performance in terms of traffic arrived gateway for various offered loads, network sizes, and configurations of WiFi or white space (WS) channels.}}{74}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Population Distribution = 500 $ppl/km^2$}}}{74}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Varying Load, 49-Nodes Regular Grid}}}{74}
+\contentsline {figure}{\numberline {\hfill 6.3.\hbox {\hskip 0.5em}\ignorespaces }{\ignorespaces }}{79}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Uniform Activity Level VS. Space Distance}}}{79}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Traffic arrived Gateways with Activity Level \& Spacing }}}{79}

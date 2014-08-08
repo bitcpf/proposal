@@ -11,46 +11,47 @@ Warning--to sort, need author or key in Ubnt
 Warning--to sort, need author or key in msdatabase
 Warning--to sort, need author or key in googledatabase
 Warning--to sort, need author or key in uscensus
+Warning--empty journal in cuileveraging
 Warning--empty journal in friis
-You've used 75 entries,
+You've used 79 entries,
             2253 wiz_defined-function locations,
-            908 strings with 16429 characters,
-and the built_in function-call counts, 25392 in all, are:
-= -- 2414
-> -- 1222
+            928 strings with 17171 characters,
+and the built_in function-call counts, 27051 in all, are:
+= -- 2579
+> -- 1300
 < -- 0
-+ -- 523
-- -- 432
-* -- 2011
-:= -- 3999
-add.period$ -- 216
-call.type$ -- 75
-change.case$ -- 438
++ -- 556
+- -- 460
+* -- 2134
+:= -- 4250
+add.period$ -- 227
+call.type$ -- 79
+change.case$ -- 464
 chr.to.int$ -- 0
-cite$ -- 84
-duplicate$ -- 903
-empty$ -- 2123
-format.name$ -- 432
-if$ -- 5294
+cite$ -- 89
+duplicate$ -- 970
+empty$ -- 2250
+format.name$ -- 460
+if$ -- 5650
 int.to.chr$ -- 0
-int.to.str$ -- 75
-missing$ -- 65
-newline$ -- 369
-num.names$ -- 134
-pop$ -- 530
+int.to.str$ -- 79
+missing$ -- 69
+newline$ -- 388
+num.names$ -- 142
+pop$ -- 561
 preamble$ -- 1
-purify$ -- 365
+purify$ -- 387
 quote$ -- 0
-skip$ -- 559
+skip$ -- 609
 stack$ -- 0
-substring$ -- 1567
-swap$ -- 217
+substring$ -- 1685
+swap$ -- 242
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 296
-warning$ -- 9
-while$ -- 233
-width$ -- 77
-write$ -- 729
-(There were 9 warnings)
+type$ -- 312
+warning$ -- 10
+while$ -- 249
+width$ -- 81
+write$ -- 768
+(There were 10 warnings)

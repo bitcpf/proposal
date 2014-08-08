@@ -1,11 +1,11 @@
 \section{Challenges and Problem Formulation}
-\label{sec:problemformulation}
+\label{sec:moa_problemformulation}
 
 % Introduce the content of this section
 In this section, we illustrate the challenges of hetergenous access point 
 band selection in wireless network deployment and formulate the problem of band 
 selection in mesh network deployments jointly using WiFi and white space bands. 
-Further, we present a linear program and a FIXME algorithm for estimating the 
+Further, we present a linear program and MHAPD(Multiband Hetergeneous AP Deployment) algorithm for estimating the 
 access point number to serve the traffic demand of a given population.
 Then we discuss the application of the algorithm in uniform population
 distribution and non-uniform population distribution with spectrum resource 
@@ -95,16 +95,17 @@ similar coverage and capacity constraints. Moreover, since less TV channels tend
 \label{subsec:problem}
 
 % Assumptions of the network
-As opposed to previous works such as~\cite{franklin2007node,robinson2010deploying
-,si2010overview}, this paper focuses on hetergenous access point selection 
+As opposed to previous works such as
+~\cite{franklin2007node,robinson2010deploying,si2010overview}, 
+this paper focuses on hetergenous access point selection 
 for wireless access networks which jointly employ WiFi and white space bands.
 We propose a relaxed linear program to find the lower bound number of access point,
-and an FIXME algorithm  to approach the lower bound number of access points which serve
+and MHAPD algorithm  to approach the lower bound number of access points which serve
 the traffic demand of a certain area. We assume the service provider has a limited number 
 of spectrum resources and radios have similar configuration. Each radio on an access 
 point operates with a classic protocol model~\cite{gupta2000capacity}. 
 We further assume that there is a given take rate and traffic demand for a given 
-population (as specified in Section~\ref{sec:experimentdesign}).
+population (as specified in Section~\ref{sec:moaexperimentdesign}).
 
 % Capacity constraint
 A network deployment should ideally provide network capacity equal to the demand of the service 

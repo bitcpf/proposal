@@ -103,6 +103,12 @@ People and households.
   multiradio wireless mesh networks using network coding.
 \newblock {\em Mobile Computing, IEEE Transactions on 12}, 1 (2013), 118--135.
 
+\bibitem{cuileveraging}
+{\sc Cui, P., Liu, H., He, J., Altintas, O., Vuyyuru, R., Rajan, D., and Camp,
+  J.}
+\newblock Leveraging diverse propagation and context for multi-modal vehicular
+  applications.
+
 \bibitem{cui2013leveraging}
 {\sc Cui, P., Liu, H., He, J., Altintas, O., Vuyyuru, R., Rajan, D., and Camp,
   J.}
@@ -142,6 +148,13 @@ People and households.
   minimum-maintenance-cost routing.
 \newblock {\em IEEE/ACM Transactions on Networking (TON) 21}, 5 (2013),
   1484--1498.
+
+\bibitem{franklin2007node}
+{\sc Franklin, A.~A., and Murthy, C. S.~R.}
+\newblock Node placement algorithm for deployment of two-tier wireless mesh
+  networks.
+\newblock In {\em Global Telecommunications Conference, 2007. GLOBECOM'07.
+  IEEE\/} (2007), IEEE, pp.~4823--4827.
 
 \bibitem{friis}
 {\sc Friis, H.~T.}
@@ -210,6 +223,14 @@ People and households.
 \newblock Impact of interference on multi-hop wireless network performance.
 \newblock {\em Wireless networks 11}, 4 (2005), 471--487.
 
+\bibitem{joshi2009efficient}
+{\sc Joshi, G.~P., Kim, S.~W., and Kim, B.-S.}
+\newblock An efficient mac protocol for improving the network throughput for
+  cognitive radio networks.
+\newblock In {\em Next Generation Mobile Applications, Services and
+  Technologies, 2009. NGMAST'09. Third International Conference on\/} (2009),
+  IEEE, pp.~271--275.
+
 \bibitem{MOAR}
 {\sc Kanodia, V., Sabharwal, A., and Knightly, E.}
 \newblock {MOAR}: A multi-channel opportunistic auto-rate media access protocol
@@ -245,6 +266,11 @@ People and households.
 \newblock A topology control approach for utilizing multiple channels in
   multi-radio wireless mesh networks.
 \newblock {\em Computer Networks 54}, 2 (2010), 241--256.
+
+\bibitem{martello1998exact}
+{\sc Martello, S., and Vigo, D.}
+\newblock Exact solution of the two-dimensional finite bin packing problem.
+\newblock {\em Management science 44}, 3 (1998), 388--399.
 
 \bibitem{meguerdichian2001exposure}
 {\sc Meguerdichian, S., Koushanfar, F., Qu, G., and Potkonjak, M.}
