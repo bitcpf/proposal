@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: centervsdis.aux
+The style file: IEEEtran.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: centervsdis.bib
+-- IEEEtran.bst version 1.00 (2002/08/13) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in friis
+Warning--empty journal in cuileveraging
+Warning--empty year in cuileveraging
+
+Done.
+You've used 27 entries,
+            3917 wiz_defined-function locations,
+            927 strings with 11238 characters,
+and the built_in function-call counts, 18622 in all, are:
+= -- 1495
+> -- 415
+< -- 161
++ -- 229
+- -- 68
+* -- 888
+:= -- 2833
+add.period$ -- 58
+call.type$ -- 27
+change.case$ -- 25
+chr.to.int$ -- 363
+cite$ -- 30
+duplicate$ -- 1381
+empty$ -- 1518
+format.name$ -- 87
+if$ -- 4265
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 240
+newline$ -- 101
+num.names$ -- 24
+pop$ -- 561
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1421
+stack$ -- 0
+substring$ -- 872
+swap$ -- 1099
+text.length$ -- 40
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 0
+warning$ -- 3
+while$ -- 87
+width$ -- 29
+write$ -- 267
+(There were 3 warnings)

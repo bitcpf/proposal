@@ -1,0 +1,119 @@
+\subsection{Path Interference Induced on the Network}
+\label{subsec:PEN}
+% Talk about the network efficiency for multiband multihop mixed hop
+
+In WhiteMesh networks, multihop paths can be intermixed with WiFi and 
+white space bands.  To consider which combination is better, we consider
+which band choices reduce the number of hops along a path and the 
+aggregate level of interference that hop-by-hop path choices have
+on the network (i.e., Path Interference induced on the Network).
+
+%network, the definition of a link is a wireless channel from one node to another, a path is a combination of links connecting two nodes.
+%In ~\emph{Multiband Multiradio Network}, 
+%a multihop path could be mixed with higher frequency links have less interference range and lower frequency links have less hop count. This is a significant difference from previous ~\emph{Multi-Channel Multi-Radio} work. 
+%A key issue of path selection in multi-band network is to answer which link combination is better.
+
+%To discuss this problem, we pick up a multihop path from wireless mesh network and analyze its performance. In wireless mesh network, generally a path would have a bottleneck in the link closest to gateway.
+%When a mesh network was built with gateway placement, constructor should considered load-aware demand of mesh nodes and mesh node population. 
+%Under this assumption, all the nodes in the path equally share the time of the common links. 
+Due to random access, mesh nodes closer to the gateway generally achieve
+greater levels of throughput at sufficiently high offered loads. To combat such
+starvation effects, we treat each flow with equal priority in the network when
+assigning channels. In particular, all nodes along a particular path have equal 
+time shares for contending links (i.e., intra-path interference). At the beginning of 
+a particular channel assignment scheme, assume that $h$ mesh nodes are demanding
+traffic from each hop of an $h$-hop path to the gateway. If each link along the 
+path uses orthogonal channels, then each link could be active simultaneously. 
+Consider if each node along the path had traffic demand $T_d$, and the bottleneck 
+link along the path were closest to the gateway. Then, the total traffic along 
+the path $h \cdot T_d$ must be less than the bottleneck link's capacity $\gamma$. 
+In such a scenario, the $h$-hop mesh node would achieve the minimum served demand,
+which we call the network efficiency. In general, the active time per link for an
+$h$-hop mesh node can be represented by $1,\frac{h-1}{h},\frac{h-2}{h}\cdots \frac{1}{h}$.
+The summation of all active times for each mesh node along the path is considered the
+intra-path network cost.
+
+%The first link close to gateway in the $h$ hop path woule be active for the whole time unit, the sencond would be $\frac{h-1}{h}$, and so on.
+%Then the acitve time in a time unit of each link in the path can be represented as $1,\frac{h-1}{h},\frac{h-2}{h}\cdots \frac{1}{h}$. 
+%The summation of each link active time in the path is counted as total cost time of network.
+%\begin{equation}
+%\label{eq:intrapath}
+%\begin{split}
+%E_{Intra-Path}=\frac{Path\ Active\ Time}{Network\ Time}\\
+%E_{Intra-Path}=\frac{1}{2}+\frac{1}{2\cdot h}
+%\end{split}
+%\end{equation}
+%As hop count increase, the ~\emph{Intra-Path} will decrease till the lower bound $\frac{1}{2}$. With routing protocol which is out of this work, the delay increase too.
+%More interference comes from \emph{Inter-Path}, which represent interference with links out of the path. 
+Considering only intra-path interference, using lower carrier frequencies allows a
+reduction in hop count and increases the network efficiency of each mesh node along
+the $h$-hop path. However, a lower carrier frequency will induce greater interference
+to other paths to the gateway (i.e., inter-path interference). 
+Fig.~\ref{fig:interferencerange} depicts such an example where
+links in different bands are represented by circles for 450 MHz, rectangles for
+2.4 GHz, and triangles for the nodes which can choose between the two.
+Nodes $A$ and $C$ could be connected through two 2.4-GHz links or a single 450-MHz link.
+With 2.4 GHz, the interfering distance will be less than using 450 MHz. For example, only 
+link $D,E$ will suffer from interference, whereas $H,I$ would not. However, with 450 MHz,
+link $A,C$ would interfere with links $F,G$, $M,L$, and $K,J$. At each time unit, the number of
+links interfering with the active links along a path would be the inter-path network cost.
+%\begin{figure}
+%%\vspace{-0.0in}
+%\centering
+%\includegraphics[width=74mm]{figures/networkefficiency}
+%\vspace{-0.1in}
+%\caption{Path Efficiency Introduction Solid Wire notes 2.4GHz link, Dashed line notes 900MHz}
+%\label{fig:networkefficiency}
+%%\vspace{-0.0in}
+%\end{figure}
+
+%To combine intra-path and inter-path interference, we define each unit of time a link 
+%is counted as a unit of network time. 
+When an $h$-hop flow is transmitted $T_d$ to a destination node, it prevents 
+activity on a number of links in the same band via the protocol model. 
+The active time on a single link can be noted as 
+$\frac{T}{\gamma_h}$. 
+An interfering link from the conflict matrix $F$ counts as $I_h$ per unit time
+and contributes to the network cost as:
+$\frac{hT}{\gamma_1}\cdot I_1 + \frac{(h-1)T}{\gamma_2}\cdot I_2 \cdots \frac{T}{\gamma_h}\cdot I_h$.
+Then, the traffic transmitted in a unit of network cost for the $h$-hop node is:
+\begin{equation}
+\label{eq:originpen}
+E_{\eta}=\frac{T}{\sum_{i \in h}\frac{(h-i+1)\cdot T}{\gamma_i}\cdot I_i }
+\end{equation}
+%With the protocol model used, if links exist, then they have the same capacity $\gamma_1=\gamma_2 \cdots =\gamma_h=c$. 
+Using network efficiency, the equation simplifies to:
+\begin{equation}
+\label{eq:pen}
+E_{\eta}=\frac{\gamma}{\sum_{i \in h} (h-i+1)\cdot I_i}
+\end{equation}
+
+The meaning of the network efficiency is the amount of traffic that could be 
+offered on a path per unit time. With multiple channels from the same band,
+$I_i$ will not change due to the common communication range. With multiple
+bands, $I_i$ depends on the band choice.  
+%In multichannel scenario, the links will have a common communication range, the $I_i$ will not change according to bands, this parameter equals to the conflic graph in many multichannel works~\cite{jain2005impact}. 
+%Since we count only one channel not multiple possible links, the parameter also could be seen as an extention of a single link's load as defined in ~\cite{raniwala2004centralized}.
+This network efficiency jointly considers hop count and interference. We define
+the Path Interference induced on the Network (PIN) as the denominator of Eq.~\ref{eq:pen},
+which represents the sum of all interfered links in the network by a given path. We
+use PIN to formulate both of our heuristic algorithms as to how to assign channels
+across WiFi and white space bands.
+%Then we have to find an answer when a lower white space band is better to be used in a path.
+To determine when the lower carrier frequency will be better than two or more links at a
+higher carrier frequency, we consider the average interference $\bar{I}$ of a given path
+at the higher frequency.  The problem could be formulated as:
+\begin{equation}
+\label{eq:benefit}
+\frac{\gamma}{\frac{h(h-1)}{2}\cdot \bar{I}+I_x} \geq \frac{\gamma}{\frac{h(h+1)}{2}\cdot \bar{I}}
+\end{equation}
+
+Here, when $I_x \leq 2\cdot h\bar{I}$, a lower-frequency link could 
+be better than two higher-frequency links along the same path. $I_x$ is also a function of hop count 
+in Eq.~\ref{eq:pen}. When the hop count is lower, the threshold would be more strict since the
+interference would have a greater effect on gateway goodput.
+%It matches the intuition the hop order is small, it close to the gateway, it may interference more links so it needs a more strict constraint.
+%According to these analysis, to improve the performance of a channel assignment in multi-band multi-radio scenario has two ways. First is to reduce the hop count, second is to reduce the interference among links. And at the same time, we have to trade off between the hop count reduction and single link interference which does not happen in multi-channel multi-radio scenario.
+
+
+

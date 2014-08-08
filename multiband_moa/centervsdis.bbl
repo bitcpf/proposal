@@ -1,0 +1,149 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\def\UrlFont{\rmfamily}
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{carlson}
+C.~Inc., ``Fcc certifies carlson wireless technologies tv white space radio,''
+  \url{http://www.carlsonwireless.com/rural-connect-press-release.html}, 2014.
+
+\bibitem{balanis2012antenna}
+C.~A. Balanis, \emph{Antenna theory: analysis and design}.\hskip 1em plus 0.5em
+  minus 0.4em\relax John Wiley \& Sons, 2012.
+
+\bibitem{si2010overview}
+W.~Si, S.~Selvakennedy, and A.~Y. Zomaya, ``An overview of channel assignment
+  methods for multi-radio multi-channel wireless mesh networks,'' \emph{Journal
+  of Parallel and Distributed Computing}, vol.~70, no.~5, pp. 505--524, 2010.
+
+\bibitem{kodialam2005characterizing}
+M.~Kodialam and T.~Nandagopal, ``Characterizing the capacity region in
+  multi-radio multi-channel wireless mesh networks,'' in \emph{Proceedings of
+  the 11th annual international conference on Mobile computing and
+  networking}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2005, pp. 73--87.
+
+\bibitem{he2008optimizing}
+B.~He, B.~Xie, and D.~P. Agrawal, ``Optimizing deployment of internet gateway
+  in wireless mesh networks,'' \emph{Computer Communications}, vol.~31, no.~7,
+  pp. 1259--1275, 2008.
+
+\bibitem{marina2010topology}
+M.~K. Marina, S.~R. Das, and A.~P. Subramanian, ``A topology control approach
+  for utilizing multiple channels in multi-radio wireless mesh networks,''
+  \emph{Computer Networks}, vol.~54, no.~2, pp. 241--256, 2010.
+
+\bibitem{andersen1995propagation}
+J.~B. Andersen, T.~S. Rappaport, and S.~Yoshida, ``Propagation measurements and
+  models for wireless communications channels,'' \emph{{IEEE Communications
+  Magazine}}, vol.~33, no.~1, pp. 42--49, 1995.
+
+\bibitem{friis}
+H.~T. Friis, ``A note on a simple transmission formula,'' vol.~34, no.~5, pp.
+  254--256, May 1946.
+
+\bibitem{rappaport}
+T.~Rappaport, \emph{Wireless Communications, Principles \& Practice}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Prentice Hall, 1996.
+
+\bibitem{haykin2005cognitive}
+S.~Haykin, ``Cognitive radio: brain-empowered wireless communications,''
+  \emph{Selected Areas in Communications, IEEE Journal on}, vol.~23, no.~2, pp.
+  201--220, 2005.
+
+\bibitem{tang2005interference}
+J.~Tang, G.~Xue, and W.~Zhang, ``Interference-aware topology control and {QoS}
+  routing in multi-channel wireless mesh networks,'' in \emph{{ACM MobiHoc}},
+  2005.
+
+\bibitem{joshi2009efficient}
+G.~P. Joshi, S.~W. Kim, and B.-S. Kim, ``An efficient mac protocol for
+  improving the network throughput for cognitive radio networks,'' in
+  \emph{Next Generation Mobile Applications, Services and Technologies, 2009.
+  NGMAST'09. Third International Conference on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2009, pp. 271--275.
+
+\bibitem{raniwala2005architecture}
+A.~Raniwala and T.~Chiueh, ``Architecture and algorithms for an {IEEE}
+  802.11-based multi-channel wireless mesh network,'' in \emph{{IEEE INFOCOM}},
+  2005.
+
+\bibitem{robinson2010deploying}
+J.~Robinson, M.~Singh, R.~Swaminathan, and E.~Knightly, ``Deploying mesh nodes
+  under non-uniform propagation,'' in \emph{{IEEE INFOCOM}}, 2010.
+
+\bibitem{msdatabase}
+``Microsoft research white space database,''
+  \url{http://whitespaces.cloudapp.net/Default.aspx}, 2013.
+
+\bibitem{franklin2007node}
+A.~A. Franklin and C.~S.~R. Murthy, ``Node placement algorithm for deployment
+  of two-tier wireless mesh networks,'' in \emph{Global Telecommunications
+  Conference, 2007. GLOBECOM'07. IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2007, pp. 4823--4827.
+
+\bibitem{gupta2000capacity}
+P.~Gupta and P.~R. Kumar, ``The capacity of wireless networks,'' \emph{{IEEE
+  Trans. on Information Theory}}, vol.~46, no.~2, pp. 388--404, 2000.
+
+\bibitem{rosston2011household}
+G.~Rosston, S.~Savage, and D.~Waldman, ``Household demand for broadband
+  internet service,'' \emph{Communications of the ACM}, vol.~54, no.~2, pp.
+  29--31, 2011.
+
+\bibitem{martello1998exact}
+S.~Martello and D.~Vigo, ``Exact solution of the two-dimensional finite bin
+  packing problem,'' \emph{Management science}, vol.~44, no.~3, pp. 388--399,
+  1998.
+
+\bibitem{cuileveraging}
+P.~Cui, H.~Liu, J.~He, O.~Altintas, R.~Vuyyuru, D.~Rajan, and J.~Camp,
+  ``Leveraging diverse propagation and context for multi-modal vehicular
+  applications.''
+
+\bibitem{meikle2012global}
+R.~Meikle and J.~Camp, ``A global measurement study of context-based
+  propagation and user mobility,'' in \emph{Proceedings of the 4th ACM
+  international workshop on Hot topics in planet-scale measurement}.\hskip 1em
+  plus 0.5em minus 0.4em\relax ACM, 2012, pp. 21--26.
+
+\bibitem{googledatabase}
+``Google spectrum database,'' \url{http://goo.gl/NnIFXQ}, 2013.
+
+\bibitem{fccwhitespace}
+``Fcc white space,'' \url{http://www.fcc.gov/topic/white-space}, 2012.
+
+\bibitem{cui2013leveraging}
+P.~Cui, H.~Liu, J.~He, O.~Altintas, R.~Vuyyuru, D.~Rajan, and J.~Camp,
+  ``Leveraging diverse propagation and context for multi-modal vehicular
+  applications,'' in \emph{{IEEE WiVeC}}, 2013.
+
+\bibitem{bahl2009white}
+P.~Bahl, R.~Chandra, T.~Moscibroda, R.~Murty, and M.~Welsh, ``White space
+  networking with {WiFi} like connectivity,'' \emph{{ACM SIGCOMM}}, vol.~39,
+  no.~4, pp. 27--38, 2009.
+
+\bibitem{akyildiz2005wireless}
+I.~F. Akyildiz, X.~Wang, and W.~Wang, ``Wireless mesh networks: a survey,''
+  \emph{Computer networks}, vol.~47, no.~4, pp. 445--487, 2005.
+
+\bibitem{murty2012senseless}
+R.~Murty, R.~Chandra, T.~Moscibroda, and P.~Bahl, ``Senseless: A
+  database-driven white spaces network,'' \emph{Mobile Computing, IEEE
+  Transactions on}, vol.~11, no.~2, pp. 189--203, 2012.
+
+\end{thebibliography}

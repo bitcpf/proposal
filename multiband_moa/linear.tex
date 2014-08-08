@@ -1,0 +1,63 @@
+\noindent
+{\bf Sets:}
+\begin{tabular}{ll}
+$B$ & Set of Bands \\
+$T$ & Type of Access Point\\
+\end{tabular}
+
+\noindent
+{\bf Parameters:}\\
+\\
+%\vspace{0.1in}
+%\begin{tabular}{lll}
+\begin{tabular}{llp{3.4cm}}
+$G$ &  & Target Area\\
+$\gamma$ & & Traffic Demand Distribution\\
+$p$ & & Coverage Rate\\
+$S_t$ & $t \in T$ & Coverage Area of Type t AP\\
+$O_{b,t}$ & $b \in B, t \in T\ binary$ & Channel Occupied by Type t AP\\
+$N_b$ & $b \in B\ $ & Available channel of a band in Target Area\\
+$C_t$ & $t \in T$ & Channel capacity of Type t AP\\
+\end{tabular}
+
+
+\noindent
+%\vspace{2pt}
+{\bf Variables:}\\
+\\
+%\vspace{1pt}
+\begin{tabular}{llr}
+$a_t\ge0$ & $t \in T$ & Number of Type t AP\\ 
+\end{tabular}
+
+\noindent
+{\bf Objective:}
+\begin{align}
+& Min \sum_t a_t
+\end{align}
+
+\noindent
+%{\bf Constraints:}
+{\bf Coverage Constraint:}
+\begin{align}
+\label{opt:coverage}
+\sum_t a_t\cdot S_t \ge G*p
+\end{align}
+\noindent
+{\bf Capacity Constraint:} 
+\begin{align}
+\label{opt:capacity}
+\sum_t a_t\cdot C_t \ge G\cdot \gamma
+\end{align}
+\noindent
+{\bf Resource Constraint:} 
+\begin{align}
+\label{opt:resource}
+\sum_t a_t\cdot O_{b,t} \le N_b
+\end{align}
+
+{\bf Spatial Constraint:} 
+\begin{align}
+\label{opt:resource}
+a_t < \frac{G}{S_t}\cdot\frac{2}{3}\cdot N_b
+\end{align}
