@@ -50,7 +50,7 @@ all competing sources $x_j (j = 1, 2, 3, ...)$ other than the intended transmitt
 For 802.11-based transmissions, the busy time on band $i$ is defined as:
 \begin{equation}
 \label{eqn:80211activity}
-B^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
+A^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
 \end{equation}
 where $L_k^{x_j}$ and $R_k^{x_j}$ represent the packet length in bits and data
 rate at which that packet is transmitted, for external sources $x_j$;
@@ -78,11 +78,11 @@ and choose it as the final band decision. (ii.) For each band, we build
 a lookup table for throughput $T_{ideal}$ in an idealized channel given the $RSSI$ and obtain 
 the best band according to following:
 \begin{align}
-&\max_i T_{ideal}^i\times(1-B^i),
+&\max_i\ T_{ideal}^i\times(1-A^i),
 \label{eq:baseline2}
 \end{align}
 The throughput $T_{ideal}$ is measured with an Azimuth ACE-MX channel emulator~\cite{AzimuthACE}. 
-The details of the system setup and data collection are discussed in Section~\ref{sec:experiment design}. 
+The details of the system setup and data collection are discussed in Section~\ref{sec:vncexperimentdesign}. 
 
 Machine learning has been used as an important tool in wireless communications~\cite{haykin2005cognitive}. When a user enters an area, the machine
 learning algorithm can learn from the historical data and
@@ -111,7 +111,7 @@ the training data points which are similar to the testing data point. First,
 we search for the historical data which is closest to the testing data based on GPS location.
 If the number of found historical data points is less than a predefined threshold, 
  $\theta_{AArea}$, we increase the distance range (the actual threshold is discussed in 
-Section~\ref{sec:experiment design}). Then, based on the filtered historical data,
+Section~\ref{sec:vncexperimentdesign}). Then, based on the filtered historical data,
 we collect $\theta_{AArea}$ data points which are closest to $P_R^i$, where $\theta_{AArea}$ is the threshold of the number of collected data points. 
 A similar process is repeated based on $P_N^i$ and $v$, respectively.
 After deciding the final data set, we average the throughput of data points at each band.
@@ -197,4 +197,4 @@ on the historical data collected in each region. Then, the trained decision stru
 is integrated in our system for multiband adaptation in each region. The granularity 
 of regional division is one parameter that affects the training set as well as the 
 performance of the resulting decision tree. We 
-evaluate the granularity of these divisions in Section~\ref{sec:vncexperiment design}.
+evaluate the granularity of these divisions in Section~\ref{sec:vncexperimentdesign}.
