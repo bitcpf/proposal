@@ -12,31 +12,23 @@ multiband adaptation algorithms for vehicular channels. For comparison, we also 
 %The problem we are going to resolve is to find a band has the best throughput in multiple available options as:
 
 Consider a system with~$n$ frequency bands, represented by an index set~$\{1,2, \ldots, n\}$. 
-The objective is to select the optimal band,~$b_{best}$, to transmit at each time instant that maximizes a desired objective function such as throughput. The throughput~$r_i$ on band~$i$ depends on several factors such as received signal power~$P_R^i$, noise power~$P_N^i$, the channel busy time~$B^i$, the velocity of the transmitter,~$v_{tx}$,
+The objective is to select the optimal band,~$b_{best}$, to transmit at each time instant that maximizes a desired objective function such as throughput. The throughput~$r_i$ on band~$i$ depends on several factors such as received signal power~$P_R^i$, noise power~$P_N^i$, the channel activity level~$A^i$, the velocity of the transmitter,~$v_{tx}$,
  the velocity of the receiver,~$v_{rx}$, 
  and location information which depends on each algorithm and will be specified in the algorithm section. The aforementioned set of all information used to make multiband decisions composes the users context. 
  %Add Context
 % Context is the information that can represent the characters of a wireless user.For mobile wireless users, velocity, RSSI, interference and location could be counted as context information.
-This relationship is represented in general as~$r_i = f(P_R^i, P_N^i, B^i, v_{tx}, v_{rx}, $context information per algorithm$)$. The objective can be stated as:
+This relationship is represented in general as~$r_i = f(P_R^i, P_N^i, A^i, v_{tx}, v_{rx}, $context information per algorithm$)$. The objective can be stated as:
 \begin{equation}
 b_{best}= \arg \max_i r_i 
 \end{equation}
-%\begin{align}
-%\label{eqn:estimation}
-%f: (v_{tx}, v_{rx},  P_R^1,..., P_R^n, B^1, ..., B^n,P_N^1,..., P_N^n,) \rightarrow b_{best}
-% \end{align}
-%where $v_{tx}$ and $v_{rx}$ are the velocities of the transmitter and the receiver, 
-%$P_R^i$ is the received power, $P_N^i$ is the non-802.11 interfering signal level and
- %Why we use context information 
-%$B^i$ is the \emph{busy time}. 
-The framework differentiates interference from other nodes using the same technology (via the busy time $B^i$) and other technologies (via the noise level~$P_N^i$). For instance, an 802.11 node can decode the packets of other 802.11 nodes but can only sense
+The framework differentiates interference from other nodes using the same technology (via the Activity level $A^i$) and other technologies (via the noise level~$P_N^i$). For instance, an 802.11 node can decode the packets of other 802.11 nodes but can only sense
 instantaneous noise levels from ZigBee/Bluetooth nodes. 
 Decoding the packets can provide increased knowledge such as 
 data rate and packet size to determine the duration of the channel use.
 %To help make decisions for multiband adaptation in a similar context,
 We can exploit the long-term behavior by using historical performance
 data for the collected context information
-({\it e.g.}, $v_{tx}$, $v_{rx}$, $B^i$, $P_N^i$, $P_R^i$)~\cite{meikle2012global}. 
+({\it e.g.}, $v_{tx}$, $v_{rx}$, $A^i$, $P_N^i$, $P_R^i$)~\cite{meikle2012global}. 
 %can be used by people tending to have repeatable patterns
 %~\cite{meikle2012global} and we could improve the performance with each trip 
 %to the region if we could passively observe context along this repeatable 
@@ -44,10 +36,10 @@ data for the collected context information
 %later. 
 
 
-To represent the utilization level of the channel, we define \emph{busy time}, $B$,
+To represent the utilization level of the channel, we define \emph{activity level}, $A$,
 as the percentage of time when the channel is occupied by 
 all competing sources $x_j (j = 1, 2, 3, ...)$ other than the intended transmitter $y$. 
-For 802.11-based transmissions, the busy time on band $i$ is defined as:
+For 802.11-based transmissions, the activity level on band $i$ is defined as:
 \begin{equation}
 \label{eqn:80211activity}
 A^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
@@ -57,19 +49,11 @@ rate at which that packet is transmitted, for external sources $x_j$;
 $S$ and $\sigma$ are the number of idle slots and slot duration, respectively. 
 When considering the activity level of non-802.11 users 
 ({\it e.g.}, the bands currently licensed to TV),
-%and other non-802.11 devices), 
-%whether the signal level from these
-%competing sources reaches a level to disrupt communication at the receiver
-%would define a similar notion of busy time. However, since this depends
-%on the environment, hardware, coding, and modulation level, 
 we use the received signal level from non-802.11 interfering sources $P_N^i$ 
 on band $i$ directly as an input to our algorithms. 
 
 \section{Multiband Adaptation Algorithms}
 \label{subsec:algorithms}
-%2 baseline methods: 
-%1. band selection based on identifying the the most common class, 
-%2. SNR-based band selection
 
 In order to evaluate the proposed multiband adaptation algorithms, 
 we construct two baseline methods: (i.) We search for the
@@ -98,7 +82,7 @@ based on searching for the closest training data points in the feature space and
 modified versions have been applied successfully for classification~\cite{zhang2006svm}.
 In the {\it Location-based Look-up Algorithm}, we search for the closest neighbors of 
 a testing point by using each parameter one by one in the input set. 
-The {\it Location-based Look-up Algorithm} additionally involves geographic information for band selection other than received signal power~$P_R^i$, noise power~$P_N^i$, the activity/occupancy level~$B^i$, the velocity of the transmitter,~$v_{tx}$.
+The {\it Location-based Look-up Algorithm} additionally involves geographic information for band selection other than received signal power~$P_R^i$, noise power~$P_N^i$, the activity/occupancy level~$A^i$, the velocity of the transmitter,~$v_{tx}$.
 The 
 performance of the selected training data points is averaged to generate an estimate of the performance at each band. Then
 the band with the highest throughput performance is selected as $b_{best}$.
@@ -106,7 +90,7 @@ the band with the highest throughput performance is selected as $b_{best}$.
 
 For the {\it Location-based Look-up Algorithm}, 
 context information involves the location $g$ (GPS latitude and longitude), $v$, $P_R^i$, $P_N^i$ 
-and $B^i$. To make a band prediction, we have four look-up blocks to reduce
+and $A^i$. To make a band prediction, we have four look-up blocks to reduce
 the training data points which are similar to the testing data point. First,
 we search for the historical data which is closest to the testing data based on GPS location.
 If the number of found historical data points is less than a predefined threshold, 
@@ -116,8 +100,6 @@ we collect $\theta_{AArea}$ data points which are closest to $P_R^i$, where $\th
 A similar process is repeated based on $P_N^i$ and $v$, respectively.
 After deciding the final data set, we average the throughput of data points at each band.
 This algorithm's key steps are shown in Algorithm~\ref{algorithms: Location}.
-%At last, the average throughput of the most similar data will be adjust of the 802.11 
-%\emph{busy time} and tell the best band.
 
 
 	  \begin{algorithm}
@@ -160,7 +142,7 @@ $b_{best}$: Optimal transmission band
 \ENDWHILE \\
 
 \STATE $T_{a,i}=avr(Data_{Velocity,i})$;
-\STATE  $T_{e,i}=T_a^i\times(1-B^i)$;
+\STATE  $T_{e,i}=T_a^i\times(1-A^i)$;
 \ENDFOR \\  
 \STATE $b_{best} = \max_i\{T_e^1,\dots,T_e^i,\dots,T_e^n\}$;\\
 \end{algorithmic}
@@ -173,7 +155,7 @@ algorithm due to their low complexity and stable performance~\cite{banfield2007}
 A decision tree can model the relationship in the training data between the context 
 information and the optimal band as a set of tree-like deduction structures. Before 
 implementing the training process, we prepare a training set including a group of 
-training data points of $\{v_{tx}, v_{rx}, P_R^1, ..., P_R^n,  B^1, ..., B^n, P_N^1, 
+training data points of $\{v_{tx}, v_{rx}, P_R^1, ..., P_R^n,  A^1, ..., A^n, P_N^1, 
 ..., P_N^n, b_{best}\}$ based on the collected measurements. We obtain $b_{best}$ by comparing
 the throughput performance of all available bands and selecting the band with the highest 
 throughput. We choose the C4.5 algorithm to generate our decision tree~\cite{hall2009weka}, a widely-used algorithm based on the 
