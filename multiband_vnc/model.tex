@@ -102,49 +102,56 @@ After deciding the final data set, we average the throughput of data points at e
 This algorithm's key steps are shown in Algorithm~\ref{algorithms: Location}.
 
 
-	  \begin{algorithm}
-          \small
-	  \caption{Location-based Look-up Algorithm}
-	  \label{algorithms: Location}
-	  \begin{algorithmic}[1]
-	  \REQUIRE  ~~\\
-		  $g$: Location information of multiband node\\
-		 $ \theta_{Area}$: Threshold of a location\\
-		 $\theta_{RSSI}$: Threshold of RSSI\\
-		 $\theta_{Velocity}$: Threshold of velocity\\
-		 $\theta_{A Area}$: Threshold of data amount for a location\\
-		 $\theta_{A RSSI}$: Threshold of data amount for RSSI\\
-		 $\theta_{A Non 802.11 SI}$: Threshold of data amount for non-802.11 interference\\
-		 $\theta_{A Velocity}$: Threshold of data amount for velocity\\
-		 $D^i \in \{D^1,D^2,\dots,D^n\}$: Historical look-up data
-\ENSURE ~~\\    
-$b_{best}$: Optimal transmission band
+\begin{algorithm}
+\caption{Location-based Look-up Algorithm}
+\label{algorithms: Location}
+\begin{algorithmic}[1]
+\REQUIRE  ~~\\
+	 $g$: Location information of multiband node\\
+	 $\theta_{Area}$: Threshold of a location\\
+	 $\theta_{RSSI}$: Threshold of RSSI\\
+	 $\theta_{Velocity}$: Threshold of velocity\\
+	 $\theta_{set} = \{\theta_{A Area},\theta_{A RSSI},\theta_{A Non 802.11 SI},\theta_{A Velocity}\}$: Threshold of data amount for \{a location, RSSI, non-802.11 interference, velocity\}\\
+%	 $\theta_{A Area}$: Threshold of data amount for a location\\
+%	 $\theta_{A RSSI}$: Threshold of data amount for RSSI\\
+%	 $\theta_{A Non 802.11 SI}$: Threshold of data amount for non-802.11 interference\\
+%	 $\theta_{A Velocity}$: Threshold of data amount for velocity\\
+	 $D^i \in \{D^1,D^2,\dots,D^n\}$: Historical look-up data
 \FOR    {$i<=n$}
 \STATE Initialize \emph{$Data_{Location}, Data_{RSSI}, Data_{Velocity}$} to zero matrix;
-\WHILE {$Amount(Data_{Location,i})<\theta_{A Area}$}
+
+
+\FOR {$j<=m$}
+\STATE $Amount = Amount_{\{Data_{Location,i},Data_{RSSI,i},Data_{P_N,i},Data_{Velocity,i}\}}^j$;
+\STATE $\theta = \theta_{set}^j$;
+\WHILE {$Amount<\theta$}
 \STATE $Data_{Location,i} \leftarrow f_{Lookup}(D^i,g,\theta_{Area})$: Find data in $D^i$ whose distance less than $\theta_{Area}$;
 \STATE $\theta_{Area}=\theta_{Area} \times 1.1$;
 \ENDWHILE
 
-\WHILE {$Amount(Data_{RSSI,i})<\theta_{A RSSI}$}
-\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_R^i,\theta_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_R^i$ in range $\theta_{RSSI}$;
-\STATE $\theta_{RSSI}=\theta_{RSSI} \times 1.1$;
-\ENDWHILE
+%\WHILE {$Amount(Data_{RSSI,i})<\theta_{A RSSI}$}
+%\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_R^i,\theta_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_R^i$ in range $\theta_{RSSI}$;
+%\STATE $\theta_{RSSI}=\theta_{RSSI} \times 1.1$;
+%\ENDWHILE
+%
+%\WHILE {$Amount(Data_{P_N,i})<\theta_{A Non 802.11 SI}$}
+%\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_N^i,\theta_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_N^i$ in range $\theta_{RSSI}$;
+%\STATE $\theta_{A Non 802.11 SI}=\theta_{A Non 802.11 SI} \times 1.1$;
+%\ENDWHILE
 
-\WHILE {$Amount(Data_{P_N,i})<\theta_{A Non 802.11 SI}$}
-\STATE $Data_{RSSI,i} \leftarrow f_{Look-up}(D_{Location,i},P_N^i,\theta_{RSSI})$: Find data in $D_{Location}$ the RSSI similar to $P_N^i$ in range $\theta_{RSSI}$;
-\STATE $\theta_{A Non 802.11 SI}=\theta_{A Non 802.11 SI} \times 1.1$;
-\ENDWHILE
-
-\WHILE {$Amount(Data_{Velocity,i})<\theta_{A Velocity}$}
-\STATE $Data_{Velocity,i} \leftarrow f_{Lookup}(D_{RSSI,i},v,\theta_{Velocity})$: Find data in $D_{RSSI}$ the RSSI similar to $v$ in range $\theta_{RSSI}$;
-\STATE $\theta_{Velocity}=\theta_{Velocity} \times 1.1$;
-\ENDWHILE \\
+%\WHILE {$Amount(Data_{Velocity,i})<\theta_{A Velocity}$}
+%\STATE $Data_{Velocity,i} \leftarrow f_{Lookup}(D_{RSSI,i},v,\theta_{Velocity})$: Find data in $D_{RSSI}$ the RSSI similar to $v$ in range $\theta_{RSSI}$;
+%\STATE $\theta_{Velocity}=\theta_{Velocity} \times 1.1$;
+%\ENDWHILE \\
 
 \STATE $T_{a,i}=avr(Data_{Velocity,i})$;
 \STATE  $T_{e,i}=T_a^i\times(1-A^i)$;
+% ENDFOR for amount and theta
+\ENDFOR \\  
 \ENDFOR \\  
 \STATE $b_{best} = \max_i\{T_e^1,\dots,T_e^i,\dots,T_e^n\}$;\\
+\ENSURE ~~\\    
+$b_{best}$: Optimal transmission band
 \end{algorithmic}
 \end{algorithm}
 
