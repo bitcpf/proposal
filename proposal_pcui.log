@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  8 AUG 2014 10:26
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  9 AUG 2014 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,16 +302,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--112
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7] [8]) (./chap_background.tex [9]
+] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+
+LaTeX Warning: Reference `ch:moa' on page 11 undefined on input line 348.
+
+) (./chap_background.tex [11]
 Chapter 2.
-[10
+[12
 
 ]
 File: figures/gw2358.eps Graphic file (type eps)
- <figures/gw2358.eps> [11] [12]
+ <figures/gw2358.eps> [13] [14]
 File: figures/fsh8.eps Graphic file (type eps)
- <figures/fsh8.eps> [13]) (./chap_vnc.tex
-[14]
+ <figures/fsh8.eps> [15]) (./chap_vnc.tex
+[16]
 Chapter 3.
 (./multiband_vnc/model.tex
 Overfull \hbox (5.20886pt too wide) in paragraph at lines 14--21
@@ -321,24 +325,24 @@ n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/
 n/12 g$\OT1/cmr/m/n/12 .
  []
 
-[15
+[17
 
-] [16] [17]
+] [18] [19]
 
 LaTeX Warning: Float too large for page by 222.80685pt on input line 167.
 
-) (./multiband_vnc/experiment_design.tex [18] [19]
+) (./multiband_vnc/experiment_design.tex [20] [21]
 File: figures/emulator2.eps Graphic file (type eps)
  <figures/emulator2.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20]
+[22]
 File: figures/infield.eps Graphic file (type eps)
  <figures/infield.eps>
 File: figures/sa_process.eps Graphic file (type eps)
- <figures/sa_process.eps> [21])
-(./multiband_vnc/experiment.tex [22]
+ <figures/sa_process.eps> [23])
+(./multiband_vnc/experiment.tex [24]
 File: figures/performance_accuracy.eps Graphic file (type eps)
  <figures/performance_accuracy.eps>
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
@@ -348,7 +352,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [23]
+ [25]
 Overfull \hbox (2.74246pt too wide) in paragraph at lines 66--70
 []\OT1/cmr/m/n/12 The sec-ond base-line al-go-rithm, \OT1/cmr/m/it/12 SNR-based
  Through-put Look-up\OT1/cmr/m/n/12 , main-tains 39.2%
@@ -361,43 +365,43 @@ Overfull \hbox (10.09898pt too wide) in paragraph at lines 99--105
 \OT1/cmr/m/n/12 has two dif-fer-ent modes of through-
  []
 
-[24]
+[26]
 File: figures/region_map.eps Graphic file (type eps)
  <figures/region_map.eps>
 File: figures/mvsl.eps Graphic file (type eps)
- <figures/mvsl.eps> [25])
-(./multiband_vnc/conclusion.tex) [26]) (./chap_winmee.tex [27]
+ <figures/mvsl.eps> [27])
+(./multiband_vnc/conclusion.tex) [28]) (./chap_winmee.tex [29]
 Chapter 4.
-(./multiband_winmee/problemformulation.tex [28
+(./multiband_winmee/problemformulation.tex [30
 
-] [29] [30] [31] [32])
-(./multiband_winmee/experiment.tex [33]
+] [31] [32] [33] [34])
+(./multiband_winmee/experiment.tex [35]
 File: figures/equipment.eps Graphic file (type eps)
- <figures/equipment.eps> [34] [35]
+ <figures/equipment.eps> [36] [37]
 File: figures/drivemap.eps Graphic file (type eps)
 
 <figures/drivemap.eps>
 File: figures/drivetest.eps Graphic file (type eps)
- <figures/drivetest.eps> [36]
+ <figures/drivetest.eps> [38]
 Overfull \hbox (190.629pt too wide) in paragraph at lines 156--172
  [][] 
  []
 
-[37]
+[39]
 File: figures/redensity.eps Graphic file (type eps)
- <figures/redensity.eps> [38]
+ <figures/redensity.eps> [40]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39] [40]) (./multiband_winmee/conclusion.tex [41])) (./chap_wm.tex [42]
+[41] [42]) (./multiband_winmee/conclusion.tex [43])) (./chap_wm.tex [44]
 Chapter 5.
-(./multiband_wm/problemformulation.tex [43
+(./multiband_wm/problemformulation.tex [45
 
-] [44]
+] [46]
 File: figures/interferencerange2.eps Graphic file (type eps)
 
-<figures/interferencerange2.eps> [45] [46] [47]) (./multiband_wm/linearopt.tex
-[48]
+<figures/interferencerange2.eps> [47] [48] [49]) (./multiband_wm/linearopt.tex
+[50]
 Underfull \hbox (badness 4859) in paragraph at lines 31--35
 []\OT1/cmr/m/n/12 Protocol In-ter-fer-
  []
@@ -432,18 +436,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--67
 
  []
 
-[49] [50]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [51] [52] [53]) [54]
+[51] [52]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [53] [54] [55]) [56]
 Overfull \vbox (4.5298pt too high) has occurred while \output is active []
 
 
-[55]
+[57]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 84.
+(amsmath)                 on input line 85.
 
-[56]) (./multiband_wm/experiment.tex [57] [58] [59]
+[58]) (./multiband_wm/experiment.tex [59] [60] [61]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 139--139
@@ -461,12 +465,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--142
 []\OT1/cmr/m/n/10 (b) Vary-ing Load, 49-
  []
 
-[60] [61]
+[62] [63]
 Overfull \hbox (64.76991pt too wide) in paragraph at lines 216--236
  [][] 
  []
 
-[62] [63] [64]
+[64] [65] [66]
 File: figures/actspac3d.eps Graphic file (type eps)
  <figures/actspac3d.eps>
 File: figures/act_spacing.eps Graphic file (type eps)
@@ -475,11 +479,11 @@ Underfull \hbox (badness 2689) in paragraph at lines 335--335
 []\OT1/cmr/m/n/10 (b) Traf-fic ar-rived Gate-
  []
 
-[65]) (./multiband_wm/conclusion.tex)) (./chap_moa.tex [66]
+[67]) (./multiband_wm/conclusion.tex)) (./chap_moa.tex [68]
 Chapter 6.
-(./multiband_moa/problemformulation.tex [67
+(./multiband_moa/problemformulation.tex [69
 
-] [68] [69] [70] [71]
+] [70] [71] [72] [73]
 File: figures/lowtraffic.eps Graphic file (type eps)
 
 <figures/lowtraffic.eps>
@@ -487,7 +491,7 @@ File: figures/mediumtraffic.eps Graphic file (type eps)
  <figures/mediumtraffic.eps>
 File: figures/hightraffic.eps Graphic file (type eps)
  <figures/hightraffic.eps>
-[72] (./multiband_moa/linear.tex
+[74] (./multiband_moa/linear.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 []\OT1/cmr/m/n/12 Traffic De-mand
  []
@@ -512,32 +516,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--32
 
  []
 
-[73]) [74]) (./multiband_moa/experiment.tex [75] [76] [77]
+[75]) [76]) (./multiband_moa/experiment.tex [77] [78] [79]
 File: figures/enoughchannels.eps Graphic file (type eps)
 
-<figures/enoughchannels.eps> [78]
+<figures/enoughchannels.eps> [80]
 File: figures/onewhitechannel.eps Graphic file (type eps)
- <figures/onewhitechannel.eps> [79]
+ <figures/onewhitechannel.eps> [81]
 File: figures/percentage.eps Graphic file (type eps)
 
 <figures/percentage.eps>) (./multiband_moa/conclusion.tex)) (./chap_related.tex
-[80] [81] [82] [83]) (./chap_futurework.tex [84]
+[82] [83] [84] [85]) (./chap_futurework.tex [86]
 Chapter 7.
-[85
+[87
 
-] [86] [87]
+] [88] [89]
 Overfull \hbox (13.42943pt too wide) in paragraph at lines 193--197
 \OT1/cmr/m/n/12 ven-dors, the num-ber of ac-cess points would be the pri-mary c
 on-cern $\OML/cmm/m/it/12 Min[]$\OT1/cmr/m/n/12 .
  []
 
-) (./chap_conclusion.tex [88]
+) (./chap_conclusion.tex [90]
 Chapter 8.
-) (./proposal_pcui.bbl [89
+) (./proposal_pcui.bbl [91
 
 ]
 REFERENCES.
-[90
+[92
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--99
@@ -551,24 +555,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
 ets / 2008 / 05 /
  []
 
-[91] [92] [93] [94] [95])
+[93] [94] [95] [96] [97])
 \openout7 = `proposal_pcui.idx'.
 
 
 Total number of figures: 22
 Total number of tables: 4
-[96] (./proposal_pcui.aux)
+[98] (./proposal_pcui.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2562 strings out of 493322
- 30979 string characters out of 6140449
+ 2563 strings out of 493322
+ 30987 string characters out of 6140449
  101256 words of memory out of 5000000
- 5888 multiletter control sequences out of 15000+600000
+ 5889 multiletter control sequences out of 15000+600000
  11970 words of font info for 43 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 27i,9n,43p,414b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,43p,414b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (110 pages, 284816 bytes).
+Output written on proposal_pcui.dvi (112 pages, 290936 bytes).

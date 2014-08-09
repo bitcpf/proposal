@@ -4,53 +4,53 @@
 \contentsline {chapter}{\numberline {\hfill 1.\hbox {\hskip 0.8em}\ignorespaces }Introduction}{1}
 \contentsline {section}{\numberline {1.1.}Challenges}{3}
 \contentsline {section}{\numberline {1.2.}Contributions and Futurework}{6}
-\contentsline {section}{\numberline {1.3.}Proposal Overview}{9}
-\contentsline {chapter}{\numberline {\hfill 2.\hbox {\hskip 0.8em}\ignorespaces }Background}{10}
-\contentsline {section}{\numberline {2.1.}White Space Bands}{10}
-\contentsline {section}{\numberline {2.2.}Gateworks Platform}{11}
-\contentsline {section}{\numberline {2.3.}Rohde \& Schwarz FSH8 Spectrum Analyzer}{11}
-\contentsline {section}{\numberline {2.4.}Mesh Network Deployment}{13}
-\contentsline {chapter}{\numberline {\hfill 3.\hbox {\hskip 0.8em}\ignorespaces }Vehicular Link Spectrum Adapatation}{15}
-\contentsline {section}{\numberline {3.1.}Link Adaptation Problem Formulation}{15}
-\contentsline {section}{\numberline {3.2.}Multiband Adaptation Algorithms}{16}
-\contentsline {section}{\numberline {3.3.}Experiments for Multiband Algorithms}{20}
-\contentsline {subsection}{\numberline {3.3.1.}In-lab Experiments for Radio Characterization}{20}
-\contentsline {subsection}{\numberline {3.3.2.}Experimental Design for In-field Data Collection}{20}
-\contentsline {section}{\numberline {3.4.}Performance Analysis of Algorithms}{22}
-\contentsline {section}{\numberline {3.5.}Summary}{26}
-\contentsline {chapter}{\numberline {\hfill 4.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Access Tier Network}{28}
-\contentsline {section}{\numberline {4.1.}White Space Opportunity and Challenge}{28}
-\contentsline {section}{\numberline {4.2.}Model and Problem Formulation}{30}
-\contentsline {section}{\numberline {4.3.}Experiment and Analysis}{33}
-\contentsline {subsection}{\numberline {4.3.1.}Experiment Design}{33}
-\contentsline {subsection}{\numberline {4.3.2.}Results and Analysis}{35}
-\contentsline {section}{\numberline {4.4.}Summary}{41}
-\contentsline {chapter}{\numberline {\hfill 5.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Backhual Tier Network}{43}
-\contentsline {section}{\numberline {5.1.}Problem Formulation}{43}
-\contentsline {subsection}{\numberline {5.1.1.}WhiteMesh Network Architecture}{43}
-\contentsline {subsection}{\numberline {5.1.2.}Model and Problem Formulation}{46}
-\contentsline {subsection}{\numberline {5.1.3.}Mixed Integer Linear Programming Formulation}{48}
-\contentsline {section}{\numberline {5.2.}Path Analysis with Diverse Propagation}{51}
-\contentsline {subsection}{\numberline {5.2.1.}Path Interference Induced on the Network}{52}
-\contentsline {subsection}{\numberline {5.2.2.}Band-based Path Selection (BPS) Algorithm}{54}
-\contentsline {section}{\numberline {5.3.}Evaluation of WhiteMesh Channel Assignment}{57}
-\contentsline {subsection}{\numberline {5.3.1.}Experimental Evaluation Setup}{57}
-\contentsline {subsection}{\numberline {5.3.2.}Experimental Analysis of WhiteMesh Backhaul}{59}
-\contentsline {subsubsection}{\numberline {5.3.2.1.}Network Size \& Bands Effect}{59}
-\contentsline {subsubsection}{\numberline {5.3.2.2.}Effect of Channel Occupancy}{64}
-\contentsline {section}{\numberline {5.4.}Summary}{66}
-\contentsline {chapter}{\numberline {\hfill 6.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Backhual Tier Network}{67}
-\contentsline {section}{\numberline {6.1.}Challenges and Problem Formulation}{67}
-\contentsline {subsection}{\numberline {6.1.1.}White Space Opportunity and Challenge}{67}
-\contentsline {subsection}{\numberline {6.1.2.}Model and Problem Formulation}{69}
-\contentsline {section}{\numberline {6.2.}Numerical Evaluation and Analysis}{75}
-\contentsline {subsection}{\numberline {6.2.1.}Experimental Setup}{75}
-\contentsline {subsection}{\numberline {6.2.2.}Results and Analysis}{77}
-\contentsline {section}{\numberline {6.3.}Summary}{80}
-\contentsline {section}{\numberline {6.4.}Related Work}{80}
-\contentsline {subsection}{\numberline {6.4.1.}White Space Links}{81}
-\contentsline {subsection}{\numberline {6.4.2.}White Space Networks}{81}
-\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{85}
-\contentsline {subsection}{\numberline {7.0.3.}Model and Problem Formulation}{85}
-\contentsline {chapter}{\numberline {\hfill 8.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{89}
-\contentsline {chapter}{REFERENCES}{90}
+\contentsline {section}{\numberline {1.3.}Proposal Overview}{11}
+\contentsline {chapter}{\numberline {\hfill 2.\hbox {\hskip 0.8em}\ignorespaces }Background}{12}
+\contentsline {section}{\numberline {2.1.}White Space Bands}{12}
+\contentsline {section}{\numberline {2.2.}Gateworks Platform}{13}
+\contentsline {section}{\numberline {2.3.}Rohde \& Schwarz FSH8 Spectrum Analyzer}{13}
+\contentsline {section}{\numberline {2.4.}Mesh Network Deployment}{15}
+\contentsline {chapter}{\numberline {\hfill 3.\hbox {\hskip 0.8em}\ignorespaces }Vehicular Link Spectrum Adapatation}{17}
+\contentsline {section}{\numberline {3.1.}Link Adaptation Problem Formulation}{17}
+\contentsline {section}{\numberline {3.2.}Multiband Adaptation Algorithms}{18}
+\contentsline {section}{\numberline {3.3.}Experiments for Multiband Algorithms}{22}
+\contentsline {subsection}{\numberline {3.3.1.}In-lab Experiments for Radio Characterization}{22}
+\contentsline {subsection}{\numberline {3.3.2.}Experimental Design for In-field Data Collection}{22}
+\contentsline {section}{\numberline {3.4.}Performance Analysis of Algorithms}{24}
+\contentsline {section}{\numberline {3.5.}Summary}{28}
+\contentsline {chapter}{\numberline {\hfill 4.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Access Tier Network}{30}
+\contentsline {section}{\numberline {4.1.}White Space Opportunity and Challenge}{30}
+\contentsline {section}{\numberline {4.2.}Model and Problem Formulation}{32}
+\contentsline {section}{\numberline {4.3.}Experiment and Analysis}{35}
+\contentsline {subsection}{\numberline {4.3.1.}Experiment Design}{35}
+\contentsline {subsection}{\numberline {4.3.2.}Results and Analysis}{37}
+\contentsline {section}{\numberline {4.4.}Summary}{43}
+\contentsline {chapter}{\numberline {\hfill 5.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Backhual Tier Network}{45}
+\contentsline {section}{\numberline {5.1.}Problem Formulation}{45}
+\contentsline {subsection}{\numberline {5.1.1.}WhiteMesh Network Architecture}{45}
+\contentsline {subsection}{\numberline {5.1.2.}Model and Problem Formulation}{48}
+\contentsline {subsection}{\numberline {5.1.3.}Mixed Integer Linear Programming Formulation}{50}
+\contentsline {section}{\numberline {5.2.}Path Analysis with Diverse Propagation}{53}
+\contentsline {subsection}{\numberline {5.2.1.}Path Interference Induced on the Network}{54}
+\contentsline {subsection}{\numberline {5.2.2.}Band-based Path Selection (BPS) Algorithm}{56}
+\contentsline {section}{\numberline {5.3.}Evaluation of WhiteMesh Channel Assignment}{59}
+\contentsline {subsection}{\numberline {5.3.1.}Experimental Evaluation Setup}{59}
+\contentsline {subsection}{\numberline {5.3.2.}Experimental Analysis of WhiteMesh Backhaul}{61}
+\contentsline {subsubsection}{\numberline {5.3.2.1.}Network Size \& Bands Effect}{61}
+\contentsline {subsubsection}{\numberline {5.3.2.2.}Effect of Channel Occupancy}{66}
+\contentsline {section}{\numberline {5.4.}Summary}{68}
+\contentsline {chapter}{\numberline {\hfill 6.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adapatation in Backhual Tier Network}{69}
+\contentsline {section}{\numberline {6.1.}Challenges and Problem Formulation}{69}
+\contentsline {subsection}{\numberline {6.1.1.}White Space Opportunity and Challenge}{69}
+\contentsline {subsection}{\numberline {6.1.2.}Model and Problem Formulation}{71}
+\contentsline {section}{\numberline {6.2.}Numerical Evaluation and Analysis}{77}
+\contentsline {subsection}{\numberline {6.2.1.}Experimental Setup}{77}
+\contentsline {subsection}{\numberline {6.2.2.}Results and Analysis}{79}
+\contentsline {section}{\numberline {6.3.}Summary}{82}
+\contentsline {section}{\numberline {6.4.}Related Work}{82}
+\contentsline {subsection}{\numberline {6.4.1.}White Space Links}{83}
+\contentsline {subsection}{\numberline {6.4.2.}White Space Networks}{83}
+\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{87}
+\contentsline {subsection}{\numberline {7.0.3.}Model and Problem Formulation}{87}
+\contentsline {chapter}{\numberline {\hfill 8.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{91}
+\contentsline {chapter}{REFERENCES}{92}
