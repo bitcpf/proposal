@@ -1,4 +1,5 @@
-\chapter{Background} \label{ch:background}
+\chapter{Background} 
+\label{ch:background}
 
 In this chapter, we describe the background of our research, 
 including the basic technology related to this work and the 
@@ -31,11 +32,32 @@ airwaves to transmit signals for data traffic. Such technology
 is predicted to improve the availability of broadband Internet 
 service, especially in rural areas.
 
-White space band not only provide more bandwidth for wireless 
-communication, but also bring the diversity in transmission/interference 
-range. Our algorithms and frameworks try to elploit white space bands 
-advantages of link communication and network deployment through spctrum
-agility with WiFi bands.
+White space bands and ISM WiFi bands have great variation of 
+propagation characteristics. Wireless propagation refers to 
+the signal loss characteristics when wireless signals are 
+transmitted through the wireless medium. The strength of the 
+received signal depends on both the line-of-sight path (or lack 
+thereof) and multiple other paths that result from reflection, 
+diffraction, and scattering from obstacles~\cite{andersen1995propagation}. 
+The widely-used Friis equation characterizes the received signal 
+power $P_r$ in terms of transmit power $P_t$, transmitter gain 
+$G_t$, receiver gain $G_r$, wavelength $\lambda$ of the carrier 
+frequency, distance $R$ from transmitter to receiver, and path 
+loss exponent $n$ according to~\cite{friis}:
+
+\begin{equation}
+\label{eq:friis}
+P_r=P_t+G_t+G_r+10n \log_{10}\left( \frac{\lambda}{4\pi R}\right)
+\end{equation}
+Here, $n$ varies according to the aforementioned environmental 
+factors with a value ranging from two to five in typical outdoor 
+settings~\cite{rappaport}.
+
+According to Eq.~\ref{eq:friis} white space band not only provide more 
+bandwidth for wireless communication, but also bring the diversity in 
+transmission/interference range. Our algorithms and frameworks try to 
+elploit white space bands advantages of link communication and network 
+deployment through spctrum agility with WiFi bands.
 
 
 \section{Gateworks Platform}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  9 AUG 2014 15:50
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  10 AUG 2014 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -189,18 +189,45 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 10pt \baselines
+kip 0.23in \setbox \@tempboxa \hbox {#1.\ \ #2} \ifdim \wd \@tempboxa >\hsize #
+1.\ \ #2\par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil } \fi \vskip 0.5
+cm.
+\c@ContinuedFloat=\count118
+Package caption Info: float package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip57
 \subfigcapskip=\skip58
-\subfigcaptopadj=\dimen123
+\subfigcaptopadj=\dimen130
 \subfigbottomskip=\skip59
-\subfigcapmargin=\dimen124
+\subfigcapmargin=\dimen131
 \subfiglabelskip=\skip60
-\c@subfigure=\count118
-\c@lofdepth=\count119
-\c@subtable=\count120
-\c@lotdepth=\count121
+\c@subfigure=\count119
+\c@lofdepth=\count120
+\c@subtable=\count121
+\c@lotdepth=\count122
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -211,16 +238,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 (./proposal_pcui.aux
 
-LaTeX Warning: Label `eq:friis' multiply defined.
-
-
 LaTeX Warning: Label `eq:intercap' multiply defined.
-
-
-LaTeX Warning: Label `tab:activitymeasurement' multiply defined.
-
-
-LaTeX Warning: Label `fig:all3figs' multiply defined.
 
 
 LaTeX Warning: Label `subsec:motivation' multiply defined.
@@ -241,9 +259,6 @@ LaTeX Warning: Label `opt:resource' multiply defined.
 LaTeX Warning: Label `subsec:result' multiply defined.
 
 
-LaTeX Warning: Label `subsec:problem' multiply defined.
-
-
 LaTeX Warning: Label `eq:nlbound' multiply defined.
 
 
@@ -252,26 +267,29 @@ LaTeX Warning: Label `eq:servicearea' multiply defined.
 )
 \openout1 = `proposal_pcui.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-\numfigure=\count122
-\numtable=\count123
-\chaptertest=\count124
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\numfigure=\count123
+\numtable=\count124
+\chaptertest=\count125
  (./proposal_pcui.idx) [0
 
 
 ] [0] (./acknow.tex) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 
  []
 
@@ -303,9 +321,9 @@ Chapter 1.
 Chapter 2.
 [12
 
-]
+] [13]
 File: figures/gw2358.eps Graphic file (type eps)
- <figures/gw2358.eps> [13]
+ <figures/gw2358.eps>
 File: figures/fsh8.eps Graphic file (type eps)
  <figures/fsh8.eps> [14]) (./chap_vnc.tex
 [15]
@@ -373,104 +391,99 @@ File: figures/drivemap.eps Graphic file (type eps)
 
 <figures/drivemap.eps>
 File: figures/drivetest.eps Graphic file (type eps)
- <figures/drivetest.eps> [37]
-Overfull \hbox (190.629pt too wide) in paragraph at lines 156--172
+ <figures/drivetest.eps>
+Overfull \hbox (10.2402pt too wide) in paragraph at lines 180--196
  [][] 
  []
 
-[38]
+[37]
 File: figures/redensity.eps Graphic file (type eps)
- <figures/redensity.eps> [39]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40] [41]) (./multiband_winmee/conclusion.tex [42])) (./chap_wm.tex [43]
+ <figures/redensity.eps> [38] [39] [40] [41])
+(./multiband_winmee/conclusion.tex [42])) (./chap_wm.tex [43]
 Chapter 5.
 (./multiband_wm/problemformulation.tex [44
 
-] [45]
+]
 File: figures/interferencerange2.eps Graphic file (type eps)
+ <figures/interferencerange2.eps>
+[45] [46] [47] [48]) (./multiband_wm/linearopt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--49
 
-<figures/interferencerange2.eps> [46] [47] [48]) (./multiband_wm/linearopt.tex
+ []
+
+
+Overfull \hbox (1.68642pt too wide) in paragraph at lines 22--49
+[] 
+ []
+
 [49]
-Underfull \hbox (badness 4859) in paragraph at lines 31--35
-[]\OT1/cmr/m/n/12 Protocol In-ter-fer-
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 35--39
-[]\OT1/cmr/m/n/12 Gateways in net-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--46
+Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 60--61
-[]\OT1/cmr/m/n/12 Time share of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-\OT1/cmr/m/n/12 link $(\OML/cmm/m/it/12 i; j\OT1/cmr/m/n/12 )$ on
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 62--63
-[]\OT1/cmr/m/n/12 Uplink flow of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--67
-
+Overfull \hbox (25.40338pt too wide) in paragraph at lines 57--70
+[]
  []
 
 [50] [51]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [52] [53] [54]) [55]
-Overfull \vbox (4.5298pt too high) has occurred while \output is active []
+(./multiband_wm/networkefficiency.tex [52] [53])
 
+LaTeX Warning: Float too large for page by 6.71977pt on input line 54.
 
-[56]
+[54] [55]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 85.
 
-[57]) (./multiband_wm/experiment.tex [58] [59] [60]
+) (./multiband_wm/experiment.tex [56] [57] [58]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
-[]\OT1/cmr/m/n/10 (a) Av-er-age Pop-u-la-
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 139--139
-\OT1/cmr/m/n/10 tion Dis-tri-bu-tion = 500
- []
-
 File: figures/maxtpt.eps Graphic file (type eps)
+
 <figures/maxtpt.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]\OT1/cmr/m/n/10 (b) Vary-ing Load, 49-
+
+LaTeX Warning: Reference `fig:all3figs' on page 59 undefined on input line 118.
+
+
+[59] [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[]\OT1/cmr/m/n/12 Multi-WS
  []
 
-[61] [62]
-Overfull \hbox (64.76991pt too wide) in paragraph at lines 216--236
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[]\OT1/cmr/m/n/12 Multi-WS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+[]\OT1/cmr/m/n/12 Multi-WS
+ []
+
+
+Overfull \hbox (17.34015pt too wide) in paragraph at lines 215--256
  [][] 
  []
 
-[63] [64] [65]
-File: figures/actspac3d.eps Graphic file (type eps)
- <figures/actspac3d.eps>
-File: figures/act_spacing.eps Graphic file (type eps)
- <figures/act_spacing.eps>
-Underfull \hbox (badness 2689) in paragraph at lines 335--335
-[]\OT1/cmr/m/n/10 (b) Traf-fic ar-rived Gate-
+
+Overfull \hbox (16.86353pt too wide) in paragraph at lines 215--256
+ [] 
  []
 
-[66]) (./multiband_wm/conclusion.tex)) (./chap_moa.tex [67]
+[62] [63] [64]
+File: figures/actspac3d.eps Graphic file (type eps)
+ <figures/actspac3d.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/act_spacing.eps Graphic file (type eps)
+<figures/act_spacing.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65] [66]) (./multiband_wm/conclusion.tex)) (./chap_moa.tex [67]
 Chapter 6.
 (./multiband_moa/problemformulation.tex [68
 
@@ -482,7 +495,7 @@ File: figures/mediumtraffic.eps Graphic file (type eps)
  <figures/mediumtraffic.eps>
 File: figures/hightraffic.eps Graphic file (type eps)
  <figures/hightraffic.eps>
-[73] (./multiband_moa/linear.tex
+(./multiband_moa/linear.tex [73]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 []\OT1/cmr/m/n/12 Traffic De-mand
  []
@@ -510,14 +523,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--32
 [74]) [75]) (./multiband_moa/experiment.tex [76] [77] [78]
 File: figures/enoughchannels.eps Graphic file (type eps)
 
-<figures/enoughchannels.eps> [79]
+<figures/enoughchannels.eps>
 File: figures/onewhitechannel.eps Graphic file (type eps)
- <figures/onewhitechannel.eps> [80]
+ <figures/onewhitechannel.eps> [79]
 File: figures/percentage.eps Graphic file (type eps)
 
-<figures/percentage.eps>) (./multiband_moa/conclusion.tex)) (./chap_related.tex
-[81] [82] [83] [84]) (./chap_futurework.tex [85]
+<figures/percentage.eps>) (./multiband_moa/conclusion.tex [80]))
+(./chap_related.tex [81]
 Chapter 7.
+[82
+
+] [83] [84]) (./chap_futurework.tex [85]
+Chapter 8.
 [86
 
 ] [87] [88]
@@ -527,7 +544,7 @@ on-cern $\OML/cmm/m/it/12 Min[]$\OT1/cmr/m/n/12 .
  []
 
 ) (./chap_conclusion.tex [89]
-Chapter 8.
+Chapter 9.
 ) (./proposal_pcui.bbl [90
 
 ]
@@ -550,20 +567,23 @@ ets / 2008 / 05 /
 \openout7 = `proposal_pcui.idx'.
 
 
-Total number of figures: 22
-Total number of tables: 4
+Total number of figures: 24
+Total number of tables: 5
 [97] (./proposal_pcui.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2563 strings out of 493322
- 30998 string characters out of 6140449
- 101265 words of memory out of 5000000
- 5890 multiletter control sequences out of 15000+600000
- 11624 words of font info for 42 fonts, out of 8000000 for 9000
+ 3580 strings out of 493322
+ 49630 string characters out of 6140449
+ 127231 words of memory out of 5000000
+ 6903 multiletter control sequences out of 15000+600000
+ 10243 words of font info for 37 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 27i,9n,43p,419b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,43p,419b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (111 pages, 289692 bytes).
+Output written on proposal_pcui.dvi (111 pages, 290080 bytes).
