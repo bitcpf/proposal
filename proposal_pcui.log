@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  10 AUG 2014 17:45
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  10 AUG 2014 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,24 +238,6 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 (./proposal_pcui.aux
 
-LaTeX Warning: Label `eq:intercap' multiply defined.
-
-
-LaTeX Warning: Label `subsec:motivation' multiply defined.
-
-
-LaTeX Warning: Label `eq:friis' multiply defined.
-
-
-LaTeX Warning: Label `subsec:problem' multiply defined.
-
-
-LaTeX Warning: Label `eq:nlbound' multiply defined.
-
-
-LaTeX Warning: Label `opt:resource' multiply defined.
-
-
 LaTeX Warning: Label `subsec:result' multiply defined.
 
 
@@ -321,12 +303,12 @@ Chapter 1.
 Chapter 2.
 [12
 
-] [13]
+] [13] [14]
 File: figures/gw2358.eps Graphic file (type eps)
  <figures/gw2358.eps>
 File: figures/fsh8.eps Graphic file (type eps)
- <figures/fsh8.eps> [14]) (./chap_vnc.tex
-[15]
+ <figures/fsh8.eps> [15]) (./chap_vnc.tex
+[16]
 Chapter 3.
 (./multiband_vnc/model.tex
 Overfull \hbox (5.20886pt too wide) in paragraph at lines 14--21
@@ -336,9 +318,9 @@ n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/
 n/12 g$\OT1/cmr/m/n/12 .
  []
 
-[16
+[17
 
-] [17] [18]
+] [18]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -346,67 +328,97 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
-)
-(./multiband_vnc/experiment_design.tex [19] [20]
+ [19]
+[20]) (./multiband_vnc/experiment_design.tex [21]
 File: figures/emulator2.eps Graphic file (type eps)
  <figures/emulator2.eps>
+File: figures/infield.eps Graphic file (type eps)
+
+<figures/infield.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
-File: figures/infield.eps Graphic file (type eps)
- <figures/infield.eps> [22]
+[22]
 File: figures/sa_process.eps Graphic file (type eps)
- <figures/sa_process.eps>)
-(./multiband_vnc/experiment.tex [23]
+ <figures/sa_process.eps> [23]) (./multiband_vnc/experiment.tex
 File: figures/performance_accuracy.eps Graphic file (type eps)
- <figures/performance_accuracy.eps>
-[24]
+
+<figures/performance_accuracy.eps> [24]
 Overfull \hbox (2.74246pt too wide) in paragraph at lines 66--70
 []\OT1/cmr/m/n/12 The sec-ond base-line al-go-rithm, \OT1/cmr/m/it/12 SNR-based
  Through-put Look-up\OT1/cmr/m/n/12 , main-tains 39.2%
  []
 
+[25]
 File: figures/performance_gap.eps Graphic file (type eps)
-<figures/performance_gap.eps>
+ <figures/performance_gap.eps>
 Overfull \hbox (10.09898pt too wide) in paragraph at lines 99--105
 []\OT1/cmr/m/n/12 The \OT1/cmr/m/it/12 Most Commonly-Selected Band Al-go-rithm 
 \OT1/cmr/m/n/12 has two dif-fer-ent modes of through-
  []
 
-[25]
 File: figures/region_map.eps Graphic file (type eps)
- <figures/region_map.eps>
+<figures/region_map.eps>
 File: figures/mvsl.eps Graphic file (type eps)
- <figures/mvsl.eps> [26])
-(./multiband_vnc/conclusion.tex) [27]) (./chap_winmee.tex [28]
+ <figures/mvsl.eps> [26] [27])
+(./multiband_vnc/conclusion.tex) [28]) (./chap_winmee.tex [29]
 Chapter 4.
-(./multiband_winmee/problemformulation.tex [29
+(./multiband_winmee/problemformulation.tex [30
 
-] [30] [31] [32] [33])
-(./multiband_winmee/experiment.tex [34]
+] [31] [32] [33])
+(./multiband_winmee/experiment.tex [34] [35]
 File: figures/equipment.eps Graphic file (type eps)
- <figures/equipment.eps> [35] [36]
+ <figures/equipment.eps> [36]
 File: figures/drivemap.eps Graphic file (type eps)
 
 <figures/drivemap.eps>
 File: figures/drivetest.eps Graphic file (type eps)
- <figures/drivetest.eps>
+ <figures/drivetest.eps> [37] [38]
 Overfull \hbox (10.2402pt too wide) in paragraph at lines 180--196
  [][] 
  []
 
-[37]
+[39]
 File: figures/redensity.eps Graphic file (type eps)
- <figures/redensity.eps> [38] [39] [40] [41])
-(./multiband_winmee/conclusion.tex [42])) (./chap_wm.tex [43]
+ <figures/redensity.eps> [40]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41] [42]) (./multiband_moa/problemformulation.tex [43] [44]
+File: figures/lowtraffic.eps Graphic file (type eps)
+
+<figures/lowtraffic.eps>
+File: figures/mediumtraffic.eps Graphic file (type eps)
+ <figures/mediumtraffic.eps>
+File: figures/hightraffic.eps Graphic file (type eps)
+ <figures/hightraffic.eps>
+[45] (./multiband_moa/linear.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--33
+
+ []
+
+[46]) [47]) (./multiband_moa/experiment.tex [48] [49] [50]
+File: figures/enoughchannels.eps Graphic file (type eps)
+
+<figures/enoughchannels.eps>
+File: figures/onewhitechannel.eps Graphic file (type eps)
+ <figures/onewhitechannel.eps> [51]
+File: figures/percentage.eps Graphic file (type eps)
+
+<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52]))
+(./chap_wm.tex [53]
 Chapter 5.
-(./multiband_wm/problemformulation.tex [44
+(./multiband_wm/problemformulation.tex [54
 
 ]
 File: figures/interferencerange2.eps Graphic file (type eps)
  <figures/interferencerange2.eps>
-[45] [46] [47] [48]) (./multiband_wm/linearopt.tex
+[55] [56] [57] [58]) (./multiband_wm/linearopt.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--49
 
  []
@@ -416,7 +428,7 @@ Overfull \hbox (1.68642pt too wide) in paragraph at lines 22--49
 [] 
  []
 
-[49]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
@@ -426,28 +438,23 @@ Overfull \hbox (25.40338pt too wide) in paragraph at lines 57--70
 []
  []
 
-[50] [51]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [52] [53])
+[60] [61]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [62] [63])
 
 LaTeX Warning: Float too large for page by 6.71977pt on input line 54.
 
-[54] [55]
+[64] [65]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 85.
 
-) (./multiband_wm/experiment.tex [56] [57] [58]
+) (./multiband_wm/experiment.tex [66] [67] [68]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
 File: figures/maxtpt.eps Graphic file (type eps)
 
-<figures/maxtpt.eps>
-
-LaTeX Warning: Reference `fig:all3figs' on page 59 undefined on input line 118.
-
-
-[59] [60] [61]
+<figures/maxtpt.eps> [69] [70] [71]
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 []\OT1/cmr/m/n/12 Multi-WS
  []
@@ -472,7 +479,7 @@ Overfull \hbox (16.86353pt too wide) in paragraph at lines 215--256
  [] 
  []
 
-[62] [63] [64]
+[72] [73] [74]
 File: figures/actspac3d.eps Graphic file (type eps)
  <figures/actspac3d.eps>
 
@@ -483,73 +490,27 @@ File: figures/act_spacing.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66]) (./multiband_wm/conclusion.tex)) (./chap_moa.tex [67]
+[75] [76]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [77]
 Chapter 6.
-(./multiband_moa/problemformulation.tex [68
+[78
 
-] [69] [70] [71] [72]
-File: figures/lowtraffic.eps Graphic file (type eps)
-
-<figures/lowtraffic.eps>
-File: figures/mediumtraffic.eps Graphic file (type eps)
- <figures/mediumtraffic.eps>
-File: figures/hightraffic.eps Graphic file (type eps)
- <figures/hightraffic.eps>
-(./multiband_moa/linear.tex [73]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-[]\OT1/cmr/m/n/12 Traffic De-mand
- []
-
-
-Underfull \hbox (badness 3375) in paragraph at lines 19--20
-[]\OT1/cmr/m/n/12 Available chan-nel
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 20--21
-[]\OT1/cmr/m/n/12 Channel ca-pac-ity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--32
-
- []
-
-[74]) [75]) (./multiband_moa/experiment.tex [76] [77] [78]
-File: figures/enoughchannels.eps Graphic file (type eps)
-
-<figures/enoughchannels.eps>
-File: figures/onewhitechannel.eps Graphic file (type eps)
- <figures/onewhitechannel.eps> [79]
-File: figures/percentage.eps Graphic file (type eps)
-
-<figures/percentage.eps>) (./multiband_moa/conclusion.tex [80]))
-(./chap_related.tex [81]
+] [79] [80]) (./chap_futurework.tex [81]
 Chapter 7.
 [82
 
-] [83] [84]) (./chap_futurework.tex [85]
-Chapter 8.
-[86
-
-] [87] [88]
+] [83] [84]
 Overfull \hbox (13.42943pt too wide) in paragraph at lines 193--197
 \OT1/cmr/m/n/12 ven-dors, the num-ber of ac-cess points would be the pri-mary c
 on-cern $\OML/cmm/m/it/12 Min[]$\OT1/cmr/m/n/12 .
  []
 
-) (./chap_conclusion.tex [89]
-Chapter 9.
-) (./proposal_pcui.bbl [90
+) (./chap_conclusion.tex [85]
+Chapter 8.
+) (./proposal_pcui.bbl [86
 
 ]
 REFERENCES.
-[91
+[87
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--99
@@ -563,27 +524,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
 ets / 2008 / 05 /
  []
 
-[92] [93] [94] [95] [96])
+[88] [89] [90] [91] [92])
 \openout7 = `proposal_pcui.idx'.
 
 
 Total number of figures: 24
 Total number of tables: 5
-[97] (./proposal_pcui.aux)
-
-LaTeX Warning: There were undefined references.
-
+[93] (./proposal_pcui.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3580 strings out of 493322
- 49630 string characters out of 6140449
+ 3571 strings out of 493322
+ 49466 string characters out of 6140449
  127231 words of memory out of 5000000
- 6903 multiletter control sequences out of 15000+600000
+ 6899 multiletter control sequences out of 15000+600000
  10243 words of font info for 37 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  36i,9n,43p,419b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (111 pages, 290080 bytes).
+Output written on proposal_pcui.dvi (107 pages, 279080 bytes).

@@ -258,6 +258,32 @@ from multiple bands. Furthermore, we discuss to centralized using frequencies
 or distributed using them in single access point. Through our numerical 
 simulation, we show that in dense area centralized using spectrum gain 
 more than sparse area.
+% MOA
+For the hetergeneous access tier optimization, we perform a relaxed linear 
+program which considers the variation of hetergeneous access point service 
+area to find the lower bound total number of access points required to 
+serve a given user demand. Further, we represent an MHAPD greedy algorithm 
+to approach the lower bound. Across varying white space and WiFi radios 
+combination, population densities in representative rural and metropolitan 
+areas we compare the cost savings (defined in terms of number of access 
+points reduced) when white space bands are not used. We then evaluate our 
+MHAPD algorithm, showing the hetergenous band selection across downtown, 
+residential and university settings in urban area and rural areas and analyze 
+the impact of white space and WiFi combinations on a wireless deployment in 
+these representative scenarios.
+% Paper contributions
+The main contributions of our work in this topic include: We develop an 
+optimization framework based on linear programming to jointly leverage 
+white space and WiFi bands approaching the lower bound in terms of the numer 
+of access points to serve the demands of a given area. We design a MHAPD 
+greedy algorithm, which model the problem as a bin package problem. We 
+evaluate the performance of the presented algorim, comparing with the 
+lower bound and the hexagon WiFi access point deployment in sparse rural 
+areas given similar channel resources. The numberic results shows that our 
+algorithm gains 260\% against the linear hexagon deployment method.  We 
+further analysis the performance of hetergenous access point performance in 
+variation of population density. The numberic results shows that hetergenous 
+access point could improve the budget saving upto 323\%. 
 
 % Whitemesh
 In the backhual layer network deployment, we leverage the diversity 
@@ -294,32 +320,6 @@ performance given similar channel resources (bandwidth and transmission
 power), We show the improvement of our BPS in typical configurations up to 
 \%180 vs. previous multichannel algorithms.
 
-% MOA
-For the hetergeneous access tier optimization, we perform a relaxed linear 
-program which considers the variation of hetergeneous access point service 
-area to find the lower bound total number of access points required to 
-serve a given user demand. Further, we represent an MHAPD greedy algorithm 
-to approach the lower bound. Across varying white space and WiFi radios 
-combination, population densities in representative rural and metropolitan 
-areas we compare the cost savings (defined in terms of number of access 
-points reduced) when white space bands are not used. We then evaluate our 
-MHAPD algorithm, showing the hetergenous band selection across downtown, 
-residential and university settings in urban area and rural areas and analyze 
-the impact of white space and WiFi combinations on a wireless deployment in 
-these representative scenarios.
-% Paper contributions
-The main contributions of our work in this topic include: We develop an 
-optimization framework based on linear programming to jointly leverage 
-white space and WiFi bands approaching the lower bound in terms of the numer 
-of access points to serve the demands of a given area. We design a MHAPD 
-greedy algorithm, which model the problem as a bin package problem. We 
-evaluate the performance of the presented algorim, comparing with the 
-lower bound and the hexagon WiFi access point deployment in sparse rural 
-areas given similar channel resources. The numberic results shows that our 
-algorithm gains 260\% against the linear hexagon deployment method.  We 
-further analysis the performance of hetergenous access point performance in 
-variation of population density. The numberic results shows that hetergenous 
-access point could improve the budget saving upto 323\%. 
 
 
 % Future work
@@ -345,7 +345,7 @@ platform and software tools applied in our research. Chapter~\ref{ch:vnc}
 provides an analysis and solution of vehicular link spectrum adaptation in 
 multiband scenario. We also proposed an access layer network deployment 
 framework in Chapter~\ref{ch:winmee} and discuss the optimization of a 
-single access point with spectrum limitation. Then, Chapter~\ref{ch:moa} 
+single access point with spectrum limitation. Then, we further
 compare the hetergeneous access point with both white space bands and WiFi 
 bands and WiFi only access points to quantify the white space benefit 
 through single access point. In Chapter~\ref{ch:wm}, we propose an 

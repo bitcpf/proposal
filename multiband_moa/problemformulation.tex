@@ -1,98 +1,98 @@
-\section{Challenges and Problem Formulation}
-\label{sec:moa_problemformulation}
-
-% Introduce the content of this section
-In this section, we illustrate the challenges of hetergenous access point 
-band selection in wireless network deployment and formulate the problem of band 
-selection in mesh network deployments jointly using WiFi and white space bands. 
-Further, we present a linear program and MHAPD(Multiband Hetergeneous AP Deployment) algorithm for estimating the 
-access point number to serve the traffic demand of a given population.
-Then we discuss the application of the algorithm in uniform population
-distribution and non-uniform population distribution with spectrum resource 
-variation to tell the general rules in picking up channels for access points.
+%\section{Hetergeneous Access Point Band Selection}
+%\label{sec:moa_problemformulation}
+%
+%% Introduce the content of this section
+%In this section, we illustrate the challenges of hetergenous access point 
+%band selection in wireless network deployment and formulate the problem of band 
+%selection in mesh network deployments jointly using WiFi and white space bands. 
+%Further, we present a linear program and MHAPD(Multiband Hetergeneous AP Deployment) algorithm for estimating the 
+%access point number to serve the traffic demand of a given population.
+%Then we discuss the application of the algorithm in uniform population
+%distribution and non-uniform population distribution with spectrum resource 
+%variation to tell the general rules in picking up channels for access points.
  
-\subsection{White Space Opportunity and Challenge}
-\label{subsec:motivation}
+%\subsection{White Space Opportunity and Challenge}
+%\label{subsec:motivation}
 
-% Propagation
-Wireless propagation is the behavior of the signal loss characteristics 
-when wireless signals are transmitted through the wireless medium.
-The strength of the received signal depends on both the line-of-sight
-path (or lack thereof) and multiple other paths that result from 
-reflection, diffraction, and scattering from 
-obstacles~\cite{andersen1995propagation}. The widely-used Friis
-equation characterizes the received signal power $P_r$ in terms 
-of transmit power $P_t$, transmitter gain $G_t$, receiver gain $G_r$, 
-wavelength $\lambda$ of the carrier frequency, 
-distance $R$ from transmitter to receiver, and path loss exponent 
-$n$ according to~\cite{friis}:
-\begin{equation}
-\label{eq:friis}
-P_r=P_t+G_t+G_r+10n \log_{10}\left( \frac{\lambda}{4\pi R}\right)
-\end{equation}
-Here, $n$ varies according to the aforementioned environmental 
-factors with the value of two to five in typical outdoor 
-settings~\cite{rappaport}.
+%% Propagation
+%Wireless propagation is the behavior of the signal loss characteristics 
+%when wireless signals are transmitted through the wireless medium.
+%The strength of the received signal depends on both the line-of-sight
+%path (or lack thereof) and multiple other paths that result from 
+%reflection, diffraction, and scattering from 
+%obstacles~\cite{andersen1995propagation}. The widely-used Friis
+%equation characterizes the received signal power $P_r$ in terms 
+%of transmit power $P_t$, transmitter gain $G_t$, receiver gain $G_r$, 
+%wavelength $\lambda$ of the carrier frequency, 
+%distance $R$ from transmitter to receiver, and path loss exponent 
+%$n$ according to~\cite{friis}:
+%\begin{equation}
+%\label{eq:friis}
+%P_r=P_t+G_t+G_r+10n \log_{10}\left( \frac{\lambda}{4\pi R}\right)
+%\end{equation}
+%Here, $n$ varies according to the aforementioned environmental 
+%factors with the value of two to five in typical outdoor 
+%settings~\cite{rappaport}.
 
 % Hetergenous access points
-Despite sufficient levels of received signal, interference can cause channels
-to be unusable (e.g., due to high levels of packet loss) or unavailable (e.g.,
-due to primary users in cognitive radios~\cite{haykin2005cognitive}).
-Prior work has worked to reduce cost through gateway deployment, channel 
-assignment, and routing~\cite{he2008optimizing,tang2005interference}.
-Most of existing works try to reduce the intra-network interference or increase
-the channel usability level of wireless network deployment
-~\cite{si2010overview,joshi2009efficient}. However, the access point service area
-variation becomes an important problem when considering the availability of white space bands.  
-Jointly considering the propagation and single channel capacity, the access points 
-with different configuration (e.g. radios) in the same area, or with same configuration 
-in diverse population density areas (e.g. downtown, rural) could have different service ranges.
-
-% Explain multiband and hetergenous access points
-When wireless devices operate in WiFi bands, the channel separation is relatively
-small (e.g., 22 MHz for the 2.4 GHz band). As a result, many works assume that
-the propagation characteristics across channels are similar. However, with the
-large frequency gaps of WiFi and white space bands (e.g., several GHz),
-propagation becomes a key factor in the deployment of wireless networks with both bands.
-Here, a frequency band is defined as a group of channels which have
-small separation meaning similar propagation characteristics.
-In this work, we consider the diverse propagation and activity characteristics
-for four total frequency bands: 450 MHz, 800 MHz, 2.4 GHz, and 5.2 GHz.
-We refer to the two former frequency bands as white space bands and
-the two latter frequency bands as WiFi bands.
-A general way to increase the capacity of a single access point is to add channels
-through radios~\cite{raniwala2005architecture}. The assumption all the channels have
-the same propagation does not fit for WiFi and white space hetergenous scenario.
-When a white space band channel added to an access point, the capacity and service 
-range could increase simultaneously. The differences in propagation and constraints 
-of network deployment create opportunity for the joint use of white space and 
-WiFi bands in wireless access networks according to the environmental characteristics 
-(e.g., urban or rural and downtown or residential) of the deployment location.
-
-% Network Constraints
-Typically, the deployment of wireless access networks is subject to coverage and capacity
-constraints for a given region. Coverage is defined with respect to the ability of
-clients to connect to access points within their service area.  We use a coverage
-constraint ratio of $95\%$ in this work for a target area~\cite{robinson2010deploying}.
-Capacity is defined with respect to the ability of a network to serve the traffic 
-demand of clients.  Spatial reuse allows improved capacity, but increases the cost
-of deploying a network by increasing the total number of access points required.
-Hence, for densely populated areas the greatest level of spatial reuse possible
-is often desired. And the deployment cost could be significant reduced through access 
-points with high capacity with more centralized using radios. In contrast, 
-sparsely-populated rural areas have lower traffic demand per unit area. Thus, 
-aggregating this demand with lower-frequency, white space bands could be highly 
-effective in reducing the total number of access points required to achieve 
-similar coverage and capacity constraints. Moreover, since less TV channels tend
- to be occupied in sparsely populated areas~\cite{msdatabase}, a larger number 
- of white space bands can be leveraged in these areas. 
+%Despite sufficient levels of received signal, interference can cause channels
+%to be unusable (e.g., due to high levels of packet loss) or unavailable (e.g.,
+%due to primary users in cognitive radios~\cite{haykin2005cognitive}).
+%Prior work has worked to reduce cost through gateway deployment, channel 
+%assignment, and routing~\cite{he2008optimizing,tang2005interference}.
+%Most of existing works try to reduce the intra-network interference or increase
+%the channel usability level of wireless network deployment
+%~\cite{si2010overview,joshi2009efficient}. However, the access point service area
+%variation becomes an important problem when considering the availability of white space bands.  
+%Jointly considering the propagation and single channel capacity, the access points 
+%with different configuration (e.g. radios) in the same area, or with same configuration 
+%in diverse population density areas (e.g. downtown, rural) could have different service ranges.
+%
+%% Explain multiband and hetergenous access points
+%When wireless devices operate in WiFi bands, the channel separation is relatively
+%small (e.g., 22 MHz for the 2.4 GHz band). As a result, many works assume that
+%the propagation characteristics across channels are similar. However, with the
+%large frequency gaps of WiFi and white space bands (e.g., several GHz),
+%propagation becomes a key factor in the deployment of wireless networks with both bands.
+%Here, a frequency band is defined as a group of channels which have
+%small separation meaning similar propagation characteristics.
+%In this work, we consider the diverse propagation and activity characteristics
+%for four total frequency bands: 450 MHz, 800 MHz, 2.4 GHz, and 5.2 GHz.
+%We refer to the two former frequency bands as white space bands and
+%the two latter frequency bands as WiFi bands.
+%A general way to increase the capacity of a single access point is to add channels
+%through radios~\cite{raniwala2005architecture}. The assumption all the channels have
+%the same propagation does not fit for WiFi and white space hetergenous scenario.
+%When a white space band channel added to an access point, the capacity and service 
+%range could increase simultaneously. The differences in propagation and constraints 
+%of network deployment create opportunity for the joint use of white space and 
+%WiFi bands in wireless access networks according to the environmental characteristics 
+%(e.g., urban or rural and downtown or residential) of the deployment location.
+%
+%% Network Constraints
+%Typically, the deployment of wireless access networks is subject to coverage and capacity
+%constraints for a given region. Coverage is defined with respect to the ability of
+%clients to connect to access points within their service area.  We use a coverage
+%constraint ratio of $95\%$ in this work for a target area~\cite{robinson2010deploying}.
+%Capacity is defined with respect to the ability of a network to serve the traffic 
+%demand of clients.  Spatial reuse allows improved capacity, but increases the cost
+%of deploying a network by increasing the total number of access points required.
+%Hence, for densely populated areas the greatest level of spatial reuse possible
+%is often desired. And the deployment cost could be significant reduced through access 
+%points with high capacity with more centralized using radios. In contrast, 
+%sparsely-populated rural areas have lower traffic demand per unit area. Thus, 
+%aggregating this demand with lower-frequency, white space bands could be highly 
+%effective in reducing the total number of access points required to achieve 
+%similar coverage and capacity constraints. Moreover, since less TV channels tend
+% to be occupied in sparsely populated areas~\cite{msdatabase}, a larger number 
+% of white space bands can be leveraged in these areas. 
 
 % More variation in population distribution
 
 
 
-\subsection{Model and Problem Formulation}
-\label{subsec:problem}
+\section{Hetergeneous Access Point Band Selection}
+\label{subsec:moaproblem}
 
 % Assumptions of the network
 As opposed to previous works such as
@@ -107,24 +107,24 @@ point operates with a classic protocol model~\cite{gupta2000capacity}.
 We further assume that there is a given take rate and traffic demand for a given 
 population (as specified in Section~\ref{sec:moaexperimentdesign}).
 
-% Capacity constraint
-A network deployment should ideally provide network capacity equal to the demand of the service 
-area to maintain the capacity constraint. The demand of a service area could be calculated as the 
-summation of individual demands all over the service area $D_a=\sum_{p\in P}D_p$. Since 
-household demand for Internet has been previously characterized~\cite{rosston2011household}, 
-$D_a$ could represent the population distribution $f$ and service area $k$ as 
-$D_a=\sum_{f \in F,k \in K}\bar{D_p}*f*k$. 
-The capacity constraint could be represented with access points set $M$ according to:
-\begin{equation}
-\label{eq:nlbound}
-\sum_{m \in M}C_r^m \ge \sum_{f \in F,k \in K}\bar{D_p}*f*k
-\end{equation}
-% Coverage constraint
-At the same time, the wireless network must additionally satisfy the coverage constraint in the service 
-area where the access points provide connectivity for client devices. 
-Generally, a coverage of $95\%$ is acceptable for wireless access networks~\cite{robinson2010deploying}.
-The object of this work is to find the best possible number of access points so that the network has good 
-connectivity and enough capacity to satisfy the traffic demands.
+%% Capacity constraint
+%A network deployment should ideally provide network capacity equal to the demand of the service 
+%area to maintain the capacity constraint. The demand of a service area could be calculated as the 
+%summation of individual demands all over the service area $D_a=\sum_{p\in P}D_p$. Since 
+%household demand for Internet has been previously characterized~\cite{rosston2011household}, 
+%$D_a$ could represent the population distribution $f$ and service area $k$ as 
+%$D_a=\sum_{f \in F,k \in K}\bar{D_p}*f*k$. 
+%The capacity constraint could be represented with access points set $M$ according to:
+%\begin{equation}
+%\label{eq:nlbound}
+%\sum_{m \in M}C_r^m \ge \sum_{f \in F,k \in K}\bar{D_p}*f*k
+%\end{equation}
+%% Coverage constraint
+%At the same time, the wireless network must additionally satisfy the coverage constraint in the service 
+%area where the access points provide connectivity for client devices. 
+%Generally, a coverage of $95\%$ is acceptable for wireless access networks~\cite{robinson2010deploying}.
+%The object of this work is to find the best possible number of access points so that the network has good 
+%connectivity and enough capacity to satisfy the traffic demands.
 
 
 % Hetergeneous Access point & resource constraint
@@ -181,7 +181,7 @@ approach the lower bound.
 \begin{figure}
 %\vspace{-0.0in}
 \centering
-\includegraphics[width=74mm]{figures/lowtraffic}
+\includegraphics[width=84mm]{figures/lowtraffic}
 \vspace{-0.1in}
 \caption{Low Traffic Scenario}                                                                 
 \label{fig:lowtraffic}
@@ -191,7 +191,7 @@ approach the lower bound.
 \begin{figure}
 %\vspace{-0.0in}
 \centering
-\includegraphics[width=74mm]{figures/mediumtraffic}
+\includegraphics[width=84mm]{figures/mediumtraffic}
 \vspace{-0.1in}
 \caption{Medium Traffic Scenario}                                                                 
 \label{fig:mediumtraffic}
@@ -202,7 +202,7 @@ approach the lower bound.
 \begin{figure}
 %\vspace{-0.0in}
 \centering
-\includegraphics[width=74mm]{figures/hightraffic}
+\includegraphics[width=84mm]{figures/hightraffic}
 \vspace{-0.1in}
 \caption{High Traffic Scenario}                                                                 
 \label{fig:hightraffic}

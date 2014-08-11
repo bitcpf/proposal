@@ -13,45 +13,45 @@ Warning--to sort, need author or key in msdatabase
 Warning--to sort, need author or key in uscensus
 Warning--empty journal in cuileveraging
 Warning--empty journal in friis
-You've used 79 entries,
+You've used 78 entries,
             2253 wiz_defined-function locations,
-            928 strings with 17171 characters,
-and the built_in function-call counts, 27051 in all, are:
-= -- 2579
-> -- 1300
+            923 strings with 16880 characters,
+and the built_in function-call counts, 26569 in all, are:
+= -- 2530
+> -- 1283
 < -- 0
-+ -- 556
-- -- 460
-* -- 2134
-:= -- 4250
-add.period$ -- 227
-call.type$ -- 79
-change.case$ -- 464
++ -- 548
+- -- 454
+* -- 2102
+:= -- 4184
+add.period$ -- 224
+call.type$ -- 78
+change.case$ -- 458
 chr.to.int$ -- 0
-cite$ -- 89
-duplicate$ -- 970
-empty$ -- 2250
-format.name$ -- 460
-if$ -- 5650
+cite$ -- 88
+duplicate$ -- 946
+empty$ -- 2208
+format.name$ -- 454
+if$ -- 5540
 int.to.chr$ -- 0
-int.to.str$ -- 79
-missing$ -- 69
-newline$ -- 388
-num.names$ -- 142
-pop$ -- 561
+int.to.str$ -- 78
+missing$ -- 68
+newline$ -- 383
+num.names$ -- 140
+pop$ -- 552
 preamble$ -- 1
-purify$ -- 387
+purify$ -- 382
 quote$ -- 0
-skip$ -- 609
+skip$ -- 590
 stack$ -- 0
-substring$ -- 1685
-swap$ -- 242
+substring$ -- 1647
+swap$ -- 232
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 312
+type$ -- 308
 warning$ -- 10
-while$ -- 249
-width$ -- 81
-write$ -- 768
+while$ -- 244
+width$ -- 80
+write$ -- 757
 (There were 10 warnings)

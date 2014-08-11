@@ -60,6 +60,46 @@ elploit white space bands advantages of link communication and network
 deployment through spctrum agility with WiFi bands.
 
 
+\section{Channel Occupancy}
+
+When access a channel licensed by FCC, most of the time we could detect signals in the 
+air from devices who share the channel. To represent the utilization level of a channel, 
+we define \emph{activity level}, $A$, as the percentage of time when the channel is 
+occupied by all competing sources $x_j (j = 1, 2, 3, ...)$ other than the intended 
+transmitter $y$. For 802.11-based transmissions, the activity level on band $i$ is 
+defined as:
+\begin{equation}
+\label{eqn:80211activity}
+A^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
+\end{equation}
+where $L_k^{x_j}$ and $R_k^{x_j}$ represent the packet length in bits and data
+rate at which that packet is transmitted, for external sources $x_j$;
+$S$ and $\sigma$ are the number of idle slots and slot duration, respectively. 
+When considering the activity level of non-802.11 users 
+({\it e.g.}, the bands currently licensed to TV),
+we use the received signal level from non-802.11 interfering sources $P_N^i$ 
+on band $i$ directly as an input to our algorithms. 
+
+
+% Talk about the available channel
+In practical, we get the activity level through in-field measurements.
+The measurements process will be introduced in following chapters.
+We define the percentage of sensing samples ($S_\theta$) above an 
+interference threshold ($\theta$) over the total samples ($S$) in a time unit as the 
+activity level ($A$) of inter-network interference:
+\begin{equation}
+\label{eq:actdef}
+A=\frac{S_\theta}{S_a}
+\end{equation}
+The capacity of a clean channel is denoted by $C$. With the protocol model, the capacity 
+of a channel with inter-network interference $C_r$ could be represented as 
+the remaining free time of the channel capacity according to: 
+\begin{equation}
+\label{eq:intercap}
+C_r=C*(1-\bar{A})
+\end{equation}
+
+
 \section{Gateworks Platform}
 
 The off the shelf platform we use for our measurments is the GW2358. 

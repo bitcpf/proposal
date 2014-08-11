@@ -1,3 +1,4 @@
+\vspace{0.2in}
 \noindent
 {\bf Sets:}
 \begin{tabular}{ll}
@@ -10,7 +11,7 @@ $T$ & Type of Access Point\\
 \\
 %\vspace{0.1in}
 %\begin{tabular}{lll}
-\begin{tabular}{llp{3.4cm}}
+\begin{tabular}{llp{9.5cm}}
 $G$ &  & Target Area\\
 $\gamma$ & & Traffic Demand Distribution\\
 $p$ & & Coverage Rate\\
@@ -55,9 +56,8 @@ $a_t\ge0$ & $t \in T$ & Number of Type t AP\\
 \label{opt:resource}
 \sum_t a_t\cdot O_{b,t} \le N_b
 \end{align}
-
 {\bf Spatial Constraint:} 
 \begin{align}
-\label{opt:resource}
 a_t < \frac{G}{S_t}\cdot\frac{2}{3}\cdot N_b
+\label{opt:spatial}
 \end{align}

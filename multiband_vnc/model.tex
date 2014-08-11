@@ -36,21 +36,21 @@ data for the collected context information
 %later. 
 
 
-To represent the utilization level of the channel, we define \emph{activity level}, $A$,
-as the percentage of time when the channel is occupied by 
-all competing sources $x_j (j = 1, 2, 3, ...)$ other than the intended transmitter $y$. 
-For 802.11-based transmissions, the activity level on band $i$ is defined as:
-\begin{equation}
-\label{eqn:80211activity}
-A^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
-\end{equation}
-where $L_k^{x_j}$ and $R_k^{x_j}$ represent the packet length in bits and data
-rate at which that packet is transmitted, for external sources $x_j$;
-$S$ and $\sigma$ are the number of idle slots and slot duration, respectively. 
-When considering the activity level of non-802.11 users 
-({\it e.g.}, the bands currently licensed to TV),
-we use the received signal level from non-802.11 interfering sources $P_N^i$ 
-on band $i$ directly as an input to our algorithms. 
+%To represent the utilization level of the channel, we define \emph{activity level}, $A$,
+%as the percentage of time when the channel is occupied by 
+%all competing sources $x_j (j = 1, 2, 3, ...)$ other than the intended transmitter $y$. 
+%For 802.11-based transmissions, the activity level on band $i$ is defined as:
+%\begin{equation}
+%\label{eqn:80211activity}
+%A^i = \frac{\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}}{\sum_k{\frac{L_k^y}{R_k^y}}+\sum_j{\sum_k{\frac{L_k^{x_j}}{R_k^{x_j}}}}+S\sigma}
+%\end{equation}
+%where $L_k^{x_j}$ and $R_k^{x_j}$ represent the packet length in bits and data
+%rate at which that packet is transmitted, for external sources $x_j$;
+%$S$ and $\sigma$ are the number of idle slots and slot duration, respectively. 
+%When considering the activity level of non-802.11 users 
+%({\it e.g.}, the bands currently licensed to TV),
+%we use the received signal level from non-802.11 interfering sources $P_N^i$ 
+%on band $i$ directly as an input to our algorithms. 
 
 \section{Multiband Adaptation Algorithms}
 \label{subsec:algorithms}

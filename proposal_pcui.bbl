@@ -223,14 +223,6 @@ People and households.
 \newblock Impact of interference on multi-hop wireless network performance.
 \newblock {\em Wireless networks 11}, 4 (2005), 471--487.
 
-\bibitem{joshi2009efficient}
-{\sc Joshi, G.~P., Kim, S.~W., and Kim, B.-S.}
-\newblock An efficient mac protocol for improving the network throughput for
-  cognitive radio networks.
-\newblock In {\em Next Generation Mobile Applications, Services and
-  Technologies, 2009. NGMAST'09. Third International Conference on\/} (2009),
-  IEEE, pp.~271--275.
-
 \bibitem{MOAR}
 {\sc Kanodia, V., Sabharwal, A., and Knightly, E.}
 \newblock {MOAR}: A multi-channel opportunistic auto-rate media access protocol
