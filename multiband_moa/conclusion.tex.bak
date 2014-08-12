@@ -1,0 +1,22 @@
+\section{Summary}
+\label{sec:moaconclusion}
+
+In this work, we jointly considered the use of WiFi and white space bands for 
+a single access point in wireless network deployment. To compare the network
+deployment costs in multiple scenarios, we proposed a Multiband Hetergeneous AP
+Deployment framework to find the number of access points required in a given region.
+We then performed numerical simulation to evaluate the gains of white space channels
+in access point deployment. Through extensive analysis across varying population 
+density and channel combinations across bands, we show that white space bands 
+can reduce the number of access points by 260\% in sufficient white space configuration
+and 80\% gain in limited white channel scenarios.
+
+%
+%own type area. Finally, we investigate different 
+%band combinations in two population densities to show that greater access to white space 
+%channels have greater total savings of mesh nodes when the total number of channels used 
+%in the network is fixed (i.e., given a total number of allowable WiFi and white space channels). 
+%As the population and spectrum utilization increase, the cost savings of white space bands
+%diminish to the point that WiFi-only channel combinations can be optimal.
+
+

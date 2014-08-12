@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  11 AUG 2014 23:14
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  12 AUG 2014 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -240,12 +240,6 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 
 LaTeX Warning: Label `subsec:result' multiply defined.
 
-
-LaTeX Warning: Label `eq:nlbound' multiply defined.
-
-
-LaTeX Warning: Label `eq:servicearea' multiply defined.
-
 )
 \openout1 = `proposal_pcui.aux'.
 
@@ -410,15 +404,15 @@ File: figures/onewhitechannel.eps Graphic file (type eps)
  <figures/onewhitechannel.eps> [51]
 File: figures/percentage.eps Graphic file (type eps)
 
-<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52]))
-(./chap_wm.tex [53]
+<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52] [53]))
+(./chap_wm.tex [54]
 Chapter 5.
-(./multiband_wm/problemformulation.tex [54
+(./multiband_wm/problemformulation.tex [55
 
 ]
 File: figures/interferencerange2.eps Graphic file (type eps)
  <figures/interferencerange2.eps>
-[55] [56] [57] [58]) (./multiband_wm/linearopt.tex
+[56] [57] [58] [59]) (./multiband_wm/linearopt.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--49
 
  []
@@ -428,7 +422,7 @@ Overfull \hbox (1.68642pt too wide) in paragraph at lines 22--49
 [] 
  []
 
-[59]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
@@ -438,23 +432,23 @@ Overfull \hbox (25.40338pt too wide) in paragraph at lines 57--70
 []
  []
 
-[60] [61]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [62] [63])
+[61] [62]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [63] [64])
 
 LaTeX Warning: Float too large for page by 6.71977pt on input line 54.
 
-[64] [65]
+[65] [66]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 85.
 
-) (./multiband_wm/experiment.tex [66] [67] [68]
+) (./multiband_wm/experiment.tex [67] [68] [69]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
 File: figures/maxtpt.eps Graphic file (type eps)
 
-<figures/maxtpt.eps> [69] [70] [71]
+<figures/maxtpt.eps> [70] [71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 []\OT1/cmr/m/n/12 Multi-WS
  []
@@ -479,7 +473,7 @@ Overfull \hbox (16.86353pt too wide) in paragraph at lines 215--256
  [] 
  []
 
-[72] [73] [74]
+[73] [74] [75]
 File: figures/actspac3d.eps Graphic file (type eps)
  <figures/actspac3d.eps>
 
@@ -490,27 +484,27 @@ File: figures/act_spacing.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75] [76]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [77]
+[76] [77]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [78]
 Chapter 6.
-[78
+[79
 
-] [79] [80]) (./chap_futurework.tex [81]
+] [80] [81]) (./chap_futurework.tex [82]
 Chapter 7.
-[82
+[83
 
-] [83] [84]
-Overfull \hbox (13.42943pt too wide) in paragraph at lines 193--197
+]
+Overfull \hbox (13.42943pt too wide) in paragraph at lines 199--203
 \OT1/cmr/m/n/12 ven-dors, the num-ber of ac-cess points would be the pri-mary c
 on-cern $\OML/cmm/m/it/12 Min[]$\OT1/cmr/m/n/12 .
  []
 
-) (./chap_conclusion.tex [85]
+) (./chap_conclusion.tex [84]
 Chapter 8.
-) (./proposal_pcui.bbl [86
+) (./proposal_pcui.bbl [85
 
 ]
 REFERENCES.
-[87
+[86
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--99
@@ -524,24 +518,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
 ets / 2008 / 05 /
  []
 
-[88] [89] [90] [91] [92])
+[87] [88] [89] [90] [91])
 \openout7 = `proposal_pcui.idx'.
 
 
 Total number of figures: 24
 Total number of tables: 5
-[93] (./proposal_pcui.aux)
+[92] (./proposal_pcui.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3571 strings out of 493322
- 49466 string characters out of 6140449
+ 3569 strings out of 493322
+ 49428 string characters out of 6140449
  127231 words of memory out of 5000000
- 6899 multiletter control sequences out of 15000+600000
+ 6897 multiletter control sequences out of 15000+600000
  10243 words of font info for 37 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  36i,9n,43p,419b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (107 pages, 279032 bytes).
+Output written on proposal_pcui.dvi (106 pages, 274836 bytes).
