@@ -4,10 +4,11 @@
 % Introduce the content of this section
 The objective of the mesh network deployment is to minimize the number of 
 deployed mesh nodes with the network constraints. In this section we first 
-describe the the motivation of frequency agility in mesh network deployment, 
-then we propose a graph-theoretic model for the network deployment problem
-with the QoS constraints and discuss the possible beamforming application in
-wireless network deployment. 
+describe the the motivation of frequency agility in mesh network deployment. 
+Then we propose a graph-theoretic model for the network deployment problem
+with the QoS constraints of an operational wireless mesh network.
+%and discuss 
+%the possible beamforming application in wireless network deployment. 
 
 %\subsection{Motivation}
 %\label{subsec:motivation}
@@ -151,8 +152,8 @@ The input of the problem is a target service area given with the parameters
 such as population distribution, spectrum usibility, and FCC licensed channels, 
 etc. The output is to locate the network infrustracture from the candidates.
 Thus, the target area with pre-defined parameters could be modeled as a 
-connectivity graph with vertexes represented as the centralized traffic demand 
-of a certain area and potential access points locations. The edges note the 
+connectivity graph with vertices represented as the centralized traffic demand 
+of a certain area and potential access points locations. The edges denote the 
 links between the locations. Oppose to previous works,
 ~\cite{robinson2010deploying,franklin2007node,tang2005interference,irwin2013resource}
 we formulate the input connectivity graph as a graph $G = (V,E,F)$, where centralized
@@ -161,19 +162,19 @@ point defined by its frequency form a unified connectivity graph.
 We are searching for the output of the problem which is expected to be an graph 
 $G' = (V',E',F')$ marks the mesh, gateway nodes and chosen frequency for them. 
 
-The vertexes in the modeled input graph represent a set $C$ of  separated target 
+The vertices in the modeled input graph represent a set $C$ of  separated target 
 area with traffic demands. The set $C$ consists of physical coordinates representing 
 target areas where client coverage is desired, analogous to the area to be covered 
 in a geometric formulation and the traffic amount need to be served. And also the 
-set of potential access points $M$ is a second part of the vertexes in the modeled 
+set of potential access points $M$ is a second part of the vertices in the modeled 
 graph. The potential locations of access points are assumed known through the 
 infrastructure conditions. The vertex set of the input connectivity graph is 
 the union of potential access points and centralized traffic demand locations as 
 $V = C\cup M$.
 
-The access points types set $F$ is defined by the working frequency band. It is 
-a set of different combination of frequency. The set $E$ int the graph is the 
-physical link under protocol model between two vertexes according to the access 
+The access points types set $F$ is defined by the working frequency bands. It is 
+a set of different combinations of frequency bands. The set $E$ in the graph is the 
+physical link under protocol model between two vertices according to the access 
 point type.
 
 In the output graph, $V'$ includes the chosen access points set $M'$ and served 
@@ -196,11 +197,9 @@ type of each $M'$.
 %$\theta_{capacity}$ is the percentage of satisfied traffic demand for the target area,
 %which also include the fairness request in the equation.
 
-The output of the graph could be optimized in several aspects. From the view of vendors,
+The output of the graph could be optimized in several aspects. From the view of network carriers,
 the number of access points would be the primary concern $Min{\{Number\{M'\}\}}$.
-Through the vendors monthly income from flow charge, maximize the served traffic
+Through the carriers monthly income from flow charge, maximize the served traffic
 demand would be the objective $Max{\{\sum{C'}\}}$. 
 
-To optimize these parameters, we are working on a graph theroy 
-approaching or a game theory approaching.
-
+To optimize these parameters, we are working on a graph or game theoretic approach

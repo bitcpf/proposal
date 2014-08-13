@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {4.3.}Experiment and Analysis}{34}
 \contentsline {subsection}{\numberline {4.3.1.}Experiment Design}{34}
 \contentsline {subsection}{\numberline {4.3.2.}Results and Analysis}{36}
-\contentsline {section}{\numberline {4.4.}Hetergeneous Access Point Band Selection}{42}
+\contentsline {section}{\numberline {4.4.}Heterogeneous Access Point Band Selection}{42}
 \contentsline {section}{\numberline {4.5.}Numerical Evaluation and Analysis}{48}
 \contentsline {subsection}{\numberline {4.5.1.}Experimental Setup}{48}
 \contentsline {subsection}{\numberline {4.5.2.}Results and Analysis}{50}
