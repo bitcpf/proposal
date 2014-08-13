@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  12 AUG 2014 11:18
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  12 AUG 2014 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,37 +293,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--114
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10]) (./chap_background.tex [11]
+] [2] [3] [4] [5] [6] [7] [8] [9]) (./chap_background.tex [10]
 Chapter 2.
-[12
+[11
 
-] [13] [14]
+] [12] [13]
 File: figures/gw2358.eps Graphic file (type eps)
  <figures/gw2358.eps>
 File: figures/fsh8.eps Graphic file (type eps)
- <figures/fsh8.eps> [15]) (./chap_vnc.tex
-[16]
+ <figures/fsh8.eps> [14]) (./chap_vnc.tex
+[15]
 Chapter 3.
 (./multiband_vnc/model.tex
-Overfull \hbox (5.20886pt too wide) in paragraph at lines 14--21
+Overfull \hbox (5.20886pt too wide) in paragraph at lines 15--22
 []\OT1/cmr/m/n/12 Consider a sys-tem with $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 
 fre-quency bands, rep-re-sented by an in-dex set $\OMS/cmsy/m/n/12 f\OT1/cmr/m/
 n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/
 n/12 g$\OT1/cmr/m/n/12 .
  []
 
-[17
+[16
 
-] [18]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
+] [17]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
- [19]
-[20]) (./multiband_vnc/experiment_design.tex [21]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+ [18]
+[19]) (./multiband_vnc/experiment_design.tex [20]
 File: figures/emulator2.eps Graphic file (type eps)
  <figures/emulator2.eps>
 File: figures/infield.eps Graphic file (type eps)
@@ -332,18 +332,18 @@ File: figures/infield.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22]
+[21]
 File: figures/sa_process.eps Graphic file (type eps)
- <figures/sa_process.eps> [23]) (./multiband_vnc/experiment.tex
+ <figures/sa_process.eps> [22]) (./multiband_vnc/experiment.tex
 File: figures/performance_accuracy.eps Graphic file (type eps)
 
-<figures/performance_accuracy.eps> [24]
+<figures/performance_accuracy.eps> [23]
 Overfull \hbox (2.74246pt too wide) in paragraph at lines 66--70
 []\OT1/cmr/m/n/12 The sec-ond base-line al-go-rithm, \OT1/cmr/m/it/12 SNR-based
  Through-put Look-up\OT1/cmr/m/n/12 , main-tains 39.2%
  []
 
-[25]
+[24]
 File: figures/performance_gap.eps Graphic file (type eps)
  <figures/performance_gap.eps>
 Overfull \hbox (10.09898pt too wide) in paragraph at lines 99--105
@@ -354,31 +354,31 @@ Overfull \hbox (10.09898pt too wide) in paragraph at lines 99--105
 File: figures/region_map.eps Graphic file (type eps)
 <figures/region_map.eps>
 File: figures/mvsl.eps Graphic file (type eps)
- <figures/mvsl.eps> [26] [27])
-(./multiband_vnc/conclusion.tex) [28]) (./chap_winmee.tex [29]
+ <figures/mvsl.eps> [25] [26])
+(./multiband_vnc/conclusion.tex) [27]) (./chap_winmee.tex [28]
 Chapter 4.
-(./multiband_winmee/problemformulation.tex [30
+(./multiband_winmee/problemformulation.tex [29
 
-] [31] [32] [33])
-(./multiband_winmee/experiment.tex [34] [35]
+] [30] [31] [32])
+(./multiband_winmee/experiment.tex [33] [34]
 File: figures/equipment.eps Graphic file (type eps)
- <figures/equipment.eps> [36]
+ <figures/equipment.eps> [35]
 File: figures/drivemap.eps Graphic file (type eps)
 
 <figures/drivemap.eps>
 File: figures/drivetest.eps Graphic file (type eps)
- <figures/drivetest.eps> [37] [38]
+ <figures/drivetest.eps> [36] [37]
 Overfull \hbox (10.2402pt too wide) in paragraph at lines 180--196
  [][] 
  []
 
-[39]
+[38]
 File: figures/redensity.eps Graphic file (type eps)
- <figures/redensity.eps> [40]
+ <figures/redensity.eps> [39]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42]) (./multiband_moa/problemformulation.tex [43] [44]
+[40] [41]) (./multiband_moa/problemformulation.tex [42] [43]
 File: figures/lowtraffic.eps Graphic file (type eps)
 
 <figures/lowtraffic.eps>
@@ -386,33 +386,33 @@ File: figures/mediumtraffic.eps Graphic file (type eps)
  <figures/mediumtraffic.eps>
 File: figures/hightraffic.eps Graphic file (type eps)
  <figures/hightraffic.eps>
-[45] (./multiband_moa/linear.tex
+(./multiband_moa/linear.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--23
 
  []
 
-
+[44] [45]
 Underfull \hbox (badness 10000) in paragraph at lines 25--33
 
  []
 
-[46]) [47]) (./multiband_moa/experiment.tex [48] [49] [50]
+) [46] [47]) (./multiband_moa/experiment.tex [48] [49]
 File: figures/enoughchannels.eps Graphic file (type eps)
 
-<figures/enoughchannels.eps>
+<figures/enoughchannels.eps> [50]
 File: figures/onewhitechannel.eps Graphic file (type eps)
  <figures/onewhitechannel.eps> [51]
 File: figures/percentage.eps Graphic file (type eps)
 
-<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52] [53]))
-(./chap_wm.tex [54]
+<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52]))
+(./chap_wm.tex [53]
 Chapter 5.
-(./multiband_wm/problemformulation.tex [55
+(./multiband_wm/problemformulation.tex [54
 
 ]
 File: figures/interferencerange2.eps Graphic file (type eps)
  <figures/interferencerange2.eps>
-[56] [57] [58] [59]) (./multiband_wm/linearopt.tex
+[55] [56] [57] [58]) (./multiband_wm/linearopt.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--49
 
  []
@@ -422,7 +422,7 @@ Overfull \hbox (1.68642pt too wide) in paragraph at lines 22--49
 [] 
  []
 
-[60]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
@@ -432,23 +432,23 @@ Overfull \hbox (25.40338pt too wide) in paragraph at lines 57--70
 []
  []
 
-[61] [62]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [63] [64])
+[60] [61]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [62] [63])
 
 LaTeX Warning: Float too large for page by 6.71977pt on input line 54.
 
-[65] [66]
+[64] [65]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 85.
 
-) (./multiband_wm/experiment.tex [67] [68] [69]
+) (./multiband_wm/experiment.tex [66] [67] [68]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
 File: figures/maxtpt.eps Graphic file (type eps)
 
-<figures/maxtpt.eps> [70] [71] [72]
+<figures/maxtpt.eps> [69] [70] [71]
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 []\OT1/cmr/m/n/12 Multi-WS
  []
@@ -473,7 +473,7 @@ Overfull \hbox (16.86353pt too wide) in paragraph at lines 215--256
  [] 
  []
 
-[73] [74] [75]
+[72] [73] [74]
 File: figures/actspac3d.eps Graphic file (type eps)
  <figures/actspac3d.eps>
 
@@ -484,13 +484,13 @@ File: figures/act_spacing.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[76] [77]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [78]
+[75] [76]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [77]
 Chapter 6.
-[79
+[78
 
-] [80] [81]) (./chap_futurework.tex [82]
+] [79] [80]) (./chap_futurework.tex [81]
 Chapter 7.
-[83
+[82
 
 ]
 Overfull \hbox (13.42943pt too wide) in paragraph at lines 199--203
@@ -498,13 +498,13 @@ Overfull \hbox (13.42943pt too wide) in paragraph at lines 199--203
 on-cern $\OML/cmm/m/it/12 Min[]$\OT1/cmr/m/n/12 .
  []
 
-) (./chap_conclusion.tex [84]
+) (./chap_conclusion.tex [83]
 Chapter 8.
-) (./proposal_pcui.bbl [85
+) (./proposal_pcui.bbl [84
 
 ]
 REFERENCES.
-[86
+[85
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--99
@@ -518,13 +518,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
 ets / 2008 / 05 /
  []
 
-[87] [88] [89] [90] [91])
+[86] [87] [88] [89] [90])
 \openout7 = `proposal_pcui.idx'.
 
 
 Total number of figures: 24
 Total number of tables: 5
-[92] (./proposal_pcui.aux)
+[91] (./proposal_pcui.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -538,4 +538,4 @@ Here is how much of TeX's memory you used:
  953 hyphenation exceptions out of 8191
  36i,9n,43p,419b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (106 pages, 274836 bytes).
+Output written on proposal_pcui.dvi (105 pages, 272592 bytes).

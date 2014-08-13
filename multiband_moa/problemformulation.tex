@@ -97,13 +97,14 @@
 % Assumptions of the network
 As opposed to previous works such as
 ~\cite{franklin2007node,robinson2010deploying,si2010overview}, 
-this paper focuses on hetergenous access point selection 
+these works focus on hetergenous access point selection 
 for wireless access networks which jointly employ WiFi and white space bands.
-We propose a relaxed linear program to find the lower bound number of access point,
+We propose a relaxed linear program to find the lower bound of the number of access points
 and MHAPD algorithm  to approach the lower bound number of access points which serve
 the traffic demand of a certain area. We assume the service provider has a limited number 
-of spectrum resources and radios have similar configuration. Each radio on an access 
-point operates with a classic protocol model~\cite{gupta2000capacity}. 
+of spectrum resources and radios have similar configurations in terms of transmission power and bandwidth per 
+channel use. Each radio on an access 
+point operates with a classic protocol model as introduced in~\cite{gupta2000capacity}. 
 We further assume that there is a given take rate and traffic demand for a given 
 population (as specified in Section~\ref{sec:moaexperimentdesign}).
 
@@ -128,52 +129,55 @@ population (as specified in Section~\ref{sec:moaexperimentdesign}).
 
 
 % Hetergeneous Access point & resource constraint
-Under the capacity and coverage constraints, the serveice area of a hetergeneous multiband access point 
+Under the capacity and coverage constraints, the service area of a hetergeneous multiband access point deployments
 varies according to the traffic demand. The service area is limited by the propagation range when the traffic 
-demand is low; and when the traffic demand is high, the service area is limited by the radio capacity.
-The radius of service area $r_s$ could be represented as:
+demand is low  when the traffic demand is high, the service area is limited by the radio capacity.
+The radius of the service area $r_s$ could be represented as:
 \begin{equation}
 \label{eq:servicearea}
 r_s=min\{r_p,r_c\}
 \end{equation}
-$r_p$ represents the propagation range of a radio in the access point, $r_c$ is the capacity range of 
-a a radio in the access point. When the traffic demand is distributed uniform in a circle, from 
+aere, $r_p$ represents the propagation range of a radio in the access point, and $r_c$ is the capacity range of 
+a a radio in the access point. When the traffic demand is distributed uniformly in a circle, from 
 Eq.~\ref{eq:nlbound} the capacity range $r_c$ could be noted as $r_c=\sqrt{k/\pi}$. Moreover,
-the propagation range and capacity rang could be determined by the environment, traffic distribution and
-power control~\cite{robinson2010deploying}. These factors are out of the scope of this work, but they could
-easily be added to the model for calculation of a hetergenous access point service area. To simplify the 
-problem and focus on multiband, we assume the traffic demand is uniform distributed and the propagation 
-follow Frii rule as Eq.~\ref{eq:friis}. When the target area is given, we could get the service area of
-each access point type through~\ref{eq:servicearea}, then we adjust the transmit power of each radio
-to reduce the interference among each other.
+the propagation range and capacity range could be determined by the environment, traffic distribution, and
+transmission power control~\cite{robinson2010deploying}. These factors are out of the scope of this work, but they could
+easily be added to the model for calculation of the hetergenous access point service area. To simplify the 
+problem and focus on the role of multiple frequency bands, we assume the traffic demand is uniformly distributed and the propagation 
+follows Frii rule as Eq.~\ref{eq:friis}. When the target area is given, we could obtain the service area of
+each access point type through~\ref{eq:servicearea}, we then adjust the transmit power of each radio
+to reduce the interference.
 
 % Variation of radios
-When the traffic demand of an area is constant, the degree of a hetergenous access point service area 
-varies with the radios. We assume all the access points have the same number of radios and channel 
+When the traffic demand of an area is constant, the service area of a hetergenous access point 
+varies with the radios due to the constraints. We assume all the access points have the same number of radios and channel 
 resources.
 % Lower traffic demand case
-In the low traffic demand scenario, the service radius reaches the radio propagation range.
-A high frequency WiFi radios will have a smaller service area since the signal attenuate fast; while the white
-space radio could have a larger service area due to the longer propagation; and a hetergenous access point who has
+In a low traffic demand scenario, the service radius reaches the radio propagation range.
+A high frequency WiFi radio will have a smaller service area since the signal attenuate faster; while the white
+space radio could have a larger service area due to the longer propagation range; and a hetergenous access point who has
 both WiFi radios and white space radios has the same range of as low frequency radios access point. An example is
 shown in Fig.~\ref{fig:lowtraffic}.
 % Medium traffic demand case
-In medium traffic demand scenario, hetergenous access points and white space access points will 
-have the same size service area which is larger than high frequency WiFi only access points as shown in 
+In a medium traffic demand scenario, hetergenous access points and white space access points will 
+have the same size service area which is larger than high frequency WiFi only access points as shown in Fig.
 ~\ref{fig:mediumtraffic}.
 % High traffic demand case
 With high traffic demand, all access points will have the same service area due to capacity constraint 
-as shown in~\ref{fig:hightraffic}. White space bands could reduce the cost of wireless network deployment. 
+as shown in Fig.~\ref{fig:hightraffic}. White space bands could reduce the cost of wireless network 
+deployment due to greater internode spacing. 
 Thus, lowest cost for covering a certain area is to use white space bands in all access points 
-based on the analysis. However, spectrum resource is limited, especially the usability
-of white space bands is restricted in major cities in US~\cite{msdatabase}. 
+it the traffic demand and user density is sufficient. 
+%based on the analysis.
+However, spectrum resources are limited and the use of white space bands 
+are restricted in major cities in the US due to TV channel occupancy~\cite{msdatabase}. 
 % Problem
-Thus, the trade of between centralized using all white space bands or mixed using white space
-bands under multiple traffic demands is a question for wireless network deployment. The problem
-could be modeled as how could we use the minumum number of different sizes of service area according to 
-radio combinations to cover a certain plane area. This problem is a to deploy different size of cells in 
-a given palen, which is a NP-hard bin package problem~\cite{martello1998exact}. We propose a relaxed 
-linear program to get the lower bound of the number of access points and a heuristic algorithm to 
+Thus, the tradeoff between centralized use of  white space bands or mixed use of white space
+bands and WiFi bands under multiple traffic demands is question for wireless network deployment. The problem
+could be modeled as how to use the minumum number of different sizes of service area according to 
+radio combinations to cover a certain 2- D plane. This problem is a to deploy different size of cells in 
+a given plane, which is a NP-hard bin packing problem~\cite{martello1998exact}. We propose a relaxed 
+linear program to achieve the lower bound of the number of access points and a heuristic algorithm to 
 approach the lower bound.
 
 
@@ -211,31 +215,33 @@ approach the lower bound.
 
 % Relaxed linear program
 Given a target area $G$ with the traffic demand distribution $\gamma$, the service area 
-of all kinds access points $S_t$, the coverage rate $p$, thus the capacity of access point $C_t$ could 
-be calaculated based on the number of radios, Friis model~\ref{eq:friis} and restriction~\ref{eq:servicearea}
-or from in-field measurement~\cite{cuileveraging}. When the target area is served, the reward of the area 
-could be knows as a constant number $R$. However, the reward does not influence the optimal deployment since 
-the total reward is a constant. Furthermore, the minimum number of access points could be found through 
-a relaxed linear program as fllowing. 
+of all kinds access points $S_t$, and the coverage rate $p$, the capacity of access point $C_t$ could 
+be calaculated based on the number of radios, Friis model in Eq.~\ref{eq:friis} and restriction constraints in Eq.~\ref{eq:servicearea}
+or from in-field measurement~\cite{cuileveraging}. 
+When the target area is served, the reward of the area 
+could be calculated as $R$. However, the reward of service carrier does not influence the 
+optimal deployment since the total reward is a constant when the user number is constant in the 
+service area in our scenario. Furthermore, the minimum number of access points could be found through 
+a relaxed linear program as follows. 
 
 \input{multiband_moa/linear}
 
-The linear program relax the coverage constraint without telling a key parameter
-{\it where should we put the access point?}. Moreover, the linear program may provide 
-multiple results since different type of access points could have the same service area, 
-(e.g. in low traffic demand case) The result of the linear program is the lower bound of 
-access points. 
+The linear program relaxes the coverage constraint without providing a key parameter
+where the access points are located. Moreover, the linear program may provide 
+multiple results since different types of access points could have the same service area, 
+(e.g. in a low traffic demand case) The result of the linear program is the lower bound
+on the number of access points. 
 
-In order to find a pratical access points deployment in multiband scenario, we represent 
-a greedy local search algorithm in~\ref{alg:gls}. The service area of access points varies 
-from population distribution. Assume the cost of building an access point is the same as $C_a$. 
-When an access point is built, the more service area is better. Thus hetegenous access point
-could always have better performance. However, since there are a limit number of spectrum resource,
-we have to balance the usability of hetegenous access point who reduce the cost of building access 
-points, and single radio access point who may cover more areas.
+In order to find a practical access points deployment in multiband scenario, we represent 
+a greedy local search algorithm in Alg.~\ref{alg:gls}. The service area of access points varies 
+across diverse population distributions. Assume the cost of building an access point is the same as $C_a$. 
+When an access point is built, the more service area the better. Thus, hetegenous access points
+could always have better performance. However, since there are a limited spectrum resources,
+we have to balance the usability of hetegenous access points which reduce the cost of building 
+a network, and single radio access point which may cover more area.
 
-In linear program, the reward $R$ is a constant of the area $G$. But for a single hetergenous access
-point deployment, we have to compare its reward and cost to seperately using the radios.
+In the linear program, the reward $R$ is a constant of the area $G$. But for a single hetergenous access
+point deployment, we have to compare its reward and cost to separately using the radios.
 In a certain area, a hetegenous AP has radius $r_1$. If we sperately using the radios with
 radius $r_2,r_3,\dots r_n$, the reward is uniformly distributee, the hetegenous reward is defined as:
 

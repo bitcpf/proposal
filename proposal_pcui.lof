@@ -1,24 +1,24 @@
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The Gateworks GW2358 off-shelf Platform.\relax }}{15}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Rohde \& Schwarz FSH 8 Spectrum Analyzer.\relax }}{16}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Experimental setup for channel emulator.\relax }}{22}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces In-field Experimental Setup.\relax }}{23}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Spectrum Analyzer Data Processing.\relax }}{23}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Accuracy of the four multiband algorithms.\relax }}{25}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Throughput Gap of the four multiband algorithms.\relax }}{26}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Spatially splitting experimental area into 8 regions.\relax }}{27}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Accuracy when dividing training set into 8 regions.\relax }}{27}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Multiband Measurement Platform\relax }}{36}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces White Space Channels in DFW Metropolitan and Surrounding Areas.\relax }}{38}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrum Activity in DFW Metropolitan and Surrounding Areas.\relax }}{38}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Number of Access Points Needed for a 13 km x13 km Area.\relax }}{40}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The Gateworks GW2358 off-shelf Platform.\relax }}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rohde \& Schwarz FSH 8 Spectrum Analyzer.\relax }}{15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Experimental setup for channel emulator.\relax }}{21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces In-field Experimental Setup.\relax }}{22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Spectrum Analyzer Data Processing.\relax }}{22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Accuracy of the four multiband algorithms.\relax }}{24}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Throughput Gap of the four multiband algorithms.\relax }}{25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Spatially splitting experimental area into 8 regions.\relax }}{26}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Accuracy when dividing training set into 8 regions.\relax }}{26}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Multiband Measurement Platform\relax }}{35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces White Space Channels in DFW Metropolitan and Surrounding Areas.\relax }}{37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrum Activity in DFW Metropolitan and Surrounding Areas.\relax }}{37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Number of Access Points Needed for a 13 km x13 km Area.\relax }}{39}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Low Traffic Scenario\relax }}{45}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Medium Traffic Scenario\relax }}{45}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces High Traffic Scenario\relax }}{45}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Sufficient White Space Channels Scenario\relax }}{51}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces One white channel\relax }}{52}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Percentage of Heterogeneous Access Points\relax }}{53}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example WhiteMesh topology with different mesh-node shapes representing different frequency band choices per link.\relax }}{57}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Average Population Distribution = 500 $ppl/km^2$\relax }}{70}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Varying Load, 49-Nodes Regular Grid\relax }}{71}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Uniform Activity Level VS. Space Distance\relax }}{77}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Traffic arrived Gateways with Activity Level \& Spacing\relax }}{77}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Percentage of Heterogeneous Access Points\relax }}{52}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example WhiteMesh topology with different mesh-node shapes representing different frequency band choices per link.\relax }}{56}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Average Population Distribution = 500 $ppl/km^2$\relax }}{69}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Varying Load, 49-Nodes Regular Grid\relax }}{70}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Uniform Activity Level VS. Space Distance\relax }}{76}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Traffic arrived Gateways with Activity Level \& Spacing\relax }}{76}

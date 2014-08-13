@@ -1,17 +1,22 @@
 \chapter{Introduction} \label{ch:introduction}
 
-Wireless network is believed to be the most convenient method to get service 
-for users. The demand of wireless device users inspires vendors to provide 
-faster, stable service in their networks. Because of the prevalence of 
-individual devices, vehicular wireless devices and wireless sensors, wireless 
+
+
+Due to the ubquity and covenience of wireless Internet service, the demand of 
+wireless device users for efficient wireless links and networks are surging.
+%Wireless network is believed to be the most convenient method to get service 
+%for users. The demand of wireless device users inspires vendors to provide 
+%faster, stable service in their networks. Because of the prevalence of 
+%individual devices, vehicular wireless devices and wireless sensors, 
+For example, wireless 
 data traffic has increased for a thousand-fold over the last years and is 
 expected to continue over the next decade~\cite{metis}, greatly motivating 
 the improvement of wireless link communication and network deployment technology.
 
-However, unlike wired networks, wireless devices have to share crowd
-and unstable channels in limited frequencies. Especially in vehicular
-environment, the situation is even worse due to the changing channel 
-state. Fortunately, drivers and passengers around the world could utilize a 
+However, unlike wired networks, wireless devices share spectrum resources 
+and have unstable, time-varying channel quality. For a vehicular
+environment, the situation is even worse due to the frequently changing channel 
+state. Drivers and passengers around the world could utilize a 
 wide array of vehicular applications ranging from real-time traffic 
 monitoring and safety applications to various infotainment applications.
 However, the continuous use of such applications is limited due to the
@@ -23,8 +28,8 @@ extremely tenuous, demanding instantaneous decisions to remain connected,
 motivating an algorithm that can find the appropriate frequency band quickly 
 and according to the current environmental context.
 
-Obviously, more frequencies resource could improve the performance for 
-both link and network communication. The FCC has approved the use of broadband 
+Clearly, more available spectrum could improve the performance for 
+both links and networks. The FCC has approved the use of broadband 
 services in the white spaces of UHF TV bands, which were formerly exclusively 
 licensed to television broadcasters. These white space bands are now available 
 for unlicensed public use, enabling the deployment of wireless access networks 
@@ -70,35 +75,36 @@ exploited in their models~\cite{raniwala2004centralized,tang2005interference, si
 which could be the fundamental issue for the success of mesh networks 
 going forward.
 
-As white space frequencies are freed for wireless communication,
-both the academy and the industry are looking forward to a complete
-solution for white space application in wireless link communication
-and networks. In this work, we try to answer part of the concerns
-of white space link communication in vehicular environment, jointly 
-white space bands and WiFi bands network deployment issues. We also
-propose prospective graph theory solution for white space frequencies
-application in short future. Beamforming is recognized as an prospective 
-technology to further improve the performance of wireless networks, 
-through increasing both time reuse and spatial reuse. The potential 
-gains of reducing deployment cost and fairness from beamforming 
-motivated us to exploit the jointly usability of beamforming and 
-white space bands in the future.
+As white space frequencies are made available for wireless communication,
+both the academic and  industry experts are seeking an integrated approach
+for white space and WiFi bands in wireless links and networks. 
+In this work, we seek to jointly use 
+white space bands and WiFi bands in vehicular and large scale network deployments. 
+We also
+propose prospective graph theory solution for white space spectrum 
+in short future. 
+%Beamforming is recognized as an prospective 
+%technology to further improve the performance of wireless networks, 
+%through increasing both time reuse and spatial reuse. The potential 
+%gains of reducing deployment cost and fairness from beamforming 
+%motivated us to exploit the jointly usability of beamforming and 
+%white space bands in the future.
 
 
 \section{Challenges}
 % Challenges
 
-Wireless communications and networks suffers the limited resource
-and interference since the day they were born. Everyone has to
-share the channels other than having a private cable as wired 
-communication. However, both the clients and the vendors are 
-seeking better service and lower cost for wireless communication. 
-Spectrum agility offers new solution for these issues. To employ
-the spectrum agility, the diversity of spectrum and network 
-complexity have to be recognized prior to the solutions.
+Wireless links and networks suffer from the limited available resources
+and interference. Everyone must 
+share the bandwidth. Here, users and work carriers alike seek 
+better service and lower cost for wireless networks. 
+Spectrum agility offers a new promising resource to address these issues. 
+%the spectrum agility, the diversity of spectrum and network 
+%complexity have to be recognized prior to the solutions.
 
 % VNC challenge
-First, accurate knowledge of channel status is hard to be detected 
+First, accurate knowledge of channel state is challenging to obtain due to the
+time varying nature of channel quality and interference.
 at the receiver. In recently, cognitive radio mechanisms which 
 interleave channel accesses motivate the frequency band selection 
 problem of finding the optimal spectrum on which to transmit
@@ -150,15 +156,17 @@ network. These two issues are critical for designing an optimal
 network deployment and providing commercial wireless services to 
 clients in any location.
 
-Third, in backhual layer, researchers have done both centralized and 
+Third, in the backhual layer, researchers have done both centralized and 
 distributed work for channel assignment and routing~\cite{raniwala2004centralized,wu2006distributed}.
-However, FCC's new policy import new resources bringing new opportunity
-and challenges for these issues.  Extra channel capacity and 
-propagation variation becomes new consideration for the solutions.
-Since the origin multichannel problem has been proved as a NP-hard
-problem which could not be solved in polynomial time, an affordable 
-solution for the new white space application is an emergency for 
-both academy and industry. As shown in Google database~\cite{googledatabase}, 
+However, the FCC's new policy bring new opportunities
+and challenges for these issues.  Increased channel capacity and 
+propagation diversity forces new consideration for existing solutions.
+Since even the original multichannel problem has been proved to be NP-hard
+which could not be solved in polynomial time, low complexity
+solution for joint white space and WiFi usage is needed.
+%the new white space application is an emergency for 
+%both academy and industry. 
+As shown in Google database~\cite{googledatabase}, 
 the additional number of available white space frequency channels 
 vary from city to city in US. Existing channel occupancy discussed in 
 previous work~\cite{pcuiwinmee} has shown that the occupancy of 
@@ -172,11 +180,9 @@ models~\cite{tang2005interference, long2013fair,doraghinejad2014channel},
 which could be {\it the} fundamental issue for the success of mesh 
 networks going forward.
 
-Moreover, the jointly use of WiFi and white space on heterogeneous 
-access point depends on the capacity of radios, the propagation range 
-and the demands of the serving area. The scant frequencies of radios, 
-the propagation distinctive and the demands diversity of population 
-distribution bring the variation of an access point service area. 
+Moreover, the joint use of WiFi and white spaces  in 
+access points depends on the capacity of radios, the propagation range 
+and the demands of the service area. 
 Thus, the new opportunities created by white spaces motivate the following 
 questions for wireless Internet carriers, which have yet to be addressed: 
 {\it (i) To what degree can white space bands reduce the network deployment 
@@ -184,25 +190,25 @@ cost of sparsely populated rural areas as opposed to comparable WiFi-only
 solutions?} and {\it (ii) To what degree can heterogeneous access points 
 benefit the dense population areas and sparsely populated rural areas?}
 
-Lastly, beamforming make the wireless network with more spatial reuse 
-similar to the wired network in some degree. However, lacking of protocols 
-and assignment methods make it hard to apply the technology in practice. 
-The issues of beamforming in application, such as deafness, new hidden 
-problem need to be leveraged and resolved by new protocols and algorithms. 
-This new technology inspire the optimization more challenging and meaningful.
+%Lastly, beamforming make the wireless network with more spatial reuse 
+%similar to the wired network in some degree. However, lacking of protocols 
+%and assignment methods make it hard to apply the technology in practice. 
+%The issues of beamforming in application, such as deafness, new hidden 
+%problem need to be leveraged and resolved by new protocols and algorithms. 
+%This new technology inspire the optimization more challenging and meaningful.
 
 % Contributions of previous work and future work plan
 \section{Contributions and Future Work}
 
-This work propose spectrum adaptation for both the link communication and 
-network optimization to improve the performance of wireless devices in 
-multiple bands accessible environment.
+This work proposes spectrum adaptation for both the wireless links and 
+large scale network deployments to improve the performance of wireless devices in 
+multiple frequency bands.
 
 % VNC Contributions
-In this link spectrum adaptation, we develop multiband adaptation protocols 
+For link adaptation, we develop multiband protocols 
 which couple the prior knowledge of in-situ performance of various bands 
-with the instantaneous knowledge of spectral activity, SNR, and current 
-location of each band to arrive at a decision on the optimal band to transmit. 
+with the instantaneous knowledge of spectral activity, SNR, and the current 
+location of each band to arrive at a decision for the optimal band on which to transmit. 
 To do so, we use an off-the-shelf platform that allows direct comparison and 
 simultaneous experimentation across four different wireless frequency bands 
 from 450 MHz to 5.8 GHz with the same physical and media access layers. 
@@ -277,14 +283,15 @@ The main contributions of our work in this topic include: We develop an
 optimization framework based on linear programming to jointly leverage 
 white space and WiFi bands approaching the lower bound in terms of the number 
 of access points to serve the demands of a given area. We design a MHAPD 
-greedy algorithm, which model the problem as a bin package problem. We 
+greedy algorithm, which models the problem as a bin packing problem. We 
 evaluate the performance of the presented algorithm, comparing with the 
-lower bound and the hexagon WiFi access point deployment in sparse rural 
+lower bound and the hexagon of WiFi access point deployment in sparse rural 
 areas given similar channel resources. The numeric results shows that our 
-algorithm gains 260\% against the linear hexagon deployment method.  We 
-further analysis the performance of heterogeneous access point performance in 
-variation of population density. The numeric results shows that heterogeneous 
-access point could improve the budget saving up to 323\%. 
+algorithm gains 260\% against the linear hexagon of deployments.  We 
+further analyze the performance of heterogeneous access point performance 
+across variety of population densities. The numeric results show that heterogeneous 
+access points which jointly use white space and WiFi bands could improve 
+the budget saving up to 323\%. 
 
 % Whitemesh
 In the backhual layer network deployment, we leverage the diversity 
@@ -297,11 +304,11 @@ we design a measurement driven heuristic algorithm, Band-based Path
 Selection (BPS). We then apply the approaching method in multiple 
 scenarios with in-field measurement data. Across a wide range of 
 scenarios, including network size, population distribution, deployment 
-distance gap, we exploit the general rules of emerging white space 
+distance gap, we exploit when and  how to emerge white space 
 bands in mesh networks. The performance of our scheme is compared 
 against two well-known multi-channel, multi-radio channel assignment 
 algorithms across these scenarios, including those typical for rural 
-areas as well as urban settings. We further discuss the channel occupancy 
+areas as well as urban settings. We further discuss how the channel occupancy 
 impacts on wireless networks and show the comparison of our algorithm 
 and previous methods in typical scenarios. Finally, we quantify the degree 
 to which the joint use of both band types can improve the performance of 
@@ -314,26 +321,27 @@ Band-based Path Selection (BPS), which considers the diverse propagation,
 overall interference level of WiFi and white space bands with measurement 
 adjust. We perform extensive analysis across offered loads, network sizes, 
 mesh nodes spacing and WiFi/white space band combinations, to compare 
-against previous multichannel multiradio algorithms. And we further 
-exploit the general rules of white space bands application in wireless 
-network. We discuss the channel occupancy and mesh spacing impacts on the 
-performance given similar channel resources (bandwidth and transmission 
-power), We show the improvement of our BPS in typical configurations up to 
-180\% vs. previous multichannel algorithms.
+against previous multichannel multiradio algorithms. 
+We discuss the channel occupancy and mesh spacing impacts the 
+performance of similar channel resources (bandwidth and transmission 
+power), We show the improvement of our BPS algorithm in typical configurations up to 
+180\% versus. previous multichannel algorithms.
 
 
 
 % Future work
 In the future, we propose to find a better solution based on graph
-theory for multiband wireless network deployment. Future work will
-tell not only the channel assignment, but also where should we put
-the gateway nodes with a solid, less complex solution to get a 
-complete process for multiband wireless network deployment. Also 
-we are interested in involving beamforming to increase the spatial
-reuse in wireless network with more capacity and fairness. 
-In the beamforming application, we are going to design protocols to 
-optimize the network deployment cost under the limitation of QoS.
-
+theory for multiband wireless network deployments. Future work will
+provide a mechamism for not only channel assignment, but also where 
+we should locate 
+the gateway nodes with a less complex solution to achieve a 
+complete framework for multiband wireless network deployment. 
+%Also 
+%we are interested in involving beamforming to increase the spatial
+%reuse in wireless network with more capacity and fairness. 
+%In the beamforming application, we are going to design protocols to 
+%optimize the network deployment cost under the limitation of QoS.
+%
 % Beamforming network time? maybe could be a concept similar to network efficiency
 
 
@@ -343,18 +351,17 @@ optimize the network deployment cost under the limitation of QoS.
 In Chapter~\ref{ch:background}, we discuss the background of this work, 
 including the basic knowledge related to this work and the hardware 
 platform and software tools applied in our research. Chapter~\ref{ch:vnc} 
-provides an analysis and solution of vehicular link spectrum adaptation in 
-multiband scenario. We also proposed an access layer network deployment 
+provides an analysis and solution of vehicular link adaptation across multiple frequency bands. 
+We also propose an access network deployment 
 framework in Chapter~\ref{ch:winmee} and discuss the optimization of a 
-single access point with spectrum limitation. Then, we further
-compare the heterogeneous access point with both white space bands and WiFi 
-bands and WiFi only access points to quantify the white space benefit 
-through single access point. In Chapter~\ref{ch:wm}, we propose an 
-algorithm to assign channels in multiband wireless network scenario for 
-optimizing the throughput performance in backhual networks. Further, we 
+single access point with spectrum limitations. Then, we further
+compare this solution to one which both white space bands and WiFi 
+bands to quantify the benefit of white spaces. In Chapter~\ref{ch:wm}, we propose an 
+algorithm to assign channels in multiband wireless network scenarios for 
+optimizing the throughput performance in multihop backhual networks. Further, we 
 quantify the heterogeneous application of white space bands and WiFi bands 
 in access points deployment process. In Chapter~\ref{ch:futurework}, we 
-propose the future in multiband network deployment and the potential 
-beamforming technology application in link communication and networks. 
+propose the future in multiband network deployment using traph theory for locating
+gateway nodes. 
 Finally, we conclude our work in Chapter~\ref{ch:conclusion}.
 
