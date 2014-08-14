@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {\hfill 1.\hbox {\hskip 0.8em}\ignorespaces }Introduction}{1}
 \contentsline {section}{\numberline {1.1.}Challenges}{3}
 \contentsline {section}{\numberline {1.2.}Contributions and Future Work}{6}
-\contentsline {section}{\numberline {1.3.}Proposal Overview}{10}
+\contentsline {section}{\numberline {1.3.}Proposal Overview}{9}
 \contentsline {chapter}{\numberline {\hfill 2.\hbox {\hskip 0.8em}\ignorespaces }Background}{11}
 \contentsline {section}{\numberline {2.1.}White Space Bands}{11}
 \contentsline {section}{\numberline {2.2.}Spectrum Utilization}{12}
@@ -29,25 +29,25 @@
 \contentsline {section}{\numberline {4.5.}Numerical Evaluation and Analysis}{48}
 \contentsline {subsection}{\numberline {4.5.1.}Experimental Setup}{48}
 \contentsline {subsection}{\numberline {4.5.2.}Results and Analysis}{50}
-\contentsline {section}{\numberline {4.6.}Summary}{53}
-\contentsline {chapter}{\numberline {\hfill 5.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adaptation for Multihop Access Networks}{54}
-\contentsline {section}{\numberline {5.1.}Problem Formulation}{54}
-\contentsline {subsection}{\numberline {5.1.1.}WhiteMesh Network Architecture}{54}
-\contentsline {subsection}{\numberline {5.1.2.}Model and Problem Formulation}{57}
-\contentsline {subsection}{\numberline {5.1.3.}Mixed Integer Linear Programming Formulation}{59}
-\contentsline {section}{\numberline {5.2.}Path Analysis with Diverse Propagation}{62}
-\contentsline {subsection}{\numberline {5.2.1.}Path Interference Induced on the Network}{62}
-\contentsline {subsection}{\numberline {5.2.2.}Band-based Path Selection (BPS) Algorithm}{64}
-\contentsline {section}{\numberline {5.3.}Evaluation of WhiteMesh Channel Assignment}{66}
-\contentsline {subsection}{\numberline {5.3.1.}Experimental Evaluation Setup}{67}
-\contentsline {subsection}{\numberline {5.3.2.}Experimental Analysis of WhiteMesh Backhaul}{69}
-\contentsline {subsubsection}{\numberline {5.3.2.1.}Network Size \& Bands Effect}{69}
-\contentsline {subsubsection}{\numberline {5.3.2.2.}Effect of Channel Occupancy}{74}
-\contentsline {section}{\numberline {5.4.}Summary}{77}
-\contentsline {chapter}{\numberline {\hfill 6.\hbox {\hskip 0.8em}\ignorespaces }Related Work}{78}
-\contentsline {section}{\numberline {6.1.}White Space Links}{78}
-\contentsline {section}{\numberline {6.2.}White Space Networks}{79}
-\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{82}
-\contentsline {section}{\numberline {7.1.}Model and Problem Formulation}{82}
-\contentsline {chapter}{\numberline {\hfill 8.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{84}
-\contentsline {chapter}{REFERENCES}{85}
+\contentsline {section}{\numberline {4.6.}Summary}{52}
+\contentsline {chapter}{\numberline {\hfill 5.\hbox {\hskip 0.8em}\ignorespaces }Spectrum Adaptation for Multihop Access Networks}{55}
+\contentsline {section}{\numberline {5.1.}Problem Formulation}{55}
+\contentsline {subsection}{\numberline {5.1.1.}WhiteMesh Network Architecture}{55}
+\contentsline {subsection}{\numberline {5.1.2.}Model and Problem Formulation}{58}
+\contentsline {subsection}{\numberline {5.1.3.}Mixed Integer Linear Programming Formulation}{60}
+\contentsline {section}{\numberline {5.2.}Path Analysis with Diverse Propagation}{63}
+\contentsline {subsection}{\numberline {5.2.1.}Path Interference Induced on the Network}{63}
+\contentsline {subsection}{\numberline {5.2.2.}Band-based Path Selection (BPS) Algorithm}{65}
+\contentsline {section}{\numberline {5.3.}Evaluation of WhiteMesh Channel Assignment}{67}
+\contentsline {subsection}{\numberline {5.3.1.}Experimental Evaluation Setup}{68}
+\contentsline {subsection}{\numberline {5.3.2.}Experimental Analysis of WhiteMesh Backhaul}{70}
+\contentsline {subsubsection}{\numberline {5.3.2.1.}Network Size \& Bands Effect}{70}
+\contentsline {subsubsection}{\numberline {5.3.2.2.}Effect of Channel Occupancy}{75}
+\contentsline {section}{\numberline {5.4.}Summary}{78}
+\contentsline {chapter}{\numberline {\hfill 6.\hbox {\hskip 0.8em}\ignorespaces }Related Work}{79}
+\contentsline {section}{\numberline {6.1.}White Space Links}{79}
+\contentsline {section}{\numberline {6.2.}White Space Networks}{80}
+\contentsline {chapter}{\numberline {\hfill 7.\hbox {\hskip 0.8em}\ignorespaces }Proposed Work}{83}
+\contentsline {section}{\numberline {7.1.}Model and Problem Formulation}{83}
+\contentsline {chapter}{\numberline {\hfill 8.\hbox {\hskip 0.8em}\ignorespaces }Conclusion}{85}
+\contentsline {chapter}{REFERENCES}{86}

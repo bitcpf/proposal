@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  13 AUG 2014 11:38
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.6.10)  14 AUG 2014 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,7 +293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--114
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9]) (./chap_background.tex [10]
+] [2] [3] [4] [5] [6] [7] [8]) (./chap_background.tex [9] [10]
 Chapter 2.
 [11
 
@@ -305,7 +305,7 @@ File: figures/fsh8.eps Graphic file (type eps)
 [15]
 Chapter 3.
 (./multiband_vnc/model.tex
-Overfull \hbox (5.20886pt too wide) in paragraph at lines 15--22
+Overfull \hbox (5.20886pt too wide) in paragraph at lines 14--25
 []\OT1/cmr/m/n/12 Consider a sys-tem with $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 
 fre-quency bands, rep-re-sented by an in-dex set $\OMS/cmsy/m/n/12 f\OT1/cmr/m/
 n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; n\OMS/cmsy/m/
@@ -315,13 +315,13 @@ n/12 g$\OT1/cmr/m/n/12 .
 [16
 
 ] [17]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
  [18]
 [19]) (./multiband_vnc/experiment_design.tex [20]
 File: figures/emulator2.eps Graphic file (type eps)
@@ -404,15 +404,15 @@ File: figures/onewhitechannel.eps Graphic file (type eps)
  <figures/onewhitechannel.eps> [51]
 File: figures/percentage.eps Graphic file (type eps)
 
-<figures/percentage.eps> [52]) (./multiband_winmee/conclusion.tex))
-(./chap_wm.tex [53]
+<figures/percentage.eps>) (./multiband_winmee/conclusion.tex [52] [53]))
+(./chap_wm.tex [54]
 Chapter 5.
-(./multiband_wm/problemformulation.tex [54
+(./multiband_wm/problemformulation.tex [55
 
 ]
 File: figures/interferencerange2.eps Graphic file (type eps)
  <figures/interferencerange2.eps>
-[55] [56] [57] [58]) (./multiband_wm/linearopt.tex
+[56] [57] [58] [59]) (./multiband_wm/linearopt.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--49
 
  []
@@ -422,7 +422,7 @@ Overfull \hbox (1.68642pt too wide) in paragraph at lines 22--49
 [] 
  []
 
-[59]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
@@ -432,23 +432,23 @@ Overfull \hbox (25.40338pt too wide) in paragraph at lines 57--70
 []
  []
 
-[60] [61]) (./multiband_wm/wmalgorithms.tex
-(./multiband_wm/networkefficiency.tex [62] [63])
+[61] [62]) (./multiband_wm/wmalgorithms.tex
+(./multiband_wm/networkefficiency.tex [63] [64])
 
 LaTeX Warning: Float too large for page by 6.71977pt on input line 54.
 
-[64] [65]
+[65] [66]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 85.
 
-) (./multiband_wm/experiment.tex [66] [67] [68]
+) (./multiband_wm/experiment.tex [67] [68] [69]
 File: figures/varysize.eps Graphic file (type eps)
  <figures/varysize.eps>
 File: figures/maxtpt.eps Graphic file (type eps)
 
-<figures/maxtpt.eps> [69] [70] [71]
+<figures/maxtpt.eps> [70] [71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 []\OT1/cmr/m/n/12 Multi-WS
  []
@@ -473,7 +473,7 @@ Overfull \hbox (16.86353pt too wide) in paragraph at lines 215--256
  [] 
  []
 
-[72] [73] [74]
+[73] [74] [75]
 File: figures/actspac3d.eps Graphic file (type eps)
  <figures/actspac3d.eps>
 
@@ -484,21 +484,21 @@ File: figures/act_spacing.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75] [76]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [77]
+[76] [77]) (./multiband_wm/conclusion.tex)) (./chap_related.tex [78]
 Chapter 6.
-[78
+[79
 
-] [79] [80]) (./chap_futurework.tex [81]
+] [80] [81]) (./chap_futurework.tex [82]
 Chapter 7.
-[82
+[83
 
-]) (./chap_conclusion.tex [83]
+]) (./chap_conclusion.tex [84]
 Chapter 8.
-) (./proposal_pcui.bbl [84
+) (./proposal_pcui.bbl [85
 
 ]
 REFERENCES.
-[85
+[86
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--99
@@ -512,13 +512,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
 ets / 2008 / 05 /
  []
 
-[86] [87] [88] [89] [90])
+[87] [88] [89] [90] [91])
 \openout7 = `proposal_pcui.idx'.
 
 
 Total number of figures: 24
 Total number of tables: 5
-[91] (./proposal_pcui.aux)
+[92] (./proposal_pcui.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -530,6 +530,6 @@ Here is how much of TeX's memory you used:
  6897 multiletter control sequences out of 15000+600000
  10243 words of font info for 37 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 36i,9n,43p,419b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,43p,344b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal_pcui.dvi (105 pages, 273368 bytes).
+Output written on proposal_pcui.dvi (106 pages, 272724 bytes).
